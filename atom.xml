@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Abstract Nonsense</title>
+  
+  <subtitle>Yunhai Xiang&#39;s Blog</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2021-06-13T15:28:08.877Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Yunhai Xiang</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Week 1</title>
+    <link href="http://yoursite.com/archives/7dbb66b9/"/>
+    <id>http://yoursite.com/archives/7dbb66b9/</id>
+    <published>2021-06-14T03:26:30.000Z</published>
+    <updated>2021-06-13T15:28:08.877Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/spoiler.css&quot; type=&quot;text/css&quot;&gt;&lt;script src=&quot;/js/spoiler.js&quot; type=&quot;text/javascript&quot; async&gt;&lt;/script&gt;
+      
+    
+    </summary>
+    
+      <category term="This Week I Learned" scheme="http://yoursite.com/categories/This-Week-I-Learned/"/>
+    
+    
+      <category term="Algebraic Geometry" scheme="http://yoursite.com/tags/Algebraic-Geometry/"/>
+    
+      <category term="Arithmetic Geometry" scheme="http://yoursite.com/tags/Arithmetic-Geometry/"/>
+    
+      <category term="Number Theory" scheme="http://yoursite.com/tags/Number-Theory/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Project Lambda: This Week I Learned</title>
+    <link href="http://yoursite.com/archives/1d22c5ec/"/>
+    <id>http://yoursite.com/archives/1d22c5ec/</id>
+    <published>2021-05-22T23:12:57.000Z</published>
+    <updated>2021-05-26T02:35:45.618Z</updated>
+    
+    <content type="html"><![CDATA[<p>Project Lambda is my personal project of a weekly column titled <em>This Week I Learned</em>, where I post a new article under the category <a href="/categories/This-Week-I-Learned/">This Week I Learned</a> each week on <strong>Friday</strong> or <strong>Saturday</strong>. In each of those articles, I will write about the following things</p><ul><li><em>An overview of the past week</em>. I will briefly go over the things I studied in the past week: which chapters of which books I read and which exercises I did. In particular, I will highlight any interesting or important theorems, facts, examples or exercises I came over, as well as my questions and confusions.</li><li><em>Objectives of next week</em>. If I have the time, I will set a rough outline of my study plan of next week. I will not, however, always follow this outline. I like to be very flexible with my schedules.</li><li><em>Anythings else that’s interesting</em>. I will write about anything else that interests me, which can be high school or university level math competition problems, or even something completely unrelated to math.</li></ul><span id="more"></span><p>Note that this project is licensed under <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Common BY-NC 4.0</a>, which means that you are free to share or adapt these documents for non-commercial purposes if you give appropriate credit. </p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Project Lambda is my personal project of a weekly column titled &lt;em&gt;This Week I Learned&lt;/em&gt;, where I post a new article under the category &lt;a href=&quot;/categories/This-Week-I-Learned/&quot;&gt;This Week I Learned&lt;/a&gt; each week on &lt;strong&gt;Friday&lt;/strong&gt; or &lt;strong&gt;Saturday&lt;/strong&gt;. In each of those articles, I will write about the following things&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;An overview of the past week&lt;/em&gt;. I will briefly go over the things I studied in the past week: which chapters of which books I read and which exercises I did. In particular, I will highlight any interesting or important theorems, facts, examples or exercises I came over, as well as my questions and confusions.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Objectives of next week&lt;/em&gt;. If I have the time, I will set a rough outline of my study plan of next week. I will not, however, always follow this outline. I like to be very flexible with my schedules.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Anythings else that’s interesting&lt;/em&gt;. I will write about anything else that interests me, which can be high school or university level math competition problems, or even something completely unrelated to math.&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Projects" scheme="http://yoursite.com/categories/Projects/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Project Sigma: My Journey with Mathematics</title>
+    <link href="http://yoursite.com/archives/2b4d8af0/"/>
+    <id>http://yoursite.com/archives/2b4d8af0/</id>
+    <published>2021-05-08T06:24:07.000Z</published>
+    <updated>2021-06-10T10:41:31.561Z</updated>
+    
+    <content type="html"><![CDATA[<p>Project Sigma is a collection of my personal course notes on various mathematical topics, mostly related to geometry and number theory, and a collection of exercises I have done on these subjects. I decided to start this project primarily as a motivation for myself to learn and as a way of recording my learning progress. That being said, it would also make me very happy if someone else benefits from my work. Each of the subject will have their own GitHub repository, typically named as “Project-Sigma-XXX” where XXX is an abbriviation of the subject. They will probably contain a lot of typos and errors, and if you found one, you are welcomed to open an issue page on the respective repository and point out my mistake. </p><span id="more"></span><p>Currently, the following subjects are planned.<br><table>  <tr>    <th>Subject</th>    <th>Repository</th>    <th>Status</th>  </tr>  <tr>    <td>Algebraic Geometry</td>    <td><a href="https://github.com/YunhaiXiang/Project-Sigma-ALG">Project-Sigma-ALG</a></td>    <td>Incomplete</td>  </tr>  <tr>    <td>Arithmetic Geometry</td>    <td><a href="https://github.com/YunhaiXiang/Project-Sigma-ARG">Project-Sigma-ARG</a></td>    <td>Incomplete</td>  </tr></table></p><p>I also plan to add new subjects in the future, but only after the current ones are completed over 75%. To download the material, simply go to the corresponding repository and either download the newest release or just clone the repository directly. When writing these notes, I will try to adhere to the following philosophies:</p><ul><li>Consistent and unambiguous notation: this means that I will follow the same notation conventions for all of the course notes and exercises. I will also clearly state any abuse of notation I will use.</li><li>Sketches of proof: this means that I will provide bullet points of my reasoning for many of the exercises and theorems instead of providing full proofs. I will try to make them as perspicuous and coherent as I can.</li><li>Prototypical examples: this means that I will give quintessential examples and non-examples for important notions. Examples help myself to build intuitions for abstract concepts.</li></ul><p>Finally, note that this project is licensed under <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Common BY-NC 4.0</a>, which means that you are free to share or adapt these documents for non-commercial purposes if you give appropriate credit. I hope you enjoy reading these notes as I enjoyed writing them!</p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Project Sigma is a collection of my personal course notes on various mathematical topics, mostly related to geometry and number theory, and a collection of exercises I have done on these subjects. I decided to start this project primarily as a motivation for myself to learn and as a way of recording my learning progress. That being said, it would also make me very happy if someone else benefits from my work. Each of the subject will have their own GitHub repository, typically named as “Project-Sigma-XXX” where XXX is an abbriviation of the subject. They will probably contain a lot of typos and errors, and if you found one, you are welcomed to open an issue page on the respective repository and point out my mistake. &lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Projects" scheme="http://yoursite.com/categories/Projects/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Nine Point Circle and Feuerbach&#39;s Theorem</title>
+    <link href="http://yoursite.com/archives/e3b6140a/"/>
+    <id>http://yoursite.com/archives/e3b6140a/</id>
+    <published>2020-02-10T03:51:01.000Z</published>
+    <updated>2021-05-22T22:49:35.681Z</updated>
+    
+    <content type="html"><![CDATA[<p>I’ve been playing with the <a href="https://github.com/3b1b/manim">Manim</a> library lately. Here’s a test animation I made demonstrating the <a href="https://en.wikipedia.org/wiki/Nine-point_circle">nine point circle</a> and part of Feuerbach’s theorem. It should be noted that Feuerbach’s Theorem also tells us that the nine point circle of a triangle is tangent to the three excircles of that triangle, but I did not include that in the video. </p><div class="video-container"><br>    <iframe src="https://www.youtube.com/embed/WKqdXB2t86E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br></div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;I’ve been playing with the &lt;a href=&quot;https://github.com/3b1b/manim&quot;&gt;Manim&lt;/a&gt; library lately. Here’s a test animation I made demonstrating
+      
+    
+    </summary>
+    
+      <category term="Articles" scheme="http://yoursite.com/categories/Articles/"/>
+    
+    
+      <category term="Euclidean Geometry" scheme="http://yoursite.com/tags/Euclidean-Geometry/"/>
+    
+  </entry>
+  
+</feed>
