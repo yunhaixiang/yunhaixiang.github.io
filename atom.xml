@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2021-06-13T15:28:08.877Z</updated>
+  <updated>2021-08-15T01:40:09.911Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,19 +17,19 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Week 1</title>
+    <title>Week 1: Galois cohomology and Mordell-Weil theorem</title>
     <link href="http://yoursite.com/archives/7dbb66b9/"/>
     <id>http://yoursite.com/archives/7dbb66b9/</id>
-    <published>2021-06-14T03:26:30.000Z</published>
-    <updated>2021-06-13T15:28:08.877Z</updated>
+    <published>2021-07-05T03:26:30.000Z</published>
+    <updated>2021-08-15T01:40:09.911Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    <content type="html"><![CDATA[<blockquote class="pullquote"><p>“If only we could actually learn math by physically bashing our heads with textbooks, it might be easier than the alternative.” </p><p style="text-align: right;"> <em>A friend of mine</em> </p></blockquote><p>This week I finally finished my final project for my PMATH 499 reading course in arithmetic geometry. My project is called “Galois cohomology and weak Mordell-Weil theorem”, which is available <a href="/documents/Galois_Cohomology.pdf">here</a>. Galois cohomology is the application of group cohomology to Galois groups. In particular, we know that for a perfect field \(k\) with an algebraic closure \(K\), the Galois group \(\mathrm{Gal}(K/k)\) is isomorphic to an inverse limit \(\displaystyle\lim_{\longleftarrow}\mathrm{Gal}(L/k)\) ranging over the finite Galois extensions \(L/k\) with the natural projections. This fact makes \(G\) a profinite group, and the Krull topology, the topology of \(G\) endowed by the inverse limit process by viewing each finite Galois group as a topological group with the discrete topology, is a topology  where a basis for the neighborhood at the identity is the collection of normal subgroups having finite index in \(G\). This is a motivation to use homological algebra in such situation. </p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/spoiler.css&quot; type=&quot;text/css&quot;&gt;&lt;script src=&quot;/js/spoiler.js&quot; type=&quot;text/javascript&quot; async&gt;&lt;/script&gt;
+        &lt;blockquote class=&quot;pullquote&quot;&gt;&lt;p&gt;“If only we could actually learn math by physically bashing our heads with textbooks, it might be easier th
       
     
     </summary>
@@ -50,9 +50,9 @@
     <link href="http://yoursite.com/archives/1d22c5ec/"/>
     <id>http://yoursite.com/archives/1d22c5ec/</id>
     <published>2021-05-22T23:12:57.000Z</published>
-    <updated>2021-05-26T02:35:45.618Z</updated>
+    <updated>2021-07-05T03:26:39.613Z</updated>
     
-    <content type="html"><![CDATA[<p>Project Lambda is my personal project of a weekly column titled <em>This Week I Learned</em>, where I post a new article under the category <a href="/categories/This-Week-I-Learned/">This Week I Learned</a> each week on <strong>Friday</strong> or <strong>Saturday</strong>. In each of those articles, I will write about the following things</p><ul><li><em>An overview of the past week</em>. I will briefly go over the things I studied in the past week: which chapters of which books I read and which exercises I did. In particular, I will highlight any interesting or important theorems, facts, examples or exercises I came over, as well as my questions and confusions.</li><li><em>Objectives of next week</em>. If I have the time, I will set a rough outline of my study plan of next week. I will not, however, always follow this outline. I like to be very flexible with my schedules.</li><li><em>Anythings else that’s interesting</em>. I will write about anything else that interests me, which can be high school or university level math competition problems, or even something completely unrelated to math.</li></ul><span id="more"></span><p>Note that this project is licensed under <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Common BY-NC 4.0</a>, which means that you are free to share or adapt these documents for non-commercial purposes if you give appropriate credit. </p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    <content type="html"><![CDATA[<p>Project Lambda is my personal project of a weekly column titled <em>This Week I Learned</em>, where I post a new article under the category <a href="/categories/This-Week-I-Learned/">This Week I Learned</a> each week on <strong>Friday</strong> or <strong>Saturday</strong>. In each of those articles, I will write about the following things</p><ul><li><em>An overview of the past week</em>. I will briefly go over the things I studied in the past week: which chapters of which books I read and which exercises I did. In particular, I will highlight any interesting or important theorems, facts, examples or exercises I came over, as well as my questions and confusions.</li><li><em>Objectives of next week</em>. If I have the time, I will set a rough outline of my study plan of next week. I will not, however, always follow this outline. I like to be very flexible with my schedules.</li><li><em>Anythings else that’s interesting</em>. I will write about anything else that interests me, such as math competition problems, brain teasers, mathematical anecdotes, or even things completely unrelated to math.</li></ul><span id="more"></span><p>Note that this project is licensed under <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Common BY-NC 4.0</a>, which means that you are free to share or adapt these documents for non-commercial purposes if you give appropriate credit. </p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
     
     <summary type="html">
     
@@ -60,7 +60,7 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;em&gt;An overview of the past week&lt;/em&gt;. I will briefly go over the things I studied in the past week: which chapters of which books I read and which exercises I did. In particular, I will highlight any interesting or important theorems, facts, examples or exercises I came over, as well as my questions and confusions.&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;Objectives of next week&lt;/em&gt;. If I have the time, I will set a rough outline of my study plan of next week. I will not, however, always follow this outline. I like to be very flexible with my schedules.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Anythings else that’s interesting&lt;/em&gt;. I will write about anything else that interests me, which can be high school or university level math competition problems, or even something completely unrelated to math.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Anythings else that’s interesting&lt;/em&gt;. I will write about anything else that interests me, such as math competition problems, brain teasers, mathematical anecdotes, or even things completely unrelated to math.&lt;/li&gt;
 &lt;/ul&gt;
     
     </summary>
