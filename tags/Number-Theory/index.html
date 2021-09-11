@@ -159,14 +159,15 @@
         <span class="column is-narrow">
             
             
-            a minute read (About 191 words)
+            a minute read (About 185 words)
         </span>
         
     </div>
     <div class="article-entry is-size-6-mobile" itemprop="articleBody">
     
-        <blockquote class="pullquote"><p>“If only we could actually learn math by physically bashing our heads with textbooks, it might be easier than the alternative.” </p>
-<p style="text-align: right;"> <em>A friend of mine</em> </p></blockquote>
+        <blockquote class="pullquote"><p>“In mathematics the art of proposing a question must be held of higher value than solving it.” </p>
+<p style="text-align: right;"> George Cantor </p></blockquote>
+
 <p>This week I finally finished my final project for my PMATH 499 reading course in arithmetic geometry. My project is called “Galois cohomology and weak Mordell-Weil theorem”, which is available <a href="/documents/Galois_Cohomology.pdf">here</a>. Galois cohomology is the application of group cohomology to Galois groups. In particular, we know that for a perfect field \(k\) with an algebraic closure \(K\), the Galois group \(\mathrm{Gal}(K/k)\) is isomorphic to an inverse limit \(\displaystyle\lim_{\longleftarrow}\mathrm{Gal}(L/k)\) ranging over the finite Galois extensions \(L/k\) with the natural projections. This fact makes \(G\) a profinite group, and the Krull topology, the topology of \(G\) endowed by the inverse limit process by viewing each finite Galois group as a topological group with the discrete topology, is a topology  where a basis for the neighborhood at the identity is the collection of normal subgroups having finite index in \(G\). This is a motivation to use homological algebra in such situation. </p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
     
@@ -352,25 +353,23 @@
     })(window);
 </script>
 
-<script src="/js/insight.js"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({{ JSON.stringify(config) }});
-</script>
-
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i=0; i < all.length; i += 1) {
-      all[i].SourceElement().parentNode.className += ' has-jax';
-    }
-  });
-</script>
-
-<script type="text/javascript" src="{{ src }}">
-</script>
-<!-- End: Injected MathJax -->
-<!-- hexo-inject:end -->
+<script src="/js/insight.js"></script>
 
     
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
 </html>

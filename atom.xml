@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2021-08-15T01:40:09.911Z</updated>
+  <updated>2021-09-11T04:21:23.217Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,15 +21,16 @@
     <link href="http://yoursite.com/archives/7dbb66b9/"/>
     <id>http://yoursite.com/archives/7dbb66b9/</id>
     <published>2021-07-05T03:26:30.000Z</published>
-    <updated>2021-08-15T01:40:09.911Z</updated>
+    <updated>2021-09-11T04:21:23.217Z</updated>
     
-    <content type="html"><![CDATA[<blockquote class="pullquote"><p>“If only we could actually learn math by physically bashing our heads with textbooks, it might be easier than the alternative.” </p><p style="text-align: right;"> <em>A friend of mine</em> </p></blockquote><p>This week I finally finished my final project for my PMATH 499 reading course in arithmetic geometry. My project is called “Galois cohomology and weak Mordell-Weil theorem”, which is available <a href="/documents/Galois_Cohomology.pdf">here</a>. Galois cohomology is the application of group cohomology to Galois groups. In particular, we know that for a perfect field \(k\) with an algebraic closure \(K\), the Galois group \(\mathrm{Gal}(K/k)\) is isomorphic to an inverse limit \(\displaystyle\lim_{\longleftarrow}\mathrm{Gal}(L/k)\) ranging over the finite Galois extensions \(L/k\) with the natural projections. This fact makes \(G\) a profinite group, and the Krull topology, the topology of \(G\) endowed by the inverse limit process by viewing each finite Galois group as a topological group with the discrete topology, is a topology  where a basis for the neighborhood at the identity is the collection of normal subgroups having finite index in \(G\). This is a motivation to use homological algebra in such situation. </p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    <content type="html"><![CDATA[<blockquote class="pullquote"><p>“In mathematics the art of proposing a question must be held of higher value than solving it.” </p><p style="text-align: right;"> George Cantor </p></blockquote><p>This week I finally finished my final project for my PMATH 499 reading course in arithmetic geometry. My project is called “Galois cohomology and weak Mordell-Weil theorem”, which is available <a href="/documents/Galois_Cohomology.pdf">here</a>. Galois cohomology is the application of group cohomology to Galois groups. In particular, we know that for a perfect field \(k\) with an algebraic closure \(K\), the Galois group \(\mathrm{Gal}(K/k)\) is isomorphic to an inverse limit \(\displaystyle\lim_{\longleftarrow}\mathrm{Gal}(L/k)\) ranging over the finite Galois extensions \(L/k\) with the natural projections. This fact makes \(G\) a profinite group, and the Krull topology, the topology of \(G\) endowed by the inverse limit process by viewing each finite Galois group as a topological group with the discrete topology, is a topology  where a basis for the neighborhood at the identity is the collection of normal subgroups having finite index in \(G\). This is a motivation to use homological algebra in such situation. </p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;blockquote class=&quot;pullquote&quot;&gt;&lt;p&gt;“If only we could actually learn math by physically bashing our heads with textbooks, it might be easier th
+        &lt;blockquote class=&quot;pullquote&quot;&gt;&lt;p&gt;“In mathematics the art of proposing a question must be held of higher value than solving it.” &lt;/p&gt;
+&lt;p styl
       
     
     </summary>
