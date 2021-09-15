@@ -414,6 +414,9 @@ figure.highlight {
     font-family: inherit !important;
     line-height: 1.5; }
 
+table {
+  overflow-x: scroll; }
+
 .MathJax_Display, .MJXc-display, .MathJax_SVG_Display {
   overflow-x: auto;
   overflow-y: hidden; }
