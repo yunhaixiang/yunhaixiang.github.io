@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2021-09-11T04:21:23.217Z</updated>
+  <updated>2021-09-15T11:10:27.170Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,21 +17,43 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Forgetful Functor, Fall 2021</title>
+    <link href="http://yoursite.com/archives/607fbcab/"/>
+    <id>http://yoursite.com/archives/607fbcab/</id>
+    <published>2021-09-13T00:09:01.000Z</published>
+    <updated>2021-09-15T11:10:27.170Z</updated>
+    
+    <content type="html"><![CDATA[<p><em>Forgetful Functor</em> is an online learning seminar in algebraic geometry held by undergraduate students at University of Waterloo in Fall 2021. Anyone with a strong interest in algebraic geometry is welcomed to join! To join the seminar, contact the organizer via email <a href="mailto:&#x79;&#x33;&#56;&#x78;&#x69;&#97;&#x6e;&#103;&#x40;&#x75;&#119;&#97;&#116;&#101;&#114;&#x6c;&#x6f;&#x6f;&#x2e;&#x63;&#97;">&#x79;&#x33;&#56;&#x78;&#x69;&#97;&#x6e;&#103;&#x40;&#x75;&#119;&#97;&#116;&#101;&#114;&#x6c;&#x6f;&#x6f;&#x2e;&#x63;&#97;</a>.</p><p>The main text we follow is <em>Foundations of Algebraic Geometry</em> by Ravi Vakil. We read 1.5 chapters per week, and have a 30 minute to 1 hour weekly discussion, in which a main speaker gives an overview of the reading material of the past week and we discuss problems together. Some other texts we use are <em>Algebraic Geometry</em> by Robin Hartshorne and <em>Categories and Homological Algebra</em> by Pierre Schapira.</p><span id="more"></span><p>Here are the details for each week’s meeting.</p><table>  <tr>    <th>Week</th>    <th>Notes</th>    <th>Recording</th>    <th>Speaker</th>    <th>Topics</th>  </tr>  <tr>    <td>1</td>    <td>Sept 18</td>    <td>Week 1</td>    <td>Yunhai Xiang</td>    <td>categories, functors, limits, adjoints, sheaves</td>  </tr></table><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;em&gt;Forgetful Functor&lt;/em&gt; is an online learning seminar in algebraic geometry held by undergraduate students at University of Waterloo in Fall 2021. Anyone with a strong interest in algebraic geometry is welcomed to join! To join the seminar, contact the organizer via email &lt;a href=&quot;mailto:&amp;#x79;&amp;#x33;&amp;#56;&amp;#x78;&amp;#x69;&amp;#97;&amp;#x6e;&amp;#103;&amp;#x40;&amp;#x75;&amp;#119;&amp;#97;&amp;#116;&amp;#101;&amp;#114;&amp;#x6c;&amp;#x6f;&amp;#x6f;&amp;#x2e;&amp;#x63;&amp;#97;&quot;&gt;&amp;#x79;&amp;#x33;&amp;#56;&amp;#x78;&amp;#x69;&amp;#97;&amp;#x6e;&amp;#103;&amp;#x40;&amp;#x75;&amp;#119;&amp;#97;&amp;#116;&amp;#101;&amp;#114;&amp;#x6c;&amp;#x6f;&amp;#x6f;&amp;#x2e;&amp;#x63;&amp;#97;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The main text we follow is &lt;em&gt;Foundations of Algebraic Geometry&lt;/em&gt; by Ravi Vakil. We read 1.5 chapters per week, and have a 30 minute to 1 hour weekly discussion, in which a main speaker gives an overview of the reading material of the past week and we discuss problems together. Some other texts we use are &lt;em&gt;Algebraic Geometry&lt;/em&gt; by Robin Hartshorne and &lt;em&gt;Categories and Homological Algebra&lt;/em&gt; by Pierre Schapira.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Projects" scheme="http://yoursite.com/categories/Projects/"/>
+    
+    
+      <category term="Algebraic Geometry" scheme="http://yoursite.com/tags/Algebraic-Geometry/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Week 1: Galois cohomology and Mordell-Weil theorem</title>
     <link href="http://yoursite.com/archives/7dbb66b9/"/>
     <id>http://yoursite.com/archives/7dbb66b9/</id>
     <published>2021-07-05T03:26:30.000Z</published>
-    <updated>2021-09-11T04:21:23.217Z</updated>
+    <updated>2021-09-15T11:29:20.958Z</updated>
     
-    <content type="html"><![CDATA[<blockquote class="pullquote"><p>“In mathematics the art of proposing a question must be held of higher value than solving it.” </p><p style="text-align: right;"> George Cantor </p></blockquote><p>This week I finally finished my final project for my PMATH 499 reading course in arithmetic geometry. My project is called “Galois cohomology and weak Mordell-Weil theorem”, which is available <a href="/documents/Galois_Cohomology.pdf">here</a>. Galois cohomology is the application of group cohomology to Galois groups. In particular, we know that for a perfect field \(k\) with an algebraic closure \(K\), the Galois group \(\mathrm{Gal}(K/k)\) is isomorphic to an inverse limit \(\displaystyle\lim_{\longleftarrow}\mathrm{Gal}(L/k)\) ranging over the finite Galois extensions \(L/k\) with the natural projections. This fact makes \(G\) a profinite group, and the Krull topology, the topology of \(G\) endowed by the inverse limit process by viewing each finite Galois group as a topological group with the discrete topology, is a topology  where a basis for the neighborhood at the identity is the collection of normal subgroups having finite index in \(G\). This is a motivation to use homological algebra in such situation. </p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    <content type="html"><![CDATA[<blockquote class="pullquote"><p>“In mathematics the art of proposing a question must be held of higher value than solving it.” </p><p style="text-align: right;"> George Cantor </p></blockquote><p>This week I finally finished my final project for my PMATH 499 reading course in arithmetic geometry. My project is called “Galois cohomology and weak Mordell–Weil theorem”, which is available <a href="/documents/Galois_Cohomology.pdf">here</a>. Galois cohomology is the application of group cohomology to Galois groups. In particular, we know that for a perfect field \(k\) with an algebraic closure \(K\), the Galois group \(\mathrm{Gal}(K/k)\) is isomorphic to an inverse limit of topological Galois groups \(\mathrm{Gal}(L/k)\) ranging over the finite Galois extensions \(L/k\) with the natural projections. This fact makes \(G\) a profinite group, and the Krull topology, the topology of \(G\) endowed by the inverse limit process by viewing each finite Galois group as a topological group with the discrete topology, is a topology  where a basis for the neighborhood at the identity is the collection of normal subgroups having finite index in \(G\). This is a motivation to use homological algebra in such situation. </p><span id="more"></span><p>My final project focuses on the proof of the weak Mordell–Weil theorem, which states that for any elliptic curve \(E\), the group \(E(k)/nE(k)\) is finite for all \(n\ge 2\). This is an important step in the proof of the Mordell–Weil theorem which states the elliptic curve groups are finitely generated. The proof of Mordell–Weil involves in applying an infinite descent argument to weak Mordell–Weil, which I will not go into detail. The motivating observation is that we have an exact sequence of topological \(\mathrm{Gal}(K/k)\)-modules \[\mathbf{0}\rightarrow E(K)[n]\rightarrow E(K)\xrightarrow{n}E(K)\rightarrow\mathbf{0}\]This short exact sequence induces a long exact sequence of cohomology groups, which we truncate after the first cohomology groups. The first cohomology group can be viewed as the group of crossed homomorphisms module the principal crossed homomorphisms, where a crossed homomorphism is some \(f\) with \(f(gh)=gf(h)+f(g)\) for all \(g,h\) and a principal crossed homomorphism is a homomorphism where there exists \(m\) with \(f(g)=gm-m\) for all \(g\). This can be verified by just computing out the differential. Next, we define the \(n\)-Selmer groups and the Tate-Shafarevich group, which is applied to the induced exact sequence we just found in order to obtain a better bound for the group \(E(k)/nE(k)\). Finally, the finiteness of \(E(k)/nE(k)\) is obtained from the finiteness of the Selmer groups.</p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;blockquote class=&quot;pullquote&quot;&gt;&lt;p&gt;“In mathematics the art of proposing a question must be held of higher value than solving it.” &lt;/p&gt;
-&lt;p styl
-      
+      &lt;blockquote class=&quot;pullquote&quot;&gt;&lt;p&gt;“In mathematics the art of proposing a question must be held of higher value than solving it.” &lt;/p&gt;
+&lt;p style=&quot;text-align: right;&quot;&gt; George Cantor &lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;This week I finally finished my final project for my PMATH 499 reading course in arithmetic geometry. My project is called “Galois cohomology and weak Mordell–Weil theorem”, which is available &lt;a href=&quot;/documents/Galois_Cohomology.pdf&quot;&gt;here&lt;/a&gt;. Galois cohomology is the application of group cohomology to Galois groups. In particular, we know that for a perfect field \(k\) with an algebraic closure \(K\), the Galois group \(\mathrm{Gal}(K/k)\) is isomorphic to an inverse limit of topological Galois groups \(\mathrm{Gal}(L/k)\) ranging over the finite Galois extensions \(L/k\) with the natural projections. This fact makes \(G\) a profinite group, and the Krull topology, the topology of \(G\) endowed by the inverse limit process by viewing each finite Galois group as a topological group with the discrete topology, is a topology  where a basis for the neighborhood at the identity is the collection of normal subgroups having finite index in \(G\). This is a motivation to use homological algebra in such situation. &lt;/p&gt;
     
     </summary>
     
@@ -51,18 +73,16 @@
     <link href="http://yoursite.com/archives/1d22c5ec/"/>
     <id>http://yoursite.com/archives/1d22c5ec/</id>
     <published>2021-05-22T23:12:57.000Z</published>
-    <updated>2021-07-05T03:26:39.613Z</updated>
+    <updated>2021-09-13T18:24:27.995Z</updated>
     
-    <content type="html"><![CDATA[<p>Project Lambda is my personal project of a weekly column titled <em>This Week I Learned</em>, where I post a new article under the category <a href="/categories/This-Week-I-Learned/">This Week I Learned</a> each week on <strong>Friday</strong> or <strong>Saturday</strong>. In each of those articles, I will write about the following things</p><ul><li><em>An overview of the past week</em>. I will briefly go over the things I studied in the past week: which chapters of which books I read and which exercises I did. In particular, I will highlight any interesting or important theorems, facts, examples or exercises I came over, as well as my questions and confusions.</li><li><em>Objectives of next week</em>. If I have the time, I will set a rough outline of my study plan of next week. I will not, however, always follow this outline. I like to be very flexible with my schedules.</li><li><em>Anythings else that’s interesting</em>. I will write about anything else that interests me, such as math competition problems, brain teasers, mathematical anecdotes, or even things completely unrelated to math.</li></ul><span id="more"></span><p>Note that this project is licensed under <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Common BY-NC 4.0</a>, which means that you are free to share or adapt these documents for non-commercial purposes if you give appropriate credit. </p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    <content type="html"><![CDATA[<p>Project Lambda is my personal project of a weekly column titled <em>This Week I Learned</em>, where I post a new article under the category <a href="/categories/This-Week-I-Learned/">This Week I Learned</a> each week on <strong>Friday</strong> or <strong>Saturday</strong>. In each of those articles, I will write about the following things</p><ul><li><em>An overview of the past week</em>. I will briefly go over the things I studied in the past week: which chapters of which books I read and which exercises I did. In particular, I will highlight any interesting or important theorems, facts, examples or exercises I came over, as well as my questions and confusions.</li><li><em>Objectives of next week</em>. If I have the time, I will set a rough outline of my study plan of next week. I will not, however, always follow this outline. I like to be very flexible with my schedules.</li><li><em>Anythings else that’s interesting</em>. I will write about anything else that interests me, such as math competition problems, brain teasers, mathematical anecdotes, or even things completely unrelated to math.</li></ul><p>Note that this project is licensed under <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Common BY-NC 4.0</a>, which means that you are free to share or adapt these documents for non-commercial purposes if you give appropriate credit. </p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;Project Lambda is my personal project of a weekly column titled &lt;em&gt;This Week I Learned&lt;/em&gt;, where I post a new article under the category &lt;a href=&quot;/categories/This-Week-I-Learned/&quot;&gt;This Week I Learned&lt;/a&gt; each week on &lt;strong&gt;Friday&lt;/strong&gt; or &lt;strong&gt;Saturday&lt;/strong&gt;. In each of those articles, I will write about the following things&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;An overview of the past week&lt;/em&gt;. I will briefly go over the things I studied in the past week: which chapters of which books I read and which exercises I did. In particular, I will highlight any interesting or important theorems, facts, examples or exercises I came over, as well as my questions and confusions.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Objectives of next week&lt;/em&gt;. If I have the time, I will set a rough outline of my study plan of next week. I will not, however, always follow this outline. I like to be very flexible with my schedules.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Anythings else that’s interesting&lt;/em&gt;. I will write about anything else that interests me, such as math competition problems, brain teasers, mathematical anecdotes, or even things completely unrelated to math.&lt;/li&gt;
-&lt;/ul&gt;
+      
+      
+        &lt;p&gt;Project Lambda is my personal project of a weekly column titled &lt;em&gt;This Week I Learned&lt;/em&gt;, where I post a new article under the catego
+      
     
     </summary>
     
