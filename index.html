@@ -152,14 +152,14 @@
         <span class="column is-narrow">
             
             
-            a minute read (About 137 words)
+            a minute read (About 143 words)
         </span>
         
     </div>
     <div class="article-entry is-size-6-mobile" itemprop="articleBody">
     
-        <p><em>Forgetful Functor</em> is an online learning seminar in algebraic geometry held by undergraduate students at University of Waterloo in Fall 2021. Anyone with a strong interest in algebraic geometry is welcomed to join! To join the seminar, contact the organizer via email <a href="mailto:&#x79;&#x33;&#56;&#x78;&#x69;&#97;&#x6e;&#103;&#x40;&#x75;&#119;&#97;&#116;&#101;&#114;&#x6c;&#x6f;&#x6f;&#x2e;&#x63;&#97;">&#x79;&#x33;&#56;&#x78;&#x69;&#97;&#x6e;&#103;&#x40;&#x75;&#119;&#97;&#116;&#101;&#114;&#x6c;&#x6f;&#x6f;&#x2e;&#x63;&#97;</a>.</p>
-<p>The main text we follow is <em>Foundations of Algebraic Geometry</em> by Ravi Vakil. We read 1.5 chapters per week, and have a 30 minute to 1 hour weekly discussion, in which a main speaker gives an overview of the reading material of the past week and we discuss problems together. Some other texts we use are <em>Algebraic Geometry</em> by Robin Hartshorne and <em>Categories and Homological Algebra</em> by Pierre Schapira.</p>
+        <p><em>Forgetful Functor</em> is an online learning seminar in algebraic geometry held by undergraduate students at University of Waterloo in Fall 2021. Anyone with a strong interest in algebraic geometry is welcomed to join! To join the seminar, contact the organizer Yunhai Xiang via email <a href="mailto:&#121;&#51;&#56;&#x78;&#105;&#x61;&#110;&#103;&#x40;&#x75;&#119;&#97;&#x74;&#101;&#114;&#x6c;&#111;&#111;&#x2e;&#x63;&#97;">&#121;&#51;&#56;&#x78;&#105;&#x61;&#110;&#103;&#x40;&#x75;&#119;&#97;&#x74;&#101;&#114;&#x6c;&#111;&#111;&#x2e;&#x63;&#97;</a>.</p>
+<p>The main text we follow is <em>Foundations of Algebraic Geometry</em> by Ravi Vakil. We read 1.5 chapters per week, and have a 30 minute to 1 hour discussion each Saturday on 7 PM EDT, in which a main speaker gives an overview of the reading material of the past week and we discuss problems together. Some other texts we use are <em>Algebraic Geometry</em> by Robin Hartshorne and <em>Categories and Homological Algebra</em> by Pierre Schapira.</p>
         <p class="article-more-link">
             <a href="/archives/607fbcab/#more">Read More</a>
         </p>
@@ -511,8 +511,23 @@
     })(window);
 </script>
 
-<script src="/js/insight.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<script src="/js/insight.js"></script>
 
     
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
 </html>
