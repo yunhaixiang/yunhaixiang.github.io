@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2021-10-11T22:15:58.118Z</updated>
+  <updated>2021-10-20T02:19:08.418Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,33 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Week 2: Symmetric functions</title>
-    <link href="http://yoursite.com/archives/86f829f/"/>
-    <id>http://yoursite.com/archives/86f829f/</id>
-    <published>2021-10-09T03:09:03.000Z</published>
-    <updated>2021-10-11T22:15:58.118Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote class="pullquote"><p>“The introduction of the cipher 0 or the group concept was general nonsense too, and mathematics was more or less stagnating for thousands of years because nobody was around to take such childish steps.” </p><p style="text-align: right;"> Alexander Grothendieck </p></blockquote><p>This week has been an extremely busy week for me. I’ve spent most of my time on catching up on the materials in CO 631, and doing PMATH 465 homeworks. This week I plan to write a summary for what I’ve learned about symmetric functions. The theory of symmetric functions is interesting. It has a central position in algebraic combinatorics, and it combines aspects of representation theory, combinatorics, and enumerative geometry. A symmetric polynomial of degree \(d\) is just a polynomial \(f\in\mathbf Q[X_1,\dots,X_d]\) such that for all permutations \(\sigma\in\mathrm{S}_d\) acting the variables by permutation will not change the polynomial, i.e. we have that \(f(X_1,\dots,X_d)=f(X_{\sigma (1)},\dots,X_{\sigma (d)})\). Let \(\Lambda^{(d)}_n\) be the subspace of symmetric polynomials of \(d\) variables that are homogeneous of degree \(n\), then we have the set of symmetric polynomials of \(d\) variables \(\Lambda^{(d)}=\bigoplus_{n\ge 0}\Lambda^{(d)}_n\) as a graded \(\mathbf Q\)–algebra. There are a few sets of basis for the subspace \(\Lambda^{(d)}_n\).</p><span id="more"></span><p>The first one is the monomial basis. For some partition \(\lambda \vdash n\) with length \(\ell(\lambda)\le d\), define<br>\[m_{\lambda}=\sum_{\substack{\alpha\in \mathbf N^d\newline\mathrm{sort}(\alpha)=\lambda}}X_{1}^{\alpha_1}\cdots X_{d}^{\alpha_d}\] where the function \(\mathrm{sort}:\mathbf N^d\rightarrow \{\lambda\vdash n:\ell(\lambda)\le d\}\) takes \((\alpha_1,\dots,\alpha_d)\) to the partition obtained by sorting the nonzero elements of \(\alpha_i\) in decreasing order. We note that the set \(B=\{X_1^{\alpha_1}\cdots X_d^{\alpha_d}:\alpha\in\mathbf N^d,\alpha_1+\cdots+\alpha_d=n\}\) is a basis for the subspace \(\mathbf Q[X_1,\dots,X_d]_{n}\) of homogeneous polynomials of degree \(n\), thus \(\{m_{\lambda}:\lambda\vdash n,\ell(\lambda)\le d\}\) is linearly independent. To see that’s spanning, define \(P:\mathbf Q[X_1,\dots,X_d]_n\rightarrow \Lambda^{(d)}_n\) by \(f\mapsto \frac{1}{d!}\sum_{\sigma\in\mathrm{S}_d}\sigma \cdot f\). This is well defined, and we easily check that \(Pf=f\) for \(f\in\Lambda^{(d)}\) so it’s a projection map onto \(\Lambda^{(d)}\). For each \(f\in B\), let \(\alpha\in\mathbf N^{d}\) such that \(f(X_1,\dots,X_d)=X_1^{\alpha_1}\cdots X_d^{\alpha_d}\), then \(Pf\) is equal to \(m_{\mathrm{sort}(\alpha)}\) up to multiplication of a rational number. By the fact that the image of a basis under a projection spans the image of the projection, \(\{m_{\lambda}:\lambda\vdash n,\ell(\lambda)\le d\}\) is a basis. Thus \(\{m_{\lambda}:\ell(\lambda)\le d\}\) is a basis for \(\Lambda^{(d)}\). </p><p>Let \(\varphi^{(d)}:\Lambda^{(d+1)}\rightarrow \Lambda^{(d)}\) by \(f\mapsto f(X_1,\dots,X_{d},0)\), define \(\Lambda=\displaystyle\lim_{\longleftarrow}\Lambda^{(d)}\) ranging over \(d\) and \(\varphi^{(d)}\). We can think of \(\Lambda\) as the symmetric polynomials in countably infinitely many variables, i.e. \(\Lambda\subseteq\mathbf Q[X_1,\dots]\), and let \(\Lambda_n=\Lambda\cap \mathbf Q[X_1,\dots]_n\) be the subspace of homogeneous symmetric polynomials of degree \(n\). Note that \[\Lambda=\displaystyle\lim_{\longleftarrow}\Lambda^{(d)}=\lim_{\longleftarrow}\bigoplus_{n\ge 0}\Lambda^{(d)}_n=\bigoplus_{n\ge 0}\lim_{\longleftarrow}\Lambda^{(d)}_n=\bigoplus_{n\ge 0}\Lambda_n\] so \(\Lambda\) is a graded \(\mathbf Q\)–algebra. Next, define \(h_n=\sum_{\lambda\vdash n}m_{\lambda}\) and \(p_n=\sum_{i\ge 1}X_i^n\) and \(e_n=m_{1^n}\), and extend them to all partitions via multiplications. By convention \(e_0=h_0=1\) (but \(p_0\) is undefined).</p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote class=&quot;pullquote&quot;&gt;&lt;p&gt;“The introduction of the cipher 0 or the group concept was general nonsense too, and mathematics was more or less stagnating for thousands of years because nobody was around to take such childish steps.” &lt;/p&gt;
-&lt;p style=&quot;text-align: right;&quot;&gt; Alexander Grothendieck &lt;/p&gt;&lt;/blockquote&gt;
-
-&lt;p&gt;This week has been an extremely busy week for me. I’ve spent most of my time on catching up on the materials in CO 631, and doing PMATH 465 homeworks. This week I plan to write a summary for what I’ve learned about symmetric functions. The theory of symmetric functions is interesting. It has a central position in algebraic combinatorics, and it combines aspects of representation theory, combinatorics, and enumerative geometry. A symmetric polynomial of degree \(d\) is just a polynomial \(f\in\mathbf Q[X_1,\dots,X_d]\) such that for all permutations \(\sigma\in\mathrm{S}_d\) acting the variables by permutation will not change the polynomial, i.e. we have that \(f(X_1,\dots,X_d)=f(X_{\sigma (1)},\dots,X_{\sigma (d)})\). Let \(\Lambda^{(d)}_n\) be the subspace of symmetric polynomials of \(d\) variables that are homogeneous of degree \(n\), then we have the set of symmetric polynomials of \(d\) variables \(\Lambda^{(d)}=\bigoplus_{n\ge 0}\Lambda^{(d)}_n\) as a graded \(\mathbf Q\)–algebra. There are a few sets of basis for the subspace \(\Lambda^{(d)}_n\).&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="This Week I Learned" scheme="http://yoursite.com/categories/This-Week-I-Learned/"/>
-    
-    
-      <category term="Combinatorics" scheme="http://yoursite.com/tags/Combinatorics/"/>
-    
-      <category term="Number Theory" scheme="http://yoursite.com/tags/Number-Theory/"/>
-    
-  </entry>
   
   <entry>
     <title>Forgetful Functor, Fall 2021</title>
