@@ -200,19 +200,13 @@
         <span class="column is-narrow">
             
             
-            a minute read (About 186 words)
+            a few seconds read (About 77 words)
         </span>
         
     </div>
     <div class="article-entry is-size-6-mobile" itemprop="articleBody">
     
-        <p>Project Lambda is my personal project of a weekly column titled <em>This Week I Learned</em>, where I post a new article under the category <a href="/categories/This-Week-I-Learned/">This Week I Learned</a> each week on <strong>Friday</strong> or <strong>Saturday</strong>. In each of those articles, I will write about the following things</p>
-<ul>
-<li><em>An overview of the past week</em>. I will briefly go over the things I studied in the past week: which books and papers I’ve read and what exercises I’ve done. In particular, I will highlight any interesting or important theorems, facts, examples or exercises I came over, as well as my questions and confusions.</li>
-<li><em>Objectives of next week</em>. I will talk about what I want to study for the next week.</li>
-<li><em>Anythings else that’s interesting</em>. I will write about anything else that interests me, such as math competition problems, brain teasers, mathematical anecdotes, or even things completely unrelated to math.</li>
-</ul>
-<p>Note that this project is licensed under <a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Common BY-NC 4.0</a>, which means that you are free to share or adapt these documents for non-commercial purposes if you give appropriate credit. </p>
+        <p><em>This Week I Learned</em> is my personal weekly column in mathematics. Each week, I post a new article under the category <a href="/categories/This-Week-I-Learned/">This Week I Learned</a> on <strong>Friday</strong>, <strong>Saturday</strong> or <strong>Sunday</strong>. In each article, I write about interesting theorems I learned, exercises I did, and confusions I had over the past week. Moreover, I write about anything else that interests me: physics, computer science, philosophy, puzzles, games, anecdotes, math education, and more. Enjoy!</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
     
     </div>
@@ -227,7 +221,7 @@
         <article class="article content gallery" itemscope itemprop="blogPost">
     <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
         
-            <a href="/archives/2b4d8af0/" itemprop="url">Project Sigma: The Egregium</a>
+            <a href="/archives/2b4d8af0/" itemprop="url">Project Sigma: Explorations in Mathematics</a>
         
     </h1>
     <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
@@ -244,13 +238,13 @@
         <span class="column is-narrow">
             
             
-            2 minutes read (About 322 words)
+            2 minutes read (About 230 words)
         </span>
         
     </div>
     <div class="article-entry is-size-6-mobile" itemprop="articleBody">
     
-        <p>Project Sigma is a collection of my personal course notes on various mathematical topics, titled <em>The Egregium</em>. I decided to start this project primarily as a motivation for myself to learn and as a way of recording my learning progress. That being said, it would also make me very happy if someone else benefits from my work. Each of the subject will have their own GitHub repository, typically named as “Project-Sigma-XXX” where XXX is an abbriviation of the subject. They will probably contain errors, and if you found one, you are welcomed to open an issue page on the respective repository and point out my mistake. Currently, the following subjects are planned.</p>
+        <p><em>Explorations in Mathematics</em> is a collection of my personal course notes and expositions in mathematics. I decided to start this project primarily as a motivation for myself to learn and as a way of recording my learning progress. That being said, it would also make me very happy if someone else benefits from them. They will probably contain errors and typos, and if you found one, you are welcomed to open an issue page in the corresponding repository and point out my mistake. See the list below.</p>
         <p class="article-more-link">
             <a href="/archives/2b4d8af0/#more">Read More</a>
         </p>
@@ -437,8 +431,23 @@
     })(window);
 </script>
 
-<script src="/js/insight.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<script src="/js/insight.js"></script>
 
     
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
 </html>
