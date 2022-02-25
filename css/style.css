@@ -418,6 +418,13 @@ figure.highlight {
   overflow-x: auto;
   overflow-y: hidden; }
 
+iframe {
+  display: block;
+  border-style: none;
+  border: none;
+  margin: 0 auto;
+  overflow-x: auto; }
+
 .ins-section-container {
   position: relative;
   background: #f7f7f7; }
