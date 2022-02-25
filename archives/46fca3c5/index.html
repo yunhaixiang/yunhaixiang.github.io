@@ -25,7 +25,7 @@
 <meta property="og:description" content="“Complex analysis is the good twin and real analysis the evil one: beautiful formulas and elegant theorems seem to blossom spontaneously in the complex domain, while toil and pathology rule the reals.">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-01-19T16:15:32.000Z">
-<meta property="article:modified_time" content="2022-02-25T05:23:07.377Z">
+<meta property="article:modified_time" content="2022-02-25T05:34:29.388Z">
 <meta property="article:author" content="Yunhai Xiang">
 <meta property="article:tag" content="Algebraic Geometry">
 <meta name="twitter:card" content="summary">
@@ -143,7 +143,7 @@
                     <hr class="navbar-divider">
                     
                     
-                    <a class="navbar-item" href="#Grothendieck-topology-and-sites">2&nbsp;&nbsp;<b>Grothendieck topology and sites</b></a>
+                    <a class="navbar-item" href="#Grothendieck-topology-sites-and-topoi">2&nbsp;&nbsp;<b>Grothendieck topology, sites, and topoi</b></a>
                     
                 </div>
             </div>
@@ -175,7 +175,7 @@
         <span class="column is-narrow">
             
             
-            11 minutes read (About 1627 words)
+            11 minutes read (About 1603 words)
         </span>
         
     </div>
@@ -183,11 +183,7 @@
     
         <blockquote class="pullquote"><p>“Complex analysis is the good twin and real analysis the evil one: beautiful formulas and elegant theorems seem to blossom spontaneously in the complex domain, while toil and pathology rule the reals.” </p>
 <p style="text-align: right;"> Charles Pugh </p></blockquote>
-
-<p>This week I plan to start writing about what I’ve learned in PMATH 965 on algebraic stacks. In the end of this semaster hopefully I will have written enough about them in this blog so that I can complie them into actual typesetted notes. We start by revisiting étale morphisms and introducing Grothendieck topologies and sites, and we define presheaves and sheaves on sites and show that they work almost the same as the usual presheaves and sheaves we are accostomed to. Then, we will define important sites such as the big and small Zariski sites and étale sites as well as the fppf site. </p>
-<span id="more"></span>
-
-
+<p>This week I plan to start writing about what I’ve learned in PMATH 965 on algebraic stacks. In the end of this semaster hopefully I will have written enough about them in this blog so that I can complie them into actual typesetted notes. We start by revisiting étale morphisms and introducing Grothendieck topologies and sites, and we define presheaves and sheaves on sites and show that they work almost the same as the usual presheaves and sheaves we are accostomed to. Then, we will define important sites such as the big and small Zariski sites and étale sites as well as the fppf site.<br><span id="more"></span></p>
 <h4 id="Etale-morphisms-of-schemes"><a href="#Etale-morphisms-of-schemes" class="headerlink" title="Étale morphisms of schemes"></a>Étale morphisms of schemes</h4><p>First, we revisit the definitions and properties of étale morphisms of schemes. </p>
 <blockquote>
 <p>Definition 3. A morphism of schemes \(f:X\rightarrow Y\) is <em>étale</em> if one of these equivalent conditions holds</p>
@@ -199,18 +195,18 @@
 <li>\(f\) is locally of finite presentation and locally a standard étale morphism,</li>
 </ol>
 </blockquote>
-<p>There are many more equivalent definitions of étale morphisms listed on <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/%C3%89tale_morphism">wikipedia</a>. Intuitively, I think of étale morphisms analogous to covering maps. We need this notion to define the étale topology which we will need to use later. As a side note, there is also something called the étale fundamental group, which also uses the notion of étale morphisms. We recall these properties of étale morphisms.</p>
+<p>There are many more equivalent definitions of étale morphisms listed on <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Étale_morphism">wikipedia</a>. Intuitively, I think of étale morphisms analogous to covering maps. We need this notion to define the étale topology which we will need to use later. As a side note, there is also something called the étale fundamental group, which also uses the notion of étale morphisms. We recall these properties of étale morphisms.</p>
 <blockquote>
 <p>Proposition 4. </p>
 <ol>
 <li>compotision of étale maps are étale,</li>
-<li>if \(f:Y\rightarrow X\) is étale then the base change is étale, i.e. if<br>$$\require{AMScd}<br>\begin{CD}<br>Y\times_X Z @&gt;&gt;&gt; Z\<br>@VVV @VVV \<br>Y @&gt;{\mathrm{èt}}&gt;&gt; X\<br>\end{CD}$$<br>then \(Y\times_X Z\rightarrow Z\) is étale,</li>
+<li>if \(f:Y\rightarrow X\) is étale then its base change \(Y\times_XZ\rightarrow Z\) is étale,</li>
 <li>if \(f:Y\rightarrow X\) and \(g:Z\rightarrow X\) are étale and \(g=f\circ h\) where \(h:Z\rightarrow Y\), then \(h\) is étale</li>
 <li>given algebraically closed field \(k\) and \(k\)-algebra \(A\), then the morphism \(\mathrm{Spec}(A)\rightarrow\mathrm{Spec}(k)\) is étale iff it is the disjoint union of spectra of finite separable field extensions of \(k\).</li>
 </ol>
 </blockquote>
 <p>Now, we are ready to define Grothendieck topology and sites.</p>
-<h4 id="Grothendieck-topology-and-sites"><a href="#Grothendieck-topology-and-sites" class="headerlink" title="Grothendieck topology and sites"></a>Grothendieck topology and sites</h4><p>Recall that a presheaf (of sets) on a topological space \(X\) is a contravariant functor \(\mathscr{F}:\mathrm{Op}(X)\rightarrow\mathbf{Set}\), and a presheaf is a sheaf when \(\mathscr{F}(U)\rightarrow\prod_{i}\mathscr{F}(U_i)\rightrightarrows\prod_{i,j}\mathscr{F}(U_i\cap U_j)\) is an equalizer for every open cover \(\{U_{i}\}\) of any open \(U\subseteq X\), which is equivalent to the identity and gluability axioms. We want to extend this from \(\mathrm{Op}(X)\) to any category \(\mathcal C\). To do this, we need to add some additional structure on the category \(\mathcal C\) so that its objects can be viewed as “open sets” and morphisms can be viewed as “inclusions”. Grothendieck’s insight is that we don’t need the full strength of a topology to define sheaves, we only need intersections and a notion of when a collection of an open set forms an open cover of it. </p>
+<h4 id="Grothendieck-topology-sites-and-topoi"><a href="#Grothendieck-topology-sites-and-topoi" class="headerlink" title="Grothendieck topology, sites, and topoi"></a>Grothendieck topology, sites, and topoi</h4><p>Recall that a presheaf (of sets) on a topological space \(X\) is a contravariant functor \(\mathscr{F}:\mathrm{Op}(X)\rightarrow\mathbf{Set}\), and a presheaf is a sheaf when \(\mathscr{F}(U)\rightarrow\prod_{i}\mathscr{F}(U_i)\rightrightarrows\prod_{i,j}\mathscr{F}(U_i\cap U_j)\) is an equalizer for every open cover \(\{U_{i}\}\) of any open \(U\subseteq X\), which is equivalent to the identity and gluability axioms. We want to extend this from \(\mathrm{Op}(X)\) to any category \(\mathcal C\). To do this, we need to add some additional structure on the category \(\mathcal C\) so that its objects can be viewed as “open sets” and morphisms can be viewed as “inclusions”. Grothendieck’s insight is that we don’t need the full strength of a topology to define sheaves, we only need intersections and a notion of when a collection of an open set forms an open cover of it. </p>
 <blockquote>
 <p>Definition 1. A <em>Grothendieck topology</em> on a category \(\mathcal C\) is the data of a set of <em>coverings</em> of \(U\), written as \(\mathrm{Cov}(U)\), for each object \(U\in \mathcal C\), where each covering \(S\in\mathrm{Cov}(U)\) is a set of morphisms of \(\mathcal C\) with \(U\) as targets, such that for all \(U\in\mathcal C\)</p>
 <ol>
@@ -224,7 +220,7 @@
 <blockquote>
 <p>Definition 2. A <em>presheaf</em> (of sets) on a site \(\mathcal C\) is a contravariant functor \(\mathscr{F}:\mathcal C\rightarrow\mathbf{Set}\), and a presheaf is a <em>sheaf</em> iff \(\mathscr{F}(U)\rightarrow\prod_{i}\mathscr{F}(U_i)\rightrightarrows\prod_{i,j}\mathscr{F}(U_i\times_U U_j)\) is an equalizer for all \(U\in\mathcal C\) and \(\{U_i\rightarrow U\}\in\mathrm{Cov}(U)\). A presheaf is called <em>separated</em> if for all \(U\in\mathcal C\) and \(\{U_i\rightarrow U\}\in\mathrm{Cov}(U)\), the map \(\mathscr{F}(U)\rightarrow \prod_i\mathscr{F}(U_i)\) is injective. We write \(\mathrm{Sh}(\mathcal C)\) (resp. \(\mathrm{PSh}(\mathcal C)\)) for the category of sheaves (resp. presheaves) of the site \(\mathcal C\).</p>
 </blockquote>
-<p>Note that a separated presheaf can be viewed as a presheaf that only satisfies one of the axioms of a sheaf, the identity axiom, but not necessaily the gluability axiom, therefore we have the obvious inclusions<br>\[\{\mathrm{sheaves}\}\hookrightarrow\{\mathrm{separated\ presheaves}\}\hookrightarrow\{\mathrm{presheaves}\}\]all of which admits left adjoints, the composition of them being sheafification. Usually, we can formulate sheafification in terms of compatible germs, but since we are working over aribitrary site, it does not make sense to take a point in an object and take the product of stalks. The way we construct the adjoint from presheaves to separated presheaves is to map a presheaf \(\mathscr{F}\) to \(\mathscr{F}^{\mathrm s}(U)=\mathscr{F}(U)/\sim\) where \(a\sim b\) iff exists \(\{U_i\rightarrow U\}\in\mathrm{Cov}(U)\) such that \(a,b\) are mapped to the same element by the map \(\mathscr{F}(U)\rightarrow \prod_i\mathscr{F}(U_i)\). We can check that this is in fact a separated presheaf. All of the above works for (pre)sheaves of rings, abelian groups, etc.</p>
+<p>Note that a separated presheaf can be viewed as a presheaf that only satisfies one of the axioms of a sheaf, the identity axiom, but not necessaily the gluability axiom, therefore we have the obvious inclusions<br>\[\{\mathrm{sheaves}\}\hookrightarrow\{\mathrm{separated\ presheaves}\}\hookrightarrow\{\mathrm{presheaves}\}\]all of which admits left adjoints, the composition of them being sheafification. Usually, we can formulate sheafification in terms of compatible germs, but since we are working over sites, it does not make sense to take a point in an object and take the product of stalks. The way we construct the adjoint from presheaves to separated presheaves is to map a presheaf \(\mathscr{F}\) to \(\mathscr{F}^{\mathrm s}(U)=\mathscr{F}(U)/\sim\) where \(a\sim b\) iff exists \(\{U_i\rightarrow U\}\in\mathrm{Cov}(U)\) such that \(a,b\) are mapped to the same element by the map \(\mathscr{F}(U)\rightarrow \prod_i\mathscr{F}(U_i)\). We can check that this is in fact a separated presheaf. All of the above works for (pre)sheaves of rings, abelian groups, etc.</p>
 <blockquote>
 <p>Definition 3. A <em>topos</em> is a category equivalent to \(\mathrm{Sh}(\mathcal C)\) for a site \(\mathcal C\). A morphism of topoi \(f:\mathcal{T}_1\rightarrow \mathcal{T}_2\) is an adjoint pair \(f^*\dashv f_*\) of functors \(f^*:\mathcal{T}_1\rightarrow \mathcal{T}_2\) and \(f_*:\mathcal{T}_2\rightarrow \mathcal{T}_1\) with a choice of natural isomorphism<br>\[\Phi:\mathrm{Mor}_{\mathcal T_1}(f^*(-),-)\rightarrow \mathrm{Mor}_{\mathcal T_2}(-,f_*(-))\]where each naturality here means \(\Phi\) is natural in each of the two dashes, and \(f^*\) commutes with finite limits (or equivalently \(f_*\) with finite colimits) when they exist. Define composition in the obvious way.</p>
 </blockquote>
