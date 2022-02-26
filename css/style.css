@@ -418,12 +418,6 @@ figure.highlight {
   overflow-x: auto;
   overflow-y: hidden; }
 
-iframe {
-  display: block;
-  border-style: none;
-  border: none;
-  margin: 0 auto; }
-
 .ins-section-container {
   position: relative;
   background: #f7f7f7; }
@@ -499,4 +493,7 @@ iframe {
 
 .quiver-container {
   position: relative;
-  overflow: auto; }
+  width: 100%;
+  height: 100%;
+  overflow: scroll !important;
+  -webkit-overflow-scrolling: touch !important; }
