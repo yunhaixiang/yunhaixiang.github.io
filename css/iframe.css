@@ -22,5 +22,5 @@
 .quiver-container {
   position: relative;
   height: 100%;
-  overflow: auto;
+  overflow-x: auto !important;
   -webkit-overflow-scrolling: touch; }
