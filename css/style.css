@@ -423,7 +423,7 @@ iframe {
   border-style: none;
   border: none;
   margin: 0 auto;
-  overflow-x: scroll; }
+  overflow: scroll; }
 
 .ins-section-container {
   position: relative;
