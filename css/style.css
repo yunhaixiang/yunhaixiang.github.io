@@ -499,7 +499,7 @@ iframe {
 
 .quiver-container {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
   overflow: scroll !important;
   -webkit-overflow-scrolling: touch !important; }
