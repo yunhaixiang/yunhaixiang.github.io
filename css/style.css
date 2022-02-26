@@ -422,8 +422,7 @@ iframe {
   display: block;
   border-style: none;
   border: none;
-  margin: 0 auto;
-  overflow: scroll; }
+  margin: 0 auto; }
 
 .ins-section-container {
   position: relative;
@@ -497,3 +496,7 @@ iframe {
   left: 0;
   width: 100%;
   height: 100%; }
+
+.quiver-container {
+  position: relative;
+  overflow: auto; }
