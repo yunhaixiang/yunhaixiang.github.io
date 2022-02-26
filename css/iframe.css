@@ -21,4 +21,4 @@
 
 .quiver-container {
   position: relative;
-  overflow: auto; }
+  overflow-x: auto; }
