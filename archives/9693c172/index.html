@@ -25,7 +25,7 @@
 <meta property="og:description" content="“Serious mathematics (contrary to a popular misconception) is not ‘about’ proofs and logic any more than serious literature is ‘about’ grammar, or music is ‘about’ notes.”  Ethan D. Bloch   In this we">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-02-16T17:24:26.000Z">
-<meta property="article:modified_time" content="2022-02-28T09:41:12.292Z">
+<meta property="article:modified_time" content="2022-03-01T01:42:20.485Z">
 <meta property="article:author" content="Yunhai Xiang">
 <meta property="article:tag" content="Algebraic Geometry">
 <meta property="article:tag" content="Complex Geometry">
@@ -176,7 +176,7 @@
         <span class="column is-narrow">
             
             
-            3 minutes read (About 462 words)
+            6 minutes read (About 844 words)
         </span>
         
     </div>
@@ -203,9 +203,24 @@
 </blockquote>
 <p>This theorem has a very long proof and the reason it is important is delayed to later. Another important result is faithfully flat descent. The idea is, if \(P\) is some property of morphism of schemes, given morphisms of schemes \(f_1:X_1\rightarrow Y_1\) and \(f_2:X_2\rightarrow Y_2\) and suppose there is a commutative diagram <div class="quiver-container"><iframe class="quiver-embed" src="https://q.uiver.app/?q=WzAsNCxbMCwwLCJYXzEiXSxbMSwwLCJZXzEiXSxbMCwxLCJYXzIiXSxbMSwxLCJZXzIiXSxbMCwxLCJmXzEiXSxbMiwzLCJmXzIiXSxbMCwyLCJcXG1hdGhybXtmcHBmfSIsMix7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6ImVwaSJ9fX1dLFsxLDNdXQ==&embed" width="184" height="184" scrolling="yes" style="overflow-x: auto !important; overflow-y: hidden !important; border: none;border-radius: 0px;"></iframe></div> </p>
 <p>then frequently \(f_1\) has property \(P\) iff \(f_2\) does. We say that \(P\) is local on the base (target) for the fppf topology (et al. Zariski, etc.) if \(f_1\) has property \(P\) implies \(f_2\) does. Examples of properties that are local on the base for the fppf topology inlcude: surjective, locally of finite type, locally of finite presentation, universally closed/open, separated, proper, etc. The full proof can be found on <a target="_blank" rel="noopener" href="https://stacks.math.columbia.edu/tag/02YJ">stacks project</a>.</p>
-<h4 id="Fibred-categories"><a href="#Fibred-categories" class="headerlink" title="Fibred categories"></a>Fibred categories</h4><p>For a category \(\mathcal C\), a category over \(\mathcal C\) is some category \(\mathcal F\) equipped with a functor \(\mathscr{P}_{\mathcal F}:\mathcal F\rightarrow\mathcal C\). We draw diagrams with the notation \(\xi\mapsto U\) to mean \(\mathscr{P}_{\mathcal F}(\xi)=U\), and we say that a diagram looking like this <div class="quiver-container"><iframe class="quiver-embed" src="https://q.uiver.app/?q=WzAsNCxbMCwwLCJcXHhpIl0sWzEsMCwiXFxldGEiXSxbMCwxLCJVIl0sWzEsMSwiViJdLFswLDEsIlxccGhpIl0sWzIsMywiZiJdLFswLDIsIiIsMSx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Im1hcHMgdG8ifX19XSxbMSwzLCIiLDEseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJtYXBzIHRvIn19fV1d&embed" width="184" height="184" scrolling="yes" style="overflow-x: auto !important; overflow-y: hidden !important; border: none;border-radius: 0px;"></iframe></div> </p>
-<p>commutes iff \(\mathscr{P}_{\mathcal F}\phi=f\). We say that a morphism \(\phi:\xi\rightarrow\eta\) in \(\mathcal F\) is cartesian if </p>
+<h4 id="Fibred-categories"><a href="#Fibred-categories" class="headerlink" title="Fibred categories"></a>Fibred categories</h4><p>For a category \(\mathcal C\), a category over \(\mathcal C\) is some category \(\mathcal F\) equipped with a functor \(\mathscr{P}_{\mathcal F}:\mathcal F\rightarrow\mathcal C\). We draw diagrams with the notation \(\xi\mapsto U\) to mean \(\mathscr{P}_{\mathcal F}(\xi)=U\), and a diagram of the form  <div class="quiver-container"><iframe class="quiver-embed" src="https://q.uiver.app/?q=WzAsNCxbMCwwLCJcXHhpIl0sWzEsMCwiXFxldGEiXSxbMCwxLCJVIl0sWzEsMSwiViJdLFswLDEsIlxccGhpIl0sWzIsMywiZiJdLFswLDIsIiIsMSx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Im1hcHMgdG8ifX19XSxbMSwzLCIiLDEseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJtYXBzIHRvIn19fV1d&embed" width="184" height="184" scrolling="yes" style="overflow-x: auto !important; overflow-y: hidden !important; border: none;border-radius: 0px;"></iframe></div> </p>
+<p>commutes iff \(\mathscr{P}_{\mathcal F}\phi=f\). Moreover, we say that a morphism \(\phi:\xi\rightarrow\eta\) in \(\mathcal F\) is <em>cartesian</em> if for all \(\zeta\in\mathcal F\) and morphisms \(\psi:\zeta \rightarrow \eta\) and \(h:\mathscr{P}_{\mathcal F}(\zeta)\rightarrow \mathscr{P}_{\mathcal F}(\xi)\) such that \(\mathscr{P}_{\mathcal F}\phi \circ h=\mathscr{P}_{\mathcal F}\psi\), there exists unique \(\theta:\zeta\rightarrow\xi\) such that \(\mathscr{P}_{\mathcal F}\theta=h\) and \(\psi=\phi\circ\theta\), as indicated in the diagram</p>
 <div class="quiver-container"><iframe class="quiver-embed" src="https://q.uiver.app/?q=WzAsNixbMSwwLCJcXHhpIl0sWzIsMCwiXFxldGEiXSxbMSwxLCJVIl0sWzIsMSwiViJdLFswLDEsIlciXSxbMCwwLCJcXHpldGEiXSxbMCwxLCJcXHBoaSIsMCx7ImNvbG91ciI6WzI1LDk0LDYwXX0sWzI1LDk0LDYwLDFdXSxbMiwzLCJcXG1hdGhzY3J7UH1fe1xcbWF0aGNhbCBGfVxccGhpIl0sWzAsMiwiIiwxLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoibWFwcyB0byJ9fX1dLFsxLDMsIiIsMSx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Im1hcHMgdG8ifX19XSxbNCwyLCJcXGZvcmFsbCBoIl0sWzQsMywiXFxtYXRoc2Nye1B9X3tcXG1hdGhjYWwgRn1cXHBzaSIsMCx7ImN1cnZlIjozfV0sWzUsNCwiIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoibWFwcyB0byJ9fX1dLFs1LDAsIlxcZXhpc3RzIVxcdGhldGEiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbNSwxLCJcXGZvcmFsbCBcXHBzaSIsMCx7ImN1cnZlIjotM31dXQ==&embed" width="262" height="184" scrolling="yes" style="overflow-x: auto !important; overflow-y: hidden !important; border: none;border-radius: 0px;"></iframe></div> 
+
+<p>and when \(\phi:\xi\rightarrow\eta\) is cartesian, we say that \(\xi\) is a <em>pullback</em> of \(\eta\) (to \(U\) along \(\mathscr{P}_{\mathcal F}\phi\)). Note that given two pullbacks \(\phi_1:\xi_1\rightarrow\eta\) and \(\phi_2:\xi_2\rightarrow\eta\) then substitute \(\psi=\xi_i\) for \(i=1,2\) will give us an isomorphism \(\xi_1\cong\xi_2\). Thus, pullbacks are unique. Next, we introduce the following properties, which is easy to check,</p>
+<blockquote>
+<p>Proposition 2. Let \(\mathscr{P}_{\mathcal F}:\mathcal F\rightarrow\mathcal C\) be a category over the category \(\mathcal C\).</p>
+<ol>
+<li>composite of cartesian arrows are cartesian,</li>
+<li>if \(\psi:\eta\rightarrow \zeta\) and \(\phi:\xi\rightarrow\eta\) are arrows in \(\mathcal F\) with \(\psi\) cartesian, then \(\phi\) is cartesian iff \(\psi\circ\phi\) is,</li>
+<li>if \(\phi:\xi\rightarrow\eta\) is an arrow and \(\mathscr{P}_{\mathcal F}\phi\) is an isomorphism, then \(\phi\) is cartesian iff it is an isomorphism,</li>
+</ol>
+</blockquote>
+<p>With these knowledge, we can introduce fibred categories. Fibred categories are used to provide a general framework for descent theory. They formalize various situations in geometry and algebra where pullbacks of objects are defined. A motivating example is the category of vector bundles on a topological space.</p>
+<blockquote>
+<p>Definition 3. A <em>fibred category</em> over a category \(\mathcal C\) is a category \(\mathcal F\) over \(\mathcal C\) such that for each \(f:U\rightarrow V\) in \(\mathcal C\) where \(V=\mathscr{P}_{\mathcal F}(\eta)\) for some \(\eta\in \mathcal F\), there exists \(\xi\in\mathcal F\) with \(U=\mathscr{P}_{\mathcal F}(\xi)\) and cartesian arrow \(\phi:\xi\rightarrow\eta\) such that \(f=\mathscr{P}_{\mathcal F}\phi\). Suppose \(\mathcal F,\mathcal G\) are fibred categories over \(\mathcal C\), then a morphism of fibred categories \(F:\mathcal F\rightarrow \mathcal G\) is a functor such that \(\mathscr{P}_{\mathcal G}\circ F=\mathscr{P}_{\mathcal F}\) and sends cartesian arrows to cartesian arrows.</p>
+</blockquote>
+<p>Thus in a fibred category we can pullback objects along any arrow.</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
     
     </div>
