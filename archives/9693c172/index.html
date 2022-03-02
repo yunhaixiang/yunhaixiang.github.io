@@ -25,7 +25,7 @@
 <meta property="og:description" content="“Serious mathematics (contrary to a popular misconception) is not ‘about’ proofs and logic any more than serious literature is ‘about’ grammar, or music is ‘about’ notes.”  Ethan D. Bloch   In this we">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-02-16T17:24:26.000Z">
-<meta property="article:modified_time" content="2022-03-01T01:42:20.485Z">
+<meta property="article:modified_time" content="2022-03-02T17:06:15.058Z">
 <meta property="article:author" content="Yunhai Xiang">
 <meta property="article:tag" content="Algebraic Geometry">
 <meta property="article:tag" content="Complex Geometry">
@@ -176,7 +176,7 @@
         <span class="column is-narrow">
             
             
-            6 minutes read (About 844 words)
+            7 minutes read (About 1072 words)
         </span>
         
     </div>
@@ -207,7 +207,7 @@
 <p>commutes iff \(\mathscr{P}_{\mathcal F}\phi=f\). Moreover, we say that a morphism \(\phi:\xi\rightarrow\eta\) in \(\mathcal F\) is <em>cartesian</em> if for all \(\zeta\in\mathcal F\) and morphisms \(\psi:\zeta \rightarrow \eta\) and \(h:\mathscr{P}_{\mathcal F}(\zeta)\rightarrow \mathscr{P}_{\mathcal F}(\xi)\) such that \(\mathscr{P}_{\mathcal F}\phi \circ h=\mathscr{P}_{\mathcal F}\psi\), there exists unique \(\theta:\zeta\rightarrow\xi\) such that \(\mathscr{P}_{\mathcal F}\theta=h\) and \(\psi=\phi\circ\theta\), as indicated in the diagram</p>
 <div class="quiver-container"><iframe class="quiver-embed" src="https://q.uiver.app/?q=WzAsNixbMSwwLCJcXHhpIl0sWzIsMCwiXFxldGEiXSxbMSwxLCJVIl0sWzIsMSwiViJdLFswLDEsIlciXSxbMCwwLCJcXHpldGEiXSxbMCwxLCJcXHBoaSIsMCx7ImNvbG91ciI6WzI1LDk0LDYwXX0sWzI1LDk0LDYwLDFdXSxbMiwzLCJcXG1hdGhzY3J7UH1fe1xcbWF0aGNhbCBGfVxccGhpIl0sWzAsMiwiIiwxLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoibWFwcyB0byJ9fX1dLFsxLDMsIiIsMSx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Im1hcHMgdG8ifX19XSxbNCwyLCJcXGZvcmFsbCBoIl0sWzQsMywiXFxtYXRoc2Nye1B9X3tcXG1hdGhjYWwgRn1cXHBzaSIsMCx7ImN1cnZlIjozfV0sWzUsNCwiIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoibWFwcyB0byJ9fX1dLFs1LDAsIlxcZXhpc3RzIVxcdGhldGEiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbNSwxLCJcXGZvcmFsbCBcXHBzaSIsMCx7ImN1cnZlIjotM31dXQ==&embed" width="262" height="184" scrolling="yes" style="overflow-x: auto !important; overflow-y: hidden !important; border: none;border-radius: 0px;"></iframe></div> 
 
-<p>and when \(\phi:\xi\rightarrow\eta\) is cartesian, we say that \(\xi\) is a <em>pullback</em> of \(\eta\) (to \(U\) along \(\mathscr{P}_{\mathcal F}\phi\)). Note that given two pullbacks \(\phi_1:\xi_1\rightarrow\eta\) and \(\phi_2:\xi_2\rightarrow\eta\) then substitute \(\psi=\xi_i\) for \(i=1,2\) will give us an isomorphism \(\xi_1\cong\xi_2\). Thus, pullbacks are unique. Next, we introduce the following properties, which is easy to check,</p>
+<p>and when \(\phi:\xi\rightarrow\eta\) is cartesian, we say that \(\xi\) is a <em>pullback</em> of \(\eta\) (to \(U\) along \(\mathscr{P}_{\mathcal F}\phi\)). Note that given two pullbacks \(\phi_1:\xi_1\rightarrow\eta\) and \(\phi_2:\xi_2\rightarrow\eta\) then substitute \(\psi=\xi_i\) for \(i=1,2\) will give us an isomorphism \(\xi_1\cong\xi_2\). Thus, pullbacks are unique. Note that in SGA1 the definition of cartesian arrow is different and this definition is sometimes known as strongly cartesian. Next, we introduce the following properties, which is easy to check,</p>
 <blockquote>
 <p>Proposition 2. Let \(\mathscr{P}_{\mathcal F}:\mathcal F\rightarrow\mathcal C\) be a category over the category \(\mathcal C\).</p>
 <ol>
@@ -218,9 +218,16 @@
 </blockquote>
 <p>With these knowledge, we can introduce fibred categories. Fibred categories are used to provide a general framework for descent theory. They formalize various situations in geometry and algebra where pullbacks of objects are defined. A motivating example is the category of vector bundles on a topological space.</p>
 <blockquote>
-<p>Definition 3. A <em>fibred category</em> over a category \(\mathcal C\) is a category \(\mathcal F\) over \(\mathcal C\) such that for each \(f:U\rightarrow V\) in \(\mathcal C\) where \(V=\mathscr{P}_{\mathcal F}(\eta)\) for some \(\eta\in \mathcal F\), there exists \(\xi\in\mathcal F\) with \(U=\mathscr{P}_{\mathcal F}(\xi)\) and cartesian arrow \(\phi:\xi\rightarrow\eta\) such that \(f=\mathscr{P}_{\mathcal F}\phi\). Suppose \(\mathcal F,\mathcal G\) are fibred categories over \(\mathcal C\), then a morphism of fibred categories \(F:\mathcal F\rightarrow \mathcal G\) is a functor such that \(\mathscr{P}_{\mathcal G}\circ F=\mathscr{P}_{\mathcal F}\) and sends cartesian arrows to cartesian arrows.</p>
+<p>Definition 3. </p>
+<ol>
+<li>A <em>fibred category</em> over a category \(\mathcal C\) is a category \(\mathcal F\) over \(\mathcal C\) such that for each \(f:U\rightarrow V\) in \(\mathcal C\) where \(V=\mathscr{P}_{\mathcal F}(\eta)\) for some \(\eta\in \mathcal F\), there exists \(\xi\in\mathcal F\) with \(U=\mathscr{P}_{\mathcal F}(\xi)\) and cartesian arrow \(\phi:\xi\rightarrow\eta\) such that \(f=\mathscr{P}_{\mathcal F}\phi\).</li>
+<li>Suppose \(\mathcal F,\mathcal G\) are fibred categories over \(\mathcal C\), then a <em>morphism of fibred categories</em> \(F:\mathcal F\rightarrow \mathcal G\) is a functor such that \(\mathscr{P}_{\mathcal G}\circ F=\mathscr{P}_{\mathcal F}\) and \(F\) sends cartesian arrows to cartesian arrows. </li>
+<li>Suppose \(\mathcal F\) is a category over \(\mathcal C\) and \(U\in\mathcal C\), write \(\mathcal F(U)\) as the subcategory of \(\mathcal F\) whose objects are \(u\in\mathcal F\) such that \(\mathscr{P}_{\mathcal F}(u)=U\) and morphisms are \(f:u\rightarrow v\) where \(\mathscr{P}_{\mathcal F}f=\mathbf{1}_U\)</li>
+<li>If \(F,G:\mathcal F\rightarrow \mathcal G\) are morphisms of fibred categories, a <em>base-preserving natural transformation</em> \(\alpha:F\rightarrow G\) is a natural transformation such that for all \(u\in\mathcal F\) we have \(\alpha(u):F(u)\rightarrow G(u)\) is such that \(\mathscr{P}_\mathcal{G}(F(u))=\mathscr{P}_\mathcal{G}(G(u))\) and \(\mathscr{P}_{\mathcal G}\alpha(u)=\mathbf 1_{\mathscr{P}_\mathcal{G}(F(u))}\), i.e. \(\alpha(u)\) is a morphism in \(\mathcal G(\mathscr{P}_\mathcal{G}(F(u)))\). </li>
+<li>Denote by \(\mathrm{MOR}_{\mathcal C}(\mathcal F,\mathcal G)\) the category whose objects are morphisms of fibred categories and morphisms are base-preserving natural transformations.</li>
+</ol>
 </blockquote>
-<p>Thus in a fibred category we can pullback objects along any arrow.</p>
+<p>Thus in a fibred category we can pullback objects along any arrow. The collection of categories fibred over a fixed category is an example of a \(2\)-category. Roughly speaking, a \(2\)-category is a category where the morphisms between two objects form a category. However, we will not use higher categorical language.</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
     
     </div>
@@ -451,23 +458,8 @@
     })(window);
 </script>
 
-<script src="/js/insight.js"></script>
+<script src="/js/insight.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
     
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
 </html>
