@@ -25,7 +25,7 @@
 <meta property="og:description" content="“Serious mathematics (contrary to a popular misconception) is not ‘about’ proofs and logic any more than serious literature is ‘about’ grammar, or music is ‘about’ notes.”  Ethan D. Bloch  In this wee">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-02-16T17:24:26.000Z">
-<meta property="article:modified_time" content="2022-03-03T02:24:54.275Z">
+<meta property="article:modified_time" content="2022-03-10T01:27:36.103Z">
 <meta property="article:author" content="Yunhai Xiang">
 <meta property="article:tag" content="Algebraic Geometry">
 <meta name="twitter:card" content="summary">
@@ -175,7 +175,7 @@
         <span class="column is-narrow">
             
             
-            10 minutes read (About 1459 words)
+            10 minutes read (About 1472 words)
         </span>
         
     </div>
@@ -231,7 +231,7 @@
 <p>Lemma 4. Let \(\mathscr{F}:\mathcal F\rightarrow\mathcal G\) be a morphism of fibred categories over \(\mathcal C\), </p>
 <ol>
 <li>\(\mathscr{F}\) is fully faithful (as a functor) iff \(\mathscr{F}_U:\mathcal F(U)\rightarrow \mathcal G(U)\) is fully faithful for all \(U\in\mathcal C\),</li>
-<li>\(\mathscr{F}\) is an equivalence (of categories) iff \(\mathscr{F}_U:\mathcal F(U)\rightarrow \mathcal G(U)\) is an equivalence for all \(U\in\mathcal C\),</li>
+<li>\(\mathscr{F}\) is an equivalence (of categories) iff \(\mathscr{F}_U:\mathcal F(U)\rightarrow \mathcal G(U)\) is an equivalence for all \(U\in\mathcal C\).</li>
 </ol>
 <div class="spoiler collapsed">
     <div class="spoiler-title">
@@ -245,7 +245,16 @@
 </blockquote>
 <p>Recall the classical Yoneda lemma: for each object \(A\in\mathcal C\) we have a natural isomorphism between the collection of natural transformations \(\mathrm{Nat}(\mathscr{F},\mathscr{H}^A)\), and the set \(\mathscr{F}(A)\). This point of view is crucial for the development of algebraic spaces, and also for fibred categories we need a variant of this lemma.</p>
 <blockquote>
-<p>Theorem 5 (\(2\)-Yoneda lemma). Suppose \(\mathcal F\) is fibred over \(\mathcal C\), there is an equivalence<br>\[\mathrm{MOR}_{\mathcal C}(\mathcal C/X,\mathcal F)\cong \mathcal F(X)\]</p>
+<p>Theorem 5 (\(2\)-Yoneda lemma). Suppose \(\mathcal F\) is fibred over \(\mathcal C\), there is an equivalence<br>\[\mathrm{MOR}_{\mathcal C}(\mathcal C/X,\mathcal F)\cong \mathcal F(X)\]given by \(\mathscr{F}\mapsto \mathscr{F}(\mathbf 1_{X})\).</p>
+<div class="spoiler collapsed">
+    <div class="spoiler-title">
+        Proof
+    </div>
+    <div class="spoiler-content">
+        <p>a</p>
+
+    </div>
+</div>
 </blockquote>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
     
@@ -259,7 +268,9 @@
     
     
     <div class="columns is-mobile is-multiline article-nav">
-        <span class="column is-12-mobile is-half-desktop is-hidden-mobile article-nav-prev">
+        <span class="column is-12-mobile is-half-desktop  article-nav-prev">
+            
+            <a href="/archives/cb0d1d4a/">Final Presentation for PMATH 965</a>
             
         </span>
         <span class="column is-12-mobile is-half-desktop  article-nav-next">
@@ -475,8 +486,23 @@
     })(window);
 </script>
 
-<script src="/js/insight.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<script src="/js/insight.js"></script>
 
     
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
 </html>
