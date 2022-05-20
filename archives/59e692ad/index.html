@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+<head>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+<title>Week 5: Semisimple Lie algebras, Weyl groups, Cartan subalgebras, and root systems - The Singularity</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
+<link rel="stylesheet" href="https://unpkg.com/vssue/dist/vssue.min.css">
+
+
+
+
+
+
+<meta name="keywords" content="Math">
+
+
+
+    <meta name="description" content="“Mathematics requires a small dose, not of genius, but of an imaginative freedom which, in a larger dose, would be insanity. And if mathematicians tend to burn out early in their careers, it is probab">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Week 5: Semisimple Lie algebras, Weyl groups, Cartan subalgebras, and root systems">
+<meta property="og:url" content="http://yoursite.com/archives/59e692ad/index.html">
+<meta property="og:site_name" content="The Singularity">
+<meta property="og:description" content="“Mathematics requires a small dose, not of genius, but of an imaginative freedom which, in a larger dose, would be insanity. And if mathematicians tend to burn out early in their careers, it is probab">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://yoursite.com/images/Root_system_G2.svg">
+<meta property="og:image" content="http://yoursite.com/images/IMG_5337.JPG">
+<meta property="og:image" content="http://yoursite.com/images/IMG_5342.JPG">
+<meta property="og:image" content="http://yoursite.com/images/table.png">
+<meta property="og:image" content="http://yoursite.com/images/IMG_5343.JPG">
+<meta property="article:published_time" content="2022-05-16T19:55:00.000Z">
+<meta property="article:modified_time" content="2022-05-20T02:11:31.371Z">
+<meta property="article:author" content="Yunhai Xiang">
+<meta property="article:tag" content="Lie Groups and Lie Algebras">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/images/Root_system_G2.svg">
+
+
+
+
+
+<link rel="icon" href="/images/favicon_package_v0/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_package_v0/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/images/favicon_package_v0/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/images/favicon_package_v0/android-chrome-512x512.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_package_v0/android-chrome-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_package_v0/android-chrome-32x32.png">
+<link rel="manifest" href="/images/favicon_package_v0/site.webmanifest">
+<link rel="mask-icon" href="/images/favicon_package_v0/safari-pinned-tab.svg" color="#ff8a00">
+<meta name="msapplication-TileColor" content="#ff8a00">
+<meta name="msapplication-TileImage" content="/images/favicon_package_v0/mstile-144x144.png">
+<meta name="msapplication-square70x70logo" content="/images/favicon_package_v0/mstile-70x70.png">
+<meta name="msapplication-square150x150logo" content="/images/favicon_package_v0/mstile-150x150.png">
+<meta name="msapplication-wide310x150logo" content="/images/favicon_package_v0/mstile-310x150.png">
+<meta name="msapplication-square310x310logo" content="/images/favicon_package_v0/mstile-310x310.png">
+<meta name="theme-color" content="#ff8a00">
+
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ovo|Source+Code+Pro">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+<script defer src="//use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+
+
+
+
+<meta name="generator" content="Hexo 5.4.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
+<body>
+    
+<!-- hexo-inject:begin --><!-- hexo-inject:end --><nav class="navbar is-transparent is-fixed-top navbar-main" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item navbar-logo" href="/">
+                
+                    
+                    <img src="/images/home-solid.png" alt="" height="28">
+                    
+                
+            </a>
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="navbar-menu navbar-start">
+            
+            <a class="navbar-item "
+               href="/.">Home</a>
+            
+            <a class="navbar-item "
+               href="/archives">Archives</a>
+            
+            <a class="navbar-item "
+               href="/projects">Projects</a>
+            
+            <a class="navbar-item "
+               href="/about">About</a>
+            
+        </div>
+        
+        <div class="navbar-menu navbar-end">
+            
+            <a class="navbar-item search" title="Search" href="javascript:;">
+                <i class="fas fa-search"></i>
+            </a>
+            
+            
+            <div class="navbar-item is-hoverable has-dropdown is-hidden-mobile is-hidden-tablet-only toc">
+                <a class="navbar-item" title="Table of Contents">
+                    <i class="fa fa-list"></i>
+                </a>
+                <div class="navbar-dropdown is-right">
+                    
+                    
+                    
+                    
+                    <a class="navbar-item" href="#Root–space-decomposition">1&nbsp;&nbsp;<b>Root–space decomposition</b></a>
+                    
+                    
+                    <hr class="navbar-divider">
+                    
+                    
+                    <a class="navbar-item" href="#Root-systems">2&nbsp;&nbsp;<b>Root systems</b></a>
+                    
+                    
+                    <hr class="navbar-divider">
+                    
+                    
+                    <a class="navbar-item" href="#Classification-of-root-systems">3&nbsp;&nbsp;<b>Classification of root systems</b></a>
+                    
+                    
+                    <hr class="navbar-divider">
+                    
+                    
+                    <a class="navbar-item" href="#Bruhat-order-on-Coxeter-groups">4&nbsp;&nbsp;<b>Bruhat order on Coxeter groups</b></a>
+                    
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</nav>
+
+    <section class="section">
+    <div class="container">
+    <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            Week 5: Semisimple Lie algebras, Weyl groups, Cartan subalgebras, and root systems
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2022-05-16T19:55:00.000Z" itemprop="datePublished">May 16 2022</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/This-Week-I-Learned/">This Week I Learned</a>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            16 minutes read (About 2466 words)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <blockquote class="pullquote"><p>“Mathematics requires a small dose, not of genius, but of an imaginative freedom which, in a larger dose, would be insanity. And if mathematicians tend to burn out early in their careers, it is probably because life has forced them to acquire too much common sense, thereby rendering them too sane to work. But by then they are sane enough to teach, so a use can still be found for them.”</p>
+<p style="text-align: right;"> Angus K. Rodgers </p></blockquote>
+
+<p>For this week, I’ll write about the theory of root systems, especially things related to Weyl groups, weight spaces and etc, for the purpose of my URA. This is because one of the objectives of my URA is to generalise my <a href="/archives/66165fd0/">previous blog post</a> about a fraction of an \(S_n\)-orbit on a hyperplane to Weyl groups. First, a Lie algebra is <em>simple</em> if it is of degree greater than \(1\) (so we are excluding the one dimensional abelian Lie algebras) and has no proper ideals, and a semisimple Lie algebra is a direct sum of simple Lie algebras. Equivalently, a Lie algebra \(\mathfrak{g}\) is semisimple if \(\mathrm{rad}(\mathfrak{g})\), the sum of all solvable ideals (or the maximal solvable ideal), is trivial. Any semisimple Lie algebra \(\mathfrak{g}\) is the Lie algebra of an algebraic group \(G\). Let \(\mathrm{ad}:\mathfrak{g}\rightarrow \mathfrak{gl}(\mathfrak{g})\) by \((\mathrm{ad} X)(Z)=[X,Z]\) be the <em>adjoint representation</em>. Let \(B:\mathfrak{g}\times \mathfrak{g}\rightarrow \mathbf C\) be the symmetric bilinear form defined by \(B(X,Y)=\mathrm{tr}(\mathrm{ad}X\mathrm{ad} Y)\), called the <em>Killing form</em> which is invariant in the sense of \(B([X,Y],Z)=B(X,[Y,Z])\). Cartan’s criterion for semisimplicity says that a Lie algebra is semisimple iff the associated Killing form is nondegenerate. From now on, we let \(\mathfrak{g}\) be a semisimple Lie algebra over \(\mathbf C\). We start by discussing the root–space decomposition \(\mathfrak{g}=\mathfrak{h}\oplus \bigoplus_{\alpha\in\Phi}\mathfrak{g}_{\alpha}\) of semisimple Lie algebras.</p>
+<span id="more"></span>
+
+<h4 id="Root–space-decomposition"><a href="#Root–space-decomposition" class="headerlink" title="Root–space decomposition"></a>Root–space decomposition</h4><p>Before we begin, we review some terminology. We say that \(\mathfrak{g}\) is abelian if the Lie bracket is identically zero, and a subspace \(\mathfrak{i}\) is an ideal if \([X,Y]\in\mathfrak{i}\) for all \(X\in \mathfrak{g}\) and \(Y\in\mathfrak{i}\). Examples include \(Z(\mathfrak{g})=\{Z\in\mathfrak{g}:[X,Z]=0,\forall X\in\mathfrak{g}\}\) called the center, \(N_{\mathfrak{g}}(k)=\{X\in\mathfrak{g}:[X,K]\in k,\,\forall K\in k\}\) called the normaliser where \(k\) is a subspace of \(\mathfrak g\), and \(C_{\mathfrak g}(k)=\{X\in\mathfrak{g}:[X,K]=0,\,\forall K\in k\}\) called the centraliser where \(k\) is a subset of \(\mathfrak g\). For ideals \(\mathfrak{i},\mathfrak{j}\) of \(\mathfrak{g}\), define \([\mathfrak{i},\mathfrak{j}]\) to be the ideal spanned by \([X,Y]\) where \(X\in \mathfrak{i},Y\in \mathfrak{j}\). We say \(\mathfrak{g}\) is <em>nilpotent</em> if the chain \(\mathfrak{g}\ge [\mathfrak{g},\mathfrak{g}]\ge [\mathfrak{g},[\mathfrak{g},\mathfrak{g}]]\ge \cdots\) called the lower central series terminates in zero. We say \(\mathfrak{g}\) is <em>solvable</em> if the chain \(\mathfrak{g}\ge [\mathfrak{g},\mathfrak{g}]\ge [[\mathfrak{g},\mathfrak{g}],[\mathfrak{g},\mathfrak{g}]]\ge \cdots\) called the derived series terminates in zero. We say \(X\in\mathfrak{g}\) is <em>ad-nilpotent</em> if \(\mathrm{ad}X\) is a nilpotent endomorphism, and semisimple if \(\mathrm{ad}X\) is diagonalisable. </p>
+<blockquote>
+<p>Definition 1. A subalgebra \(\mathfrak{h}\) of \(\mathfrak{g}\) is <em>Cartan</em> if \(\mathfrak h\) satisfies one of the equivalent conditions</p>
+<ol>
+<li>nilpotent and self-normalising (\(N_\mathfrak{g}(\mathfrak h)=\mathfrak h\))</li>
+<li>(if \(\mathfrak g\) is f.d. over field of char. 0) a maximal subalgebra consisting of semisimple elements,</li>
+</ol>
+</blockquote>
+<p>A Cartan subalgebra \(\mathfrak{h}\) is abelian, and combine this with the fact that all elements are semisimple, we have \(\mathrm{ad}[\mathfrak h]\) are simultaneously diagonalisable and there is a direct sum decomposition \(\mathfrak{g}=\bigoplus_{\alpha\in \mathfrak h^*}\mathfrak g_{\alpha}\) where \(\mathfrak{h}^*\) is the dual space and \(\mathfrak{g}_{\alpha}=\{X\in\mathfrak g: (\mathrm{ad}H)(X)=\alpha (H)X,\forall H\in\mathfrak h\}\). We have \(\mathfrak g_0=\mathfrak h=C_{\mathfrak g}(\mathfrak h)\). Let \(\Phi=\{\alpha\in \mathfrak{h}^*: \alpha\ne 0, \mathfrak g_{\alpha}\ne 0\}\),<br>\[\mathfrak g=\mathfrak h\oplus\bigoplus_{\alpha\in\Phi}\mathfrak g_{\alpha}\]The elements of \(\Phi\) are called roots, which there are only finitely many. The spaces \(\mathfrak g_{\alpha}\) with \(\alpha\) a root is called the <em>root spaces</em>. It turns out that root spaces all have dimension \(1\).</p>
+<blockquote>
+<p>Example 2. Let \(E_{i,j}\) be the matrix with \(1\) at \((i,j)\) and \(0\) elsewhere. </p>
+<ol>
+<li>Suppose \(\mathfrak g=\mathfrak{sl}_n(\mathbf C)=\{M\in\mathrm{Mat}_n(\mathbf C): \mathrm{tr}(M)=0\}\). We have the Cartan subalgebra \(\mathfrak h\) consists of all diagonal matrices. Let \(e_i\in\mathfrak h^*\) output the \(i\)-th diagonal, then \(\mathrm{ad}(H)E_{i,j}=(e_i(H)-e_j(H))(E_{i,j})\). Thus the roots are \(\alpha_{i,j}=e_{i}-e_{j}\) for \(i\ne j\) and the corresponding root spaces are \(\mathbf CE_{i,j}\).</li>
+<li>Suppose \(\mathfrak g=\mathfrak{so}_{2n+1}(\mathbf C)=\{M\in\mathrm{Mat}_{2n+1}(\mathbf C): M^{\mathrm T}=-M\}\). The Cartan subalgebra \(\mathfrak h\) consists of the block diagonal matrices with a \(1\)-by-\(1\) zero block and \(n\) \(2\)-by \(2\) blocks of the form<br>\[\begin{pmatrix}0 &amp; ih_j\\ -ih_j &amp; 0\end{pmatrix}\]Let \(e_j\in\mathfrak h^*\) output \(h_j\). The roots are \(\pm e_i\pm e_j\) for \(i\ne j\) and \(e_k\) for \(k\). The root spaces are in Knapp II.1.</li>
+<li>Suppose \(\mathfrak{g}=\mathfrak{sp}_{2n}(\mathbf C)=\{M\in\mathrm{Mat}_{2n}(\mathbf C): M^\mathrm{T}J=-JM\}\) where<br>\[J=\begin{bmatrix}\mathbf{0} &amp; I\\ -I&amp; \mathbf{0}\end{bmatrix}\]The Cartan subalgebra \(\mathfrak h\) consists of the diagonal matrices of the form<br>\[\begin{bmatrix}H &amp; \mathbf{0} \\ \mathbf{0} &amp; -H\end{bmatrix}\]where \(H\in\mathrm{Mat}_n(\mathbf C)\) is diagonal. Let \(e_j\in\mathfrak{h}^*\) output the the \(j\)-th diagonal of \(H\) in the above matrix. The roots are \(\pm e_i\pm e_j\) for \(i\ne j\) and \(\pm 2e_k\) for \(k\). The root spaces are in Knapp II.1.</li>
+<li>Suppose \(\mathfrak g=\mathfrak{so}_{2n}(\mathbf C)=\{M\in\mathrm{Mat}_{2n}(\mathbf C): M^{\mathrm T}=-M\}\). The Cartan subalgebra is similar to that of \(\mathfrak g=\mathfrak{so}_{2n}(\mathbf C)\) except the last zero block. The roots are \(\pm e_i\pm e_j\) with \(i\ne j\).</li>
+</ol>
+</blockquote>
+<p>Note that we have \([\mathfrak g_{\alpha},\mathfrak{g}_{\beta}]\subseteq \mathfrak{g}_{\alpha+\beta}\), and if \(\alpha,\beta\in\Phi\) and \(\alpha\ne -\beta\) then \(B(\mathfrak g_{\alpha},\mathfrak g_{\beta})=0\). Also, we note that \(\Phi\) spans \(\mathfrak h^*\). In the next section, we define abstract root systems and formalize how we could obtain the Weyl group from \(\Phi\). There is a different way we could define Weyl groups using <a target="_blank" rel="noopener" href="https://encyclopediaofmath.org/wiki/Maximal_torus">maximal torus</a>.</p>
+<h4 id="Root-systems"><a href="#Root-systems" class="headerlink" title="Root systems"></a>Root systems</h4><p>A root system is a configuration of vectors in the euclidean space that satisfies some geometric properties, which helps us with some classification problems in representation theory of Lie algebras. </p>
+<blockquote>
+<p>Definition 3. A <em>root system</em> is a Euclidean space \(E\) and a finite set of nonzero vectors \(\Phi\subseteq E\) such that </p>
+<ol>
+<li>\(\mathrm{Span}(\Phi)=E\),</li>
+<li>for \(\alpha\in\Phi\), the only scalar multiples of \(\alpha\) in \(\Phi\) are \(\pm \alpha\),</li>
+<li>for any \(\alpha,\beta\in\Phi\), we have \(\langle\beta,\alpha \rangle=2\frac{(\alpha,\beta)}{(\alpha,\alpha)}\in\mathbf Z\) is an integer,</li>
+<li>for \(\alpha\in\Phi\), we have the reflection of any \(\beta\in\Phi\) about the hyperplane perpendicular to \(\alpha\), i.e. \[\sigma_{\alpha}(\beta)=\beta-\langle \beta,\alpha\rangle \alpha=\beta-2\frac{(\alpha,\beta)}{(\alpha,\alpha)}\alpha\]is still in \(\Phi\).</li>
+</ol>
+<p>where \((\cdot,\cdot)\) is the standard inner product. The elements of \(\Phi\) are <em>roots</em>. The rank of \(\Phi\) is the dimension of \(E\). A morphism of root systems is a linear morphism between the Euclidean spaces which preserves \(\langle \cdot,\cdot\rangle\). A root system \(\Phi\) is <em>reducible</em> if \(\Phi=\Phi_1\cup\Phi_2\) s.t. \((\alpha,\beta)=0\) for all \(\alpha\in\Phi_1\) and \(\beta\in\Phi_2\).</p>
+</blockquote>
+<p>We can draw diagrams of root systems, for example, the following is an example of a root system called \(G_2\). This is in fact an irreducible root system. It does not decompose into disjoint unions that are orthogonal to each other.</p>
+<p align="center">
+<img src="/images/Root_system_G2.svg" alt="The root system G2" style="height: 300px; width: 300px;"></p>
+
+<p>I credit this picture to <a target="_blank" rel="noopener" href="https://commons.wikimedia.org/wiki/File:Root_system_G2.svg">this page</a> of the wikipedia media repository. Here’s another picture of the root system \(C_3\) (arising from the sympletic Lie algebra \(\mathfrak{sp}_{3}\)) drawn by my friend Maya, and a physical model we made together using coffee stirrers (it may not be the most accurate model but it’s hard work). </p>
+<p align="center">
+<img src="/images/IMG_5337.JPG" alt="The root system C3" style="height: 300px; width: 300px;">
+<img src="/images/IMG_5342.JPG" alt="Physical model of the root system C3" style="height: 300px; width: 300px;">
+</p>
+
+<p>The <em>Weyl</em> group of a root system \(\Phi\) is the group of all reflections \(W(\Phi)=\{\sigma_{\alpha}:\alpha\in\Phi\}\le \mathrm{GL}(E)\). This is a <em>Coxeter group</em>, i.e. a group with a presentation of the form \(\langle r_1,\dots,r_n\mid (r_ir_j)^{m_{i,j}}\rangle\) where \(m_{i,i}=1\) and \(m_{i,j}&gt;1\) for \(i\ne j\) where \(m_{i,j}=\infty\) when there are no relation. The Weyl group acts faithfully on the roots. For a Lie algebra \(\mathfrak g\) with root space decomposition \(\mathfrak h\oplus \bigoplus_{\alpha\in\Phi}\mathfrak g_{\alpha}\), the set \(\Phi\) is a root system. The Weyl chambers of a root system is the set of connected components of the complement of the union of all hyperplanes perpendicular to a root. </p>
+<blockquote>
+<p>Definition 4. A <em>base</em> for the root system is a subset \(\Delta\subseteq\Phi\), whose elements are called <em>simple roots</em>, such that \(\Delta\) is a basis for \(E\), and each root is a linear combination of \(\Delta\) with integer coefficients such that the coefficients are either all nonnegative or all nonpositive, which are called the positive and negative roots with respect to \(\Delta\). The <em>height</em> of a root with respect to \(\Delta\) is the sum of all its coefficients in the basis \(\Delta\).</p>
+</blockquote>
+<p>Equivalently, we can take a hyperplane not containing any root and define the positive roots as a fixed side, where the simple roots are the positive roots that cannot be written as the sum of two positive roots. The simple roots generate the Weyl group. The <em>fundamental Weyl chamber</em> associated to a base \(\Delta\) is the set of points \(\{v\in E:(\alpha,v)&gt;0,\forall \alpha\in \Delta\}\). For each root \(\alpha\), define the coroot \(\alpha^{\lor}=\frac{2}{\langle \alpha,\alpha\rangle}\alpha\), the set of coroots forms the dual of the root system \(\Phi^\lor\).</p>
+<h4 id="Classification-of-root-systems"><a href="#Classification-of-root-systems" class="headerlink" title="Classification of root systems"></a>Classification of root systems</h4><p>For \(\alpha,\beta\in\Phi\), since \(\cos(\theta_{\alpha,\beta})=\frac{(\alpha,\beta)^2}{(\alpha,\alpha)(\beta,\beta)}\), we have \(\langle \alpha,\beta\rangle\langle \beta,\alpha\rangle=4\cos^2(\theta_{\alpha,\beta})\le 4\) which is an integer by assumption. Thus, we can list all the possibilities for the angles and for \(\langle \alpha,\beta\rangle\)</p>
+<p align="center">
+<img src="/images/table.png" alt="Table of angles of roots" style="height: 181px; width: 322px;"></p>
+
+<p>If \(\Delta\) is a base for \(\Phi\), then the Cartan matrix associated to \(\Delta\) is \(C=(\langle\alpha_i,\alpha_j \rangle)\in\mathrm{Mat}_{\ell}(\mathbf Z)\) where \(\Delta=\{\alpha_1,\dots,\alpha_{\ell}\}\) where \(\ell=|\Delta|\). Changing the order of roots just permutes the Cartan matrix’s rows and columns. </p>
+<blockquote>
+<p>Definition 5. The <em>Dynkin diagram</em> of a root system \(\Phi\) with respect to a base \(\Delta\) is a graph with undirected or directed edges with possibly multiple edges, such that the vertices are \(\Delta\) and the number of edges between \(\alpha,\beta\in\Delta\) is \(\max(|\langle\alpha,\beta \rangle|,|\langle \beta,\alpha\rangle |)\), directed towards the longer root if the number of edges is more than one.</p>
+</blockquote>
+<p>Obviously the root system is irreducible iff the Dynkin diagram is connected. Two root systems are isomorphic iff they have the same Dynkin diagram. A classification of all Dynkin diagrams can be found <a target="_blank" rel="noopener" href="https://sites.math.washington.edu/~julia/teaching/581C_Fall2010/Snow_Lecture.pdf">here</a>. The bases for the root systems according to these classification can be found <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Root_system#Explicit_construction_of_the_irreducible_root_systems">here</a>. The simply laced (no multiple edges) Dynkin diagrams shows up in classification problems in many different areas in mathematics: labelled graphs, quivers, 2d conformal field theories, etc. See <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/ADE_classification">ADE classification</a>.</p>
+<p>The Dynkin diagram also tells us information about the presentation of the Weyl group. For two distinct simple roots \(s,r\in\Delta\), the order \(m\) of \(sr\) in the presentation of the Weyl group is determined by the number of edges between their corresponding vertices in the Dynkin diagram. If there are no edges then \(m=2\), if there is one edge then \(m=3\), if there are two edges then \(m=4\), and if there are three edges then \(m=6\).</p>
+<h4 id="Bruhat-order-on-Coxeter-groups"><a href="#Bruhat-order-on-Coxeter-groups" class="headerlink" title="Bruhat order on Coxeter groups"></a>Bruhat order on Coxeter groups</h4><p>An important step in Pawlowski’s paper was bounding \(\mathcal O(v,w)\) using the antichains in the Bruhat order. The Bruhat order can in fact be defined over any Coxeter group.</p>
+<blockquote>
+<p>Definition 6. If \(W\) is a Coxeter group with standard generators \(S\), the <em>Bruhat order</em> on \(W\) is defined by \(u\le v\) iff some substring of a \(S\)-reduced word for \(v\) is a \(S\)-reduced word for \(u\).</p>
+</blockquote>
+<p>As an example, we calculate the Weyl group of the root system arising from \(\mathfrak{sp}_{2n}\) and its Bruhat order. From Example 2.3 earlier, we have \(\Phi=\{\pm e_i\pm e_j:i\ne j\}\cup\{\pm 2e_k:k\}\). To compute the presentation, we first choose a set of simple roots \(\Delta=\{2e_1,e_2-e_1,e_3-e_2,\dots,e_{n}-e_{n-1}\}\), and by computing the Cartan matrix, we derive the following Dynkin diagram which then determines the Weyl group \(W(\Phi)\).</p>
+<p align="center">
+<img src="/images/IMG_5343.JPG" alt="Weyl group and Dynkin diagram of Sp(2n)" style="height: 390px; width: 610px;"></p>
+
+<p>Next, we find the reduced words in the group. For a word in this group, if two neighboring letters differ by an index greater than \(1\) then we cannot reduce the two letters further, and if they do not differ then they reduce to \(1\). Thus the reduced words are the concatonation of proper substrings of \((s_1s_2)^4\) and \((s_ks_{k+1})^3\) for \(k\ge 2\) such that each neighboring pair of such block do not form the string \((s_1s_2)^4\) or \((s_ks_{k+1})^3\) for \(k\ge 2\) and such that the two neighboring ends are not the same letter. For example, the word \(s_3s_4s_3s_4s_5s_4s_5s_7s_6\) is reduced. Observe that the reduced words are unique. </p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+    
+    </div>
+    
+    <div class="columns is-variable is-1 is-multiline is-mobile">
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/Lie-Groups-and-Lie-Algebras/">#Lie Groups and Lie Algebras</a></span>
+    
+    </div>
+    
+    
+    <div class="columns is-mobile is-multiline article-nav">
+        <span class="column is-12-mobile is-half-desktop is-hidden-mobile article-nav-prev">
+            
+        </span>
+        <span class="column is-12-mobile is-half-desktop  article-nav-next">
+            
+            <a href="/archives/66165fd0/">Week 4: Bruhat order, Sperner property, and the fraction of an Sn-orbit on a hyperplane</a>
+            
+        </span>
+    </div>
+    
+</article>
+
+
+<div class="sharebox">
+    
+<div class="addthis_inline_share_toolbox"></div>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-603b815e662e1491"></script>
+
+</div>
+
+
+
+<div class="comments">
+    <h3 class="title is-4">Comments</h3>
+    
+<div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script>
+    const gitalk = new Gitalk({
+        clientID: '9caad4c382780c5c4db2',
+        clientSecret: '4132ac79084e3d4b67a63ff19e3096c459f9d725',
+        id: 'archives/59e692ad/',
+        repo: 'yunhaixiang.github.io-comments',
+        owner: 'YunhaiXiang',
+        admin: ['YunhaiXiang'],
+        language: 'en',
+        distractionFreeMode: false,
+    })
+    gitalk.render('gitalk-container')
+</script>
+
+</div>
+
+    </div>
+</section>
+    <footer class="footer">
+    <div class="container">
+        <div class="columns content">
+            <div class="column is-narrow has-text-centered">
+                &copy; 2022 Yunhai Xiang&nbsp;
+                Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> & <a
+                        target="_blank" rel="noopener" href="http://github.com/ppoffice/hexo-theme-minos">Minos</a>. Icons made by <a target="_blank" rel="noopener" href="https://www.freepik.com" title="Freepik">Freepik</a> from <a target="_blank" rel="noopener" href="https://www.flaticon.com/" title="Flaticon">Flaticon</a>.
+            </div>
+            <div class="column is-hidden-mobile"></div>
+
+            
+            
+        </div>
+    </div>
+</footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+
+<!-- test if the browser is outdated -->
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" target="_blank" rel="noopener" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // plugin function, place inside DOM ready function
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        })
+    });
+</script>
+
+<script>
+    window.FontAwesomeConfig = {
+        searchPseudoElements: true
+    }
+    moment.locale("en-AU");
+</script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script>
+    MathJax.Hub.Config({
+        "HTML-CSS": {matchFontHeight: false},
+        SVG: {matchFontHeight: false},
+        CommonHTML: {matchFontHeight: false}
+    });
+</script>
+
+    
+    
+    
+    
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+<script>
+    (function ($) {
+        $(document).ready(function () {
+            if (typeof($.fn.lightGallery) === 'function') {
+                $('.article.gallery').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof($.fn.justifiedGallery) === 'function') {
+                $('.justified-gallery').justifiedGallery();
+            }
+        });
+    })(jQuery);
+</script>
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <style>
+        .hljs {
+            position: relative;
+        }
+
+        .hljs .clipboard-btn {
+            float: right;
+            color: #9a9a9a;
+            background: none;
+            border: none;
+        }
+
+        .hljs > .clipboard-btn {
+            display: none;
+            position: absolute;
+            right: 4px;
+            top: 4px;
+        }
+
+        .hljs:hover > .clipboard-btn {
+            display: inline;
+        }
+
+        .hljs > figcaption > .clipboard-btn {
+            margin-right: 4px;
+        }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $('figure.hljs').each(function(i, figure) {
+          var codeId = 'code-' + i;
+          var code = figure.querySelector('.code');
+          var copyButton = $('<button>Copy <i class="far fa-clipboard"></i></button>');
+          code.id = codeId;
+          copyButton.addClass('clipboard-btn');
+          copyButton.attr('data-clipboard-target-id', codeId);
+
+          var figcaption = figure.querySelector('figcaption');
+
+          if (figcaption) {
+            figcaption.append(copyButton[0]);
+          } else {
+            figure.prepend(copyButton[0]);
+          }
+        })
+
+        var clipboard = new ClipboardJS('.clipboard-btn', {
+          target: function(trigger) {
+            return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+          }
+        });
+      })
+    </script>
+
+    
+    
+
+    
+
+
+
+<script src="/js/script.js"></script>
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-mask"></div>
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something..." />
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+    
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</body>
+</html>

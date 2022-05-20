@@ -1,0 +1,41 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="600" height="600" xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <g transform="translate(300,300)">
+        <g stroke="#000088" stroke-width="4" fill="none">
+            <line x1="0" y1="0" x2="160.00" y2="-0.00" />
+            <polyline points="140.00,-10.00 160.00,-0.00 140.00,10.00" />
+            <line x1="0" y1="0" x2="240.00" y2="-138.56" />
+            <polyline points="217.68,-137.22 240.00,-138.56 227.68,-119.90" />
+            <line x1="0" y1="0" x2="80.00" y2="-138.56" />
+            <polyline points="61.34,-126.24 80.00,-138.56 78.66,-116.24" />
+            <line x1="0" y1="0" x2="0.00" y2="-277.13" />
+            <polyline points="-10.00,-257.13 0.00,-277.13 10.00,-257.13" />
+            <line x1="0" y1="0" x2="-80.00" y2="-138.56" />
+            <polyline points="-78.66,-116.24 -80.00,-138.56 -61.34,-126.24" />
+            <line x1="0" y1="0" x2="-240.00" y2="-138.56" />
+            <polyline points="-227.68,-119.90 -240.00,-138.56 -217.68,-137.22" />
+            <line x1="0" y1="0" x2="-160.00" y2="-0.00" />
+            <polyline points="-140.00,10.00 -160.00,-0.00 -140.00,-10.00" />
+            <line x1="0" y1="0" x2="-240.00" y2="138.56" />
+            <polyline points="-217.68,137.22 -240.00,138.56 -227.68,119.90" />
+            <line x1="0" y1="0" x2="-80.00" y2="138.56" />
+            <polyline points="-61.34,126.24 -80.00,138.56 -78.66,116.24" />
+            <line x1="0" y1="0" x2="-0.00" y2="277.13" />
+            <polyline points="10.00,257.13 -0.00,277.13 -10.00,257.13" />
+            <line x1="0" y1="0" x2="80.00" y2="138.56" />
+            <polyline points="78.66,116.24 80.00,138.56 61.34,126.24" />
+            <line x1="0" y1="0" x2="240.00" y2="138.56" />
+            <polyline points="227.68,119.90 240.00,138.56 217.68,137.22" />
+        </g>
+        <clipPath id="arcClip">
+            <path d="M 160.00,0.00 L 0,0 -240.00,-138.56 240.00,-138.56 Z" clip-rule="evenodd" />
+        </clipPath>
+        <circle cx="0" cy="0" r="120.000000" clip-path="url(#arcClip)" stroke="#880000" stroke-width="2" fill="none" />
+        <polyline points="-85.26,-72.32 -103.92,-60.00 -102.58,-82.32" stroke="#880000" stroke-width="2" fill="none" />
+        <text x="176.00" y="0.00" font-size="30" fill="#000000">α</text>
+        <text x="-264.00" y="-152.42" font-size="30" fill="#000000">β</text>
+        <text x="131.37" y="-35.20" font-size="20" fill="#000000">5π/6</text>
+        <text x="100" y="-250" font-size="30" fill="#000000"><tspan>G</tspan><tspan dy="5" font-size="20">2</tspan></text>
+    </g>
+</svg>
