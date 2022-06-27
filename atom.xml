@@ -89,11 +89,11 @@
   </entry>
   
   <entry>
-    <title>Galois categories and Étale fundamental groups</title>
+    <title>Galois category and Étale fundamental group</title>
     <link href="http://yoursite.com/archives/cb0d1d4a/"/>
     <id>http://yoursite.com/archives/cb0d1d4a/</id>
     <published>2022-04-13T02:33:43.000Z</published>
-    <updated>2022-06-27T19:05:56.384Z</updated>
+    <updated>2022-06-27T19:13:32.592Z</updated>
     
     <content type="html"><![CDATA[<p>I’m in a good mood today because it’s my birthday 🎉 and I finally finished recording my final presentation for PMATH 965! For my final presentation, I did an exposition on Galois categories and étale fundamental groups. Here’s the Youtube video of my presentation, and you can download the slides <a href="/documents/Etale_Fundamental_Group.pdf">here</a>.<div class="video-container"><iframe src="https://www.youtube.com/embed/mbobKvMsrng" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></p><p><br>In a nutshell, first I gave some motivations from Galois theory and algebraic topology where I made an analogy between the fundamental theorems of Galois theory and covering spaces, I then explained some backgrounds on Galois category and finite étale morphisms, and finally I use these backgrounds to define étale fundamental groups.</p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
     
