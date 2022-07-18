@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2022-06-27T19:12:38.981Z</updated>
+  <updated>2022-07-18T15:16:53.388Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,17 +17,41 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Schubert Calculus and Cohomology of Grassmannians</title>
+    <link href="http://yoursite.com/archives/a5b2dbed/"/>
+    <id>http://yoursite.com/archives/a5b2dbed/</id>
+    <published>2022-07-18T04:14:01.000Z</published>
+    <updated>2022-07-18T15:16:53.388Z</updated>
+    
+    <content type="html"><![CDATA[<p>Last week I gave a talk on the Canadian Undergraduate Mathematics Conference 2022 on Schubert Calculus and Cohomology of Grassmannians. Here are the <a href="/documents/grassmannian.pdf">slides</a> of my talk, and here is the video recording.</p><span id="more"></span><div class="video-container">    <iframe src="https://www.youtube.com/embed/-UZc6WDSKIs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><p><br>The Grassmannian is a space that parameterises linear subspaces, and the cohomology ring of the Grassmannian, the Chow ring, encodes data useful for intersection theory. In my talk I focused on two examples: In \(\mathbb P^3\), \(2\) lines meet \(4\) general lines, and any smooth cubic surface contains \(27\) lines. </p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Last week I gave a talk on the Canadian Undergraduate Mathematics Conference 2022 on Schubert Calculus and Cohomology of Grassmannians. Here are the &lt;a href=&quot;/documents/grassmannian.pdf&quot;&gt;slides&lt;/a&gt; of my talk, and here is the video recording.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="articles" scheme="http://yoursite.com/categories/articles/"/>
+    
+    
+      <category term="Combinatorics" scheme="http://yoursite.com/tags/Combinatorics/"/>
+    
+      <category term="Algebraic Geometry" scheme="http://yoursite.com/tags/Algebraic-Geometry/"/>
+    
+  </entry>
+  
+  <entry>
     <title>A topological proof of the insolvability of the quintic</title>
     <link href="http://yoursite.com/archives/31598439/"/>
     <id>http://yoursite.com/archives/31598439/</id>
     <published>2022-06-27T18:43:08.000Z</published>
     <updated>2022-06-27T19:12:38.981Z</updated>
     
-    <content type="html"><![CDATA[<p>It is a well known fact that there is no general formula for quintic equations or algebraic equations of any higher degree, and a typical proof of this fact uses heavy machinery from Galois theory. However, there is a far more elementary but much less well known proof by V.I. Arnold using nothing more than basic knowledge of complex numbers and topology. Last week, I gave a talk on the <a href="https://puremath.club/events/s22#7">Short Attention Span Math Seminars</a> organized by the <a href="https://puremath.club">Pure Math Club</a> at University of Waterloo. In my talk, I explained the main idea of his proof: moving the coefficients along loops to induce permutations of the roots. I also talked about how it could be turned into a rigorous proof using Riemann surfaces of algebraic functions and their monodromy groups, as well as its connections to Galois theory. In the end, I also discussed briefly some ideas related to this proof, such as topological Galois theory, Grothendieck’s Galois theory, and Grothendieck—Teichmüller theory. Here is the recording for my talk, and <a href="/documents/insolvability.pdf">here</a> are my slides.</p><span id="more"></span><div class="video-container">    <iframe src="https://www.youtube.com/embed/sVkgWqMVPZg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><p><br>I’m indebted to Fred Akalin for his beautiful javascript program which visualizes the permutations of roots. He also has a very well written <a href="https://www.akalin.com/quintic-unsolvability">exposition</a> on the same topic which you should definitely check out. I’m also very grateful for Leo Goldmakher and Henryk Zoladek for their wonderful expository papers on the topic, and most of all I’m very grateful to Faisal Al-Faisal for suggesting me to do this topic.</p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    <content type="html"><![CDATA[<p>It is a well known fact that there is no general formula for quintic equations or algebraic equations of any higher degree, and a typical proof of this fact uses heavy machinery from Galois theory. However, there is a far more elementary but much less well known proof by V.I. Arnold using nothing more than basic knowledge of complex numbers and topology. Last week, I gave a talk on the <a href="https://puremath.club/events/s22#7">Short Attention Span Math Seminars</a> organized by the <a href="https://puremath.club/">Pure Math Club</a> at University of Waterloo. In my talk, I explained the main idea of his proof: moving the coefficients along loops to induce permutations of the roots. I also talked about how it could be turned into a rigorous proof using Riemann surfaces of algebraic functions and their monodromy groups, as well as its connections to Galois theory. In the end, I also discussed briefly some ideas related to this proof, such as topological Galois theory, Grothendieck’s Galois theory, and Grothendieck–Teichmüller theory. Here is the recording for my talk, and <a href="/documents/insolvability.pdf">here</a> are my slides.</p><span id="more"></span><div class="video-container">    <iframe src="https://www.youtube.com/embed/sVkgWqMVPZg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><p><br>I’m indebted to Fred Akalin for his beautiful javascript program which visualizes the permutations of roots. He also has a very well written <a href="https://www.akalin.com/quintic-unsolvability">exposition</a> on the same topic which you should definitely check out. I’m also very grateful for Leo Goldmakher and Henryk Zoladek for their wonderful expository papers on the topic, and most of all I’m very grateful to Faisal Al-Faisal for suggesting me to do this topic.</p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;It is a well known fact that there is no general formula for quintic equations or algebraic equations of any higher degree, and a typical proof of this fact uses heavy machinery from Galois theory. However, there is a far more elementary but much less well known proof by V.I. Arnold using nothing more than basic knowledge of complex numbers and topology. Last week, I gave a talk on the &lt;a href=&quot;https://puremath.club/events/s22#7&quot;&gt;Short Attention Span Math Seminars&lt;/a&gt; organized by the &lt;a href=&quot;https://puremath.club&quot;&gt;Pure Math Club&lt;/a&gt; at University of Waterloo. In my talk, I explained the main idea of his proof: moving the coefficients along loops to induce permutations of the roots. I also talked about how it could be turned into a rigorous proof using Riemann surfaces of algebraic functions and their monodromy groups, as well as its connections to Galois theory. In the end, I also discussed briefly some ideas related to this proof, such as topological Galois theory, Grothendieck’s Galois theory, and Grothendieck—Teichmüller theory. Here is the recording for my talk, and &lt;a href=&quot;/documents/insolvability.pdf&quot;&gt;here&lt;/a&gt; are my slides.&lt;/p&gt;
+      &lt;p&gt;It is a well known fact that there is no general formula for quintic equations or algebraic equations of any higher degree, and a typical proof of this fact uses heavy machinery from Galois theory. However, there is a far more elementary but much less well known proof by V.I. Arnold using nothing more than basic knowledge of complex numbers and topology. Last week, I gave a talk on the &lt;a href=&quot;https://puremath.club/events/s22#7&quot;&gt;Short Attention Span Math Seminars&lt;/a&gt; organized by the &lt;a href=&quot;https://puremath.club/&quot;&gt;Pure Math Club&lt;/a&gt; at University of Waterloo. In my talk, I explained the main idea of his proof: moving the coefficients along loops to induce permutations of the roots. I also talked about how it could be turned into a rigorous proof using Riemann surfaces of algebraic functions and their monodromy groups, as well as its connections to Galois theory. In the end, I also discussed briefly some ideas related to this proof, such as topological Galois theory, Grothendieck’s Galois theory, and Grothendieck–Teichmüller theory. Here is the recording for my talk, and &lt;a href=&quot;/documents/insolvability.pdf&quot;&gt;here&lt;/a&gt; are my slides.&lt;/p&gt;
     
     </summary>
     
@@ -93,16 +117,13 @@
     <link href="http://yoursite.com/archives/cb0d1d4a/"/>
     <id>http://yoursite.com/archives/cb0d1d4a/</id>
     <published>2022-04-13T02:33:43.000Z</published>
-    <updated>2022-06-27T19:13:32.592Z</updated>
+    <updated>2022-07-18T15:17:11.250Z</updated>
     
-    <content type="html"><![CDATA[<p>I’m in a good mood today because it’s my birthday 🎉 and I finally finished recording my final presentation for PMATH 965! For my final presentation, I did an exposition on Galois categories and étale fundamental groups. Here’s the Youtube video of my presentation, and you can download the slides <a href="/documents/Etale_Fundamental_Group.pdf">here</a>.<div class="video-container"><iframe src="https://www.youtube.com/embed/mbobKvMsrng" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></p><p><br>In a nutshell, first I gave some motivations from Galois theory and algebraic topology where I made an analogy between the fundamental theorems of Galois theory and covering spaces, I then explained some backgrounds on Galois category and finite étale morphisms, and finally I use these backgrounds to define étale fundamental groups.</p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    <content type="html"><![CDATA[<p>I’m in a good mood today because it’s my birthday 🎉 and I finally finished recording my final presentation for PMATH 965! For my final presentation, I did an exposition on Galois categories and étale fundamental groups. Here’s the Youtube video of my presentation, and you can download the slides <a href="/documents/Etale_Fundamental_Group.pdf">here</a>.<span id="more"></span><div class="video-container"><iframe src="https://www.youtube.com/embed/mbobKvMsrng" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></p><p><br>In a nutshell, first I gave some motivations from Galois theory and algebraic topology where I made an analogy between the fundamental theorems of Galois theory and covering spaces, I then explained some backgrounds on Galois category and finite étale morphisms, and finally I use these backgrounds to define étale fundamental groups.</p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;I’m in a good mood today because it’s my birthday 🎉 and I finally finished recording my final presentation for PMATH 965! For my final p
-      
+      &lt;p&gt;I’m in a good mood today because it’s my birthday 🎉 and I finally finished recording my final presentation for PMATH 965! For my final presentation, I did an exposition on Galois categories and étale fundamental groups. Here’s the Youtube video of my presentation, and you can download the slides &lt;a href=&quot;/documents/Etale_Fundamental_Group.pdf&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
     
     </summary>
     
