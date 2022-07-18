@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2022-07-18T15:16:53.388Z</updated>
+  <updated>2022-07-18T15:44:30.173Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Schubert Calculus and Cohomology of Grassmannians</title>
+    <title>Schubert Calculus and cohomology of Grassmannians</title>
     <link href="http://yoursite.com/archives/a5b2dbed/"/>
     <id>http://yoursite.com/archives/a5b2dbed/</id>
     <published>2022-07-18T04:14:01.000Z</published>
-    <updated>2022-07-18T15:16:53.388Z</updated>
+    <updated>2022-07-18T15:44:30.173Z</updated>
     
     <content type="html"><![CDATA[<p>Last week I gave a talk on the Canadian Undergraduate Mathematics Conference 2022 on Schubert Calculus and Cohomology of Grassmannians. Here are the <a href="/documents/grassmannian.pdf">slides</a> of my talk, and here is the video recording.</p><span id="more"></span><div class="video-container">    <iframe src="https://www.youtube.com/embed/-UZc6WDSKIs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><p><br>The Grassmannian is a space that parameterises linear subspaces, and the cohomology ring of the Grassmannian, the Chow ring, encodes data useful for intersection theory. In my talk I focused on two examples: In \(\mathbb P^3\), \(2\) lines meet \(4\) general lines, and any smooth cubic surface contains \(27\) lines. </p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
     
