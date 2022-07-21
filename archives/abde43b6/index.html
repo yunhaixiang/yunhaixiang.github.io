@@ -2,7 +2,7 @@
 <html class="has-navbar-fixed-top">
 <head>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-<title>Schubert Calculus and cohomology of Grassmannians - The Singularity</title>
+<title>Things I learned from CUMC 2022 - The Singularity</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
@@ -17,18 +17,21 @@
 
 
 
-    <meta name="description" content="Last week I gave a talk on the Canadian Undergraduate Mathematics Conference 2022 on Schubert Calculus and cohomology of Grassmannians. The Grassmannian is a space that parameterises linear subspaces,">
+    <meta name="description" content="“Why did the two algebraic geometers get arrested at the airport? Because they were talking about blowing up six points on the plane.”  Anonymous   I spent my last week in Quebec attending the Canadia">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Schubert Calculus and cohomology of Grassmannians">
-<meta property="og:url" content="http://yoursite.com/archives/a5b2dbed/index.html">
+<meta property="og:title" content="Things I learned from CUMC 2022">
+<meta property="og:url" content="http://yoursite.com/archives/abde43b6/index.html">
 <meta property="og:site_name" content="The Singularity">
-<meta property="og:description" content="Last week I gave a talk on the Canadian Undergraduate Mathematics Conference 2022 on Schubert Calculus and cohomology of Grassmannians. The Grassmannian is a space that parameterises linear subspaces,">
+<meta property="og:description" content="“Why did the two algebraic geometers get arrested at the airport? Because they were talking about blowing up six points on the plane.”  Anonymous   I spent my last week in Quebec attending the Canadia">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-07-18T04:14:01.000Z">
-<meta property="article:modified_time" content="2022-07-19T02:47:33.145Z">
+<meta property="article:published_time" content="2022-07-20T06:48:33.000Z">
+<meta property="article:modified_time" content="2022-07-21T00:14:42.178Z">
 <meta property="article:author" content="Yunhai Xiang">
 <meta property="article:tag" content="Combinatorics">
-<meta property="article:tag" content="Algebraic Geometry">
+<meta property="article:tag" content="Algebraic geometry">
+<meta property="article:tag" content="Representation Theory">
+<meta property="article:tag" content="Differential Geometry">
+<meta property="article:tag" content="Logic Theory">
 <meta name="twitter:card" content="summary">
 
 
@@ -149,12 +152,12 @@
     <article class="article content gallery" itemscope itemprop="blogPost">
     <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
         
-            Schubert Calculus and cohomology of Grassmannians
+            Things I learned from CUMC 2022
         
     </h1>
     <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
         <span class="column is-narrow">
-            <time datetime="2022-07-18T04:14:01.000Z" itemprop="datePublished">Jul 18 2022</time>
+            <time datetime="2022-07-20T06:48:33.000Z" itemprop="datePublished">Jul 20 2022</time>
         </span>
         
         <span class="column is-narrow article-category">
@@ -166,19 +169,30 @@
         <span class="column is-narrow">
             
             
-            a minute read (About 218 words)
+            8 minutes read (About 1144 words)
         </span>
         
     </div>
     <div class="article-entry is-size-6-mobile" itemprop="articleBody">
     
-        <p>Last week I gave a talk on the Canadian Undergraduate Mathematics Conference 2022 on Schubert Calculus and cohomology of Grassmannians. The Grassmannian is a space that parameterises linear subspaces, and the cohomology ring of the Grassmannian, the Chow ring, encodes data useful for intersection theory. In my talk, I introduced the definition of a Grassmannian as a manifold (via the Stiefel manifold or as a homogeneous space) and as a projective variety (via the Plücker embedding). Then I introduced the decomposition of Grassmannian into Schubert cells and Schubert varieties (by CW-decomposition and affine stratification). After that, I introduced the Chow ring. Here are the <a href="/documents/grassmannian.pdf">slides</a> of my talk, and here is the video recording.</p>
-<span id="more"></span>
-<div class="video-container">
-    <iframe src="https://www.youtube.com/embed/-UZc6WDSKIs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+        <blockquote class="pullquote"><p>“Why did the two algebraic geometers get arrested at the airport? Because they were talking about blowing up six points on the plane.”</p>
+<p style="text-align: right;"> Anonymous </p></blockquote>
 
-<p><br>This was actually quite a challenging topic for me since I only began to learn about Grassmannians this term, and I didn’t have a ton of time to prepare. In the end, I didn’t feel I understood Chern classes so I only briefly mentioned how it could be used for proving that there are \(27\) lines on a smooth cubic surface. Origianlly, I had hoped to also learn about generalized flag varieties, Bruhat decomposition, and Borel–Weil–Bott theorem, but I really ran out of stamina. Perhaps I will find sometime to learn about them in the future.</p>
+<p>I spent my last week in Quebec attending the <a target="_blank" rel="noopener" href="https://cumc.math.ca/2022/presentation-database">Canadian Undergraduate Mathematics Conference 2022</a>. It was really an intense week of learning. I learned a lot and met many smart and interesting people. So I wanted to write about the things I learned and the people I met during the conference. There were so many excellent talks but unfortunately I could only attend some of them. In particular, there are some very good ones in geometry, topology, representation theory, algebra, logic theory, etc. </p>
+<span id="more"></span>
+<ol>
+<li><em>When Polynomials don’t Commute: An Introduction to Ore Extensions</em> by Nick Priebe. Non-commutative algebra is a central topic in modern algebra research, which concerns objects such as non-commutative rings. Suppose \(R\) is a ring, \(\sigma:R\rightarrow R\) a homomorphism, \(\delta:R\rightarrow R\) a \(\sigma\)-derivation i.e. a homomorphism s.t. \(\delta(rs)=\sigma(r)\delta(s)+\delta(r)s\), then an <em>Ore extension</em> or a <em>skew polynomial ring</em> is the noncommutative ring \(R[x;\sigma,\delta]\) where the multiplication satisfies \(xr=\sigma(r)x+\delta(r)\). Apparently, noncommutative algebra is useful in physics. Nick also introduced some basic results and open problems about their representations. I’m also curious the relationship between noncommutative geometry and noncommutative algebra. </li>
+<li><em>A Brief Introduction to Homotopy Type Theory</em> by Jacob Eater. Homotopy type theory is a new foundation of mathematics which is developed from intuitionist type theory. In HoTT, the fundamental objects are types, and we can build dependent types with \(\sum_{(x:A)}B(x)\) (analogue of \(\exists x\in A,B(x)\)) and \(\prod_{(x:A)}B(x)\) (analogue of \(\forall x\in A,B(x)\)). To avoid Russel’s paradox, we can build a tower of universes. Jacob also introduced Voevodsky’s Univalence axiom \((A= B)\simeq (A\simeq B)\) so isomorphic objects are equal. HoTT is very analogous to homotopy theory in the sense of its \(\infty\)-groupoid structure. Currently there is a lot of research in their higher-categorical models and their application in computer proof assistants.</li>
+<li><em>Waring Squaring</em> by Maya Gusak. A classical result in number theory is that each natural number is the sum of at more four squares. Waring’s problem asks for which \(k\in\mathbb N\) exists \(s\in\mathbb Z^+\) s.t. each \(n\in\mathbb N\) can be written as a sum \(n=n_1^k+n_2^k+\cdots+n_s^k\), where \(n_1,\dots,n_s\in\mathbb N\). To tackle this problem, mathematicians used so called circle method. Additionally, this method can be used to prove Vinogradov’s theorem (every natural number \(n&gt;5\) is the sum of three primes), but fails to solve Goldbach conjecture.</li>
+<li><em>ADE classification for quivers of finite representation type</em> by Xinrui You. A quiver is a multidigraph (i.e. a directed graph with multiple edges and loops allowed) which simulates underlying structure of a category. A representation of a quiver sends each vertex to a vector space or a module and each edge to a morphism. These representations decompose just as representations of finite groups. One fundamental result in the classification of quivers is Gabriel’s theorem. Gabriel’s theorem says that a quiver of finite representation type is a union of Dynkin graphs of type A, D, or E. </li>
+<li><em>The Nash Embedding Theorem for Tori in \(3\)-space</em> by Diba Heydary. A fundamental result in Riemannian geometry is that every Riemannian manifold can be isometrically (preserving the length of every path) embedded into a Euclidean space. Diba talked about a specific example of an embedding of a torus in the Euclidean \(3\)-space. A torus has a polygonal representation which can be used to create this embedding. Whitney embedding theorem is a similar result for differentiable manifolds.</li>
+<li><em>Dissection of Polyhedra and the Dehn invariant</em> by James Bona-Landry. The Wallace–Bolyai–Gerwien theorem which says that that two polygons can be dissected and transformed to each other iff they have the same area. The natural generalization of this question into \(3\) dimensions does not hold. This is due to the Dehn invariant \(\sum_i\ell_i\otimes \theta_i\in \mathbb R\otimes (\mathbb R/2\pi \mathbb Z)\). We can show that there are polyhedra that share same volume but has different Dehn invariant which means they can not transform to each other via dissection. In fact Dehn-Sydler theorem says that they can iff they have the same volume and same Dehn invariant. The generalization for higher dimensions is open.</li>
+<li><em>An Introduction to Linear Logic</em> by Amélie Comtois. Linear logic is different from classical logic in that if \(A\rightarrow B\) is used then \(A\) is no longer available anymore. It uses drastically different logical symbols than classical logic as well. Linear logic is an extension of classical logic, and classical logic can be realized in linear logic. Linear logic is thought of as the language of quantum theory. Moreover, I discussed with Amélie about category theory, and I learned from her about multicategories and higher categories. </li>
+<li><em>Exploring Quivers, Representations, and Varieties via Multisegments</em> by Iretomiwa Ajala. This is another talk about quivers, and much more technical than that of Xinrui. Iretomiwa introduced multisegments, and discussed how they related to quivers of type A. He also mentions parabolic induction, which is a method of obtaining a representation of a reductive group from the representations of its parabolic subgroups.</li>
+<li><em>An Introduction to Coxeter Groups and the Properties of their Weak Order</em> by Kimia Shaban. A very interesting talk on the combinatorial side of Coxeter groups. Kimia gave an introduction to Coxeter groups, which are a type of groups generated by reflections. She discussed their ADE classification, and the Sperner property of the weak Bruhat order on Coxeter groups, as well as a conjecture related to it. </li>
+<li><em>Univariate Tropical Polynomials</em> by Charlotte Lavoie-Bel. Tropical polynomical replace addition with the minimum function and multiplication by the usual addition, which makes it a semifield. Tropical polynomials can be graphed and they will have a cell-looking structure. They can be thought of as the limit of logarithm under base \(0\). They also have a different notion of roots than regular polynomials. We can consider zero locus of tropical polynomials i.e. tropical varieties. The tropical version of some classical algebraic geometry theorems such as Riemann–Roch theorem, can be proven by combinatorial arguments. </li>
+</ol>
+<p>There are many other excellent talks that I unfortunately did not attend, and I only wrote about some of the talks I went to. I also gave my own talk on Schubert calculus and cohomology of Grassmannians as the last student speaker of the conference, which you can view in a <a href="/archives/a5b2dbed/">previous post</a>.</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
     
     </div>
@@ -187,20 +201,24 @@
     
         <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/Combinatorics/">#Combinatorics</a></span>
     
-        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/Algebraic-Geometry/">#Algebraic Geometry</a></span>
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/Algebraic-geometry/">#Algebraic geometry</a></span>
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/Representation-Theory/">#Representation Theory</a></span>
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/Differential-Geometry/">#Differential Geometry</a></span>
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/Logic-Theory/">#Logic Theory</a></span>
     
     </div>
     
     
     <div class="columns is-mobile is-multiline article-nav">
-        <span class="column is-12-mobile is-half-desktop  article-nav-prev">
-            
-            <a href="/archives/abde43b6/">Things I learned from CUMC 2022</a>
+        <span class="column is-12-mobile is-half-desktop is-hidden-mobile article-nav-prev">
             
         </span>
         <span class="column is-12-mobile is-half-desktop  article-nav-next">
             
-            <a href="/archives/31598439/">A topological proof of the insolvability of the quintic</a>
+            <a href="/archives/a5b2dbed/">Schubert Calculus and cohomology of Grassmannians</a>
             
         </span>
     </div>
@@ -227,7 +245,7 @@
     const gitalk = new Gitalk({
         clientID: '9caad4c382780c5c4db2',
         clientSecret: '4132ac79084e3d4b67a63ff19e3096c459f9d725',
-        id: 'archives/a5b2dbed/',
+        id: 'archives/abde43b6/',
         repo: 'yunhaixiang.github.io-comments',
         owner: 'YunhaiXiang',
         admin: ['YunhaiXiang'],
