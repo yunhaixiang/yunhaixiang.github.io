@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+<head>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+<title>Week 6: Abelian categories, derived functors, and homotopy category of complexes - The Singularity</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
+<link rel="stylesheet" href="https://unpkg.com/vssue/dist/vssue.min.css">
+
+
+
+
+
+
+<meta name="keywords" content="Math">
+
+
+
+    <meta name="description" content="“A mathematician is a person who can find analogies between theorems; a better mathematician is one who can see analogies between proofs and the best mathematician can notice analogies between theorie">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Week 6: Abelian categories, derived functors, and homotopy category of complexes">
+<meta property="og:url" content="http://yoursite.com/archives/4bee11dc/index.html">
+<meta property="og:site_name" content="The Singularity">
+<meta property="og:description" content="“A mathematician is a person who can find analogies between theorems; a better mathematician is one who can see analogies between proofs and the best mathematician can notice analogies between theorie">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-07-25T19:28:14.000Z">
+<meta property="article:modified_time" content="2022-07-26T21:13:30.306Z">
+<meta property="article:author" content="Yunhai Xiang">
+<meta property="article:tag" content="Category theory">
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+<link rel="icon" href="/images/favicon_package_v0/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_package_v0/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/images/favicon_package_v0/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/images/favicon_package_v0/android-chrome-512x512.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_package_v0/android-chrome-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_package_v0/android-chrome-32x32.png">
+<link rel="manifest" href="/images/favicon_package_v0/site.webmanifest">
+<link rel="mask-icon" href="/images/favicon_package_v0/safari-pinned-tab.svg" color="#ff8a00">
+<meta name="msapplication-TileColor" content="#ff8a00">
+<meta name="msapplication-TileImage" content="/images/favicon_package_v0/mstile-144x144.png">
+<meta name="msapplication-square70x70logo" content="/images/favicon_package_v0/mstile-70x70.png">
+<meta name="msapplication-square150x150logo" content="/images/favicon_package_v0/mstile-150x150.png">
+<meta name="msapplication-wide310x150logo" content="/images/favicon_package_v0/mstile-310x150.png">
+<meta name="msapplication-square310x310logo" content="/images/favicon_package_v0/mstile-310x310.png">
+<meta name="theme-color" content="#ff8a00">
+
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ovo|Source+Code+Pro">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+<script defer src="//use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+
+
+
+
+<meta name="generator" content="Hexo 5.4.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
+<body>
+    
+<!-- hexo-inject:begin --><!-- hexo-inject:end --><nav class="navbar is-transparent is-fixed-top navbar-main" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item navbar-logo" href="/">
+                
+                    
+                    <img src="/images/home-solid.png" alt="" height="28">
+                    
+                
+            </a>
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="navbar-menu navbar-start">
+            
+            <a class="navbar-item "
+               href="/.">Home</a>
+            
+            <a class="navbar-item "
+               href="/archives">Archives</a>
+            
+            <a class="navbar-item "
+               href="/projects">Projects</a>
+            
+            <a class="navbar-item "
+               href="/about">About</a>
+            
+        </div>
+        
+        <div class="navbar-menu navbar-end">
+            
+            <a class="navbar-item search" title="Search" href="javascript:;">
+                <i class="fas fa-search"></i>
+            </a>
+            
+            
+            <div class="navbar-item is-hoverable has-dropdown is-hidden-mobile is-hidden-tablet-only toc">
+                <a class="navbar-item" title="Table of Contents">
+                    <i class="fa fa-list"></i>
+                </a>
+                <div class="navbar-dropdown is-right">
+                    
+                    
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</nav>
+
+    <section class="section">
+    <div class="container">
+    <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            Week 6: Abelian categories, derived functors, and homotopy category of complexes
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2022-07-25T19:28:14.000Z" itemprop="datePublished">Jul 25 2022</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/This-Week-I-Learned/">This Week I Learned</a>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            24 minutes read (About 3647 words)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <blockquote class="pullquote"><p>“A mathematician is a person who can find analogies between theorems; a better mathematician is one who can see analogies between proofs and the best mathematician can notice analogies between theories. One can imagine that the ultimate mathematician is one who can see analogies between analogies.”</p>
+<p style="text-align: right;"> Stefan Banach </p></blockquote>
+
+<p>I have always been curious about derived categories. In particular, I read from the wikipedia page on <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Homological_mirror_symmetry">homological mirror symmetry</a> that the derived category of coherent sheaves is a popular research topic in algebraic geometry. Also, I’ve been told by a professor that derived categories are related to something called geometric Satake correspondance, which is also something I totally don’t understand but it sounds very cool. Therefore, I decided to study a little about derived categories, and write about my progress here. I want this post to be the first part in several parts of my notes. In this first part, we will focus on abelian categoires, derived functors, and homotopy category of complexes. We begin by reviewing abelian categories and their properties. In particular, the (co)chain complexes in an abelian category and their related notions. After that, we define derived functors. Eventually, we finish by defining the homotopy category of complexes \(K(\mathcal A)\).</p>
+<span id="more"></span>
+
+<blockquote>
+<p>Definition 1. An <em>additive category</em> \(\mathcal C\) is a category where for each \(A,B\in\mathcal C\), the morphisms \(\mathrm{Mor}(A,B)\) carry an additional additive abelian group structure, and satisfies</p>
+<ol>
+<li>\(\mathcal C\) admits zero object,</li>
+<li>\(\mathcal C\) admits finite products and finite coproducts which coincide, and</li>
+<li>addition is distributive, i.e. \(g\circ (f_1+f_2)=g\circ f_1+g\circ f_2\) and \((f_1+f_2)\circ g=f_1\circ g+ f_2\circ g\) </li>
+</ol>
+<p>We use the notation \(\mathrm{Hom}(A,B)\) for \(\mathrm{Mor}(A,B)\) in additive categories to emphasize that the morphisms have an abelian group structure. An <em>additive functor</em> \(\mathcal F:\mathcal C\rightarrow\mathcal D\) between additive categories is a functor such that the associated map \(\mathrm{Hom}(A,B)\rightarrow \mathrm{Hom}(\mathcal F(A),\mathcal F(B))\) is a group homomorphism for each \(A,B\in\mathcal C\). Moreover, we denote by \(0_{A,B}\) (or \(0\) if there is no confusion) the identity element of \(\mathrm{Hom}(A,B)\).</p>
+</blockquote>
+<p>Note \(0_{A,B}\) is the zero morphism since it’s the unique morphism \(A\rightarrow B\) which factors through \(\mathbf 0\), i.e. \(A\rightarrow\mathbf 0\rightarrow B\).  In particular, note that \(0_{A,B}\circ f=0_{X,A}\) and \(g\circ 0_{A,B}=0_{B,X}\) for any \(f:X\rightarrow A\) and \(g:B\rightarrow X\), for any object \(X\). We note that equivalently, an additive functor maybe defined as a functor that preserves all finite biproducts.</p>
+<p>We recall that in a category \(\mathcal C\), the equalizer \(\mathrm{Eq}(f,g)\) of morphisms \(f,g:A\rightarrow B\) is an object \(E\in\mathcal C\) and a morphism \(e:E\rightarrow A\) s.t. the diagram \(E\rightarrow A\rightrightarrows B\) commutes and is universal with respect to this construction. Dually, the coequalizer \(\mathrm{Coeq}(f,g)\) is an object \(Q\in\mathcal C\) and a morphism \(q:B\rightarrow Q\) s.t. the diagram \( A\rightrightarrows B\rightarrow Q\) commutes and is universal with respect to this construction. In an additive category, for a morphism \(f:A\rightarrow B\), define its kernel \(\mathrm{Ker}(f)=\mathrm{Eq}(f,0_{A,B})\), cokernel \(\mathrm{Coker}(f)=\mathrm{Coeq}(f,0_{A,B})\). Spelled out explicitly, a kernel of \(f:A\rightarrow B\) is an object \(K\) and a morphism \(k:K\rightarrow A\) such that \(f\circ k=0_{K,B}\), and given any \(K^\prime\) and \(k^\prime:K^\prime\rightarrow A\) with \(f\circ k^\prime=0_{K^\prime,B}\), there exists unique \(u:K^\prime\rightarrow K\) s.t. \(k\circ u=k^\prime\).</p>
+<iframe class="quiver-embed" src="https://q.uiver.app/?q=WzAsNCxbMSwwLCJBIl0sWzIsMCwiQiJdLFswLDAsIksiXSxbMCwxLCJLXlxccHJpbWUiXSxbMCwxLCJmIl0sWzIsMCwiayJdLFsyLDEsIjBfe0ssQn0iLDAseyJjdXJ2ZSI6LTN9XSxbMywwLCJrXlxccHJpbWUiLDIseyJsYWJlbF9wb3NpdGlvbiI6NjB9XSxbMywxLCIwX3tLXlxccHJpbWUsQn0iLDIseyJjdXJ2ZSI6Mn1dLFszLDIsInUiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XV0=&embed" height="190" style="border-radius: 8px; border: none;"></iframe>
+
+<p>Dually, a cokernel of \(f:A\rightarrow B\) is an object \(Q\) with a morphism \(q:B\rightarrow Q\) with \(q\circ f=0_{A,Q}\), such that for any object \(Q^\prime\) and morphism \(q^\prime:B\rightarrow Q\) with \(q^\prime\circ f=0_{A,Q^\prime}\), there exists unique \(u:Q\rightarrow Q^\prime\) such that \(q^\prime=u\circ q\).</p>
+<iframe class="quiver-embed" src="https://q.uiver.app/?q=WzAsNCxbMCwwLCJBIl0sWzEsMCwiQiJdLFsyLDAsIlEiXSxbMiwxLCJRXlxccHJpbWUiXSxbMCwxLCJmIl0sWzEsMiwicSJdLFsxLDMsInFeXFxwcmltZSIsMl0sWzIsMywidSIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFswLDIsIjBfe0EsUX0iLDAseyJjdXJ2ZSI6LTN9XSxbMCwzLCIwX3tBLFFeXFxwcmltZX0iLDIseyJjdXJ2ZSI6Mn1dXQ==&embed" height="190" style="border-radius: 8px; border: none;"></iframe>
+
+<p>Recall a subobject of an object \(X\) is an object \(A\) with a monomorphism \(A\hookrightarrow X\), and a quotient object of \(X\) is an object \(Q\) with an epimorphism \(X\twoheadrightarrow Q\). We remark that \(\mathrm{Ker}(f)\) is a subobject of \(A\) and \(\mathrm{Coker}(f)\) is a quotient object of \(B\), when they exist (it is an easy exercise to show equalizers are monic and coequalizers are epic).</p>
+<blockquote>
+<p>Definition 2. An <em>abelian category</em> is an additive category where</p>
+<ol>
+<li>every morphism has a kernel and a cokernel,</li>
+<li>every monomorphism is the kernel of its cokernel, and </li>
+<li>every epimorphism is the cokernel of its kernel.</li>
+</ol>
+<p>Moreover, in an abelian category, for any morphism \(f:A\rightarrow B\), we define its image as the kernel of its cokernel \(\mathrm{Im}(f)=\mathrm{Ker}(\mathrm{Coker}(f))\), and coimage as the cokernel of its kernel \(\mathrm{Coim}(f)=\mathrm{Coker}(\mathrm{Ker}(f))\).</p>
+</blockquote>
+<p>A quintessential example of an abelian category is the category of \(R\)-modules. In fact, the <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Mitchell%27s_embedding_theorem">Freyd–Mitchell embedding theorem</a> states that any abelian category can be embedded to the category of \(R\)-modules for some \(R\) via a fully faithful functor. So we may use element-wise diagram chasing in abelian categories, which may help us derive diagram chasing theorems such as \(5\)-lemma and snake lemma. In an abelian category, all finite limits and colimits exist, in particular, pullbacks exist and they preserve monomorphisms and epimorphisms. </p>
+<blockquote>
+<p>Lemma 3. In an abelian category, </p>
+<ol>
+<li>a morphism \(f:A\rightarrow B\) is monic iff \(\mathrm{Ker}(f)=\mathbf 0\), and epic iff \(\mathrm{Coker}(f)=\mathbf 0\),</li>
+<li>a morphism \(f:A\rightarrow B\) is an isomorphism iff it is monic and epic,</li>
+<li>each morphism \(f:X\rightarrow Y\) factorizes canonically as \(X\twoheadrightarrow \mathrm{Im}(f)\hookrightarrow Y\) and \(X\twoheadrightarrow \mathrm{Coim}(f)\hookrightarrow Y\)</li>
+<li>for a morphism \(f:A\rightarrow B\), if it factorizes as \(A\twoheadrightarrow X\rightarrow B\) then \(\mathrm{Coker}(f)=\mathrm{Coker}(X\rightarrow B)\), and if it factorizes as \(A\rightarrow X\hookrightarrow B\), then \(\mathrm{Ker}(f)=\mathrm{Ker}(A\rightarrow X)\).</li>
+</ol>
+<div class="spoiler collapsed">
+    <div class="spoiler-title">
+        Proof
+    </div>
+    <div class="spoiler-content">
+        <ol>
+<li>Left as an exercise.</li>
+<li>Left as an exercise.</li>
+<li>We will only prove the factorization \(X\twoheadrightarrow \mathrm{Coim}(f)\hookrightarrow Y\), and the other one can be proved dually. First, we have \(\mathrm{Ker}(f)\hookrightarrow X\rightarrow Y\) is zero and \(\mathrm{Ker}(f)\hookrightarrow X\twoheadrightarrow \mathrm{Coim}(f)\) is zero, so we have a factorization \(X\twoheadrightarrow \mathrm{Coim}(f)\rightarrow Y\) by the universal property of cokernels. It remains to show that \(\beta:\mathrm{Coim}(f)\rightarrow Y\) is a monomorphism. Suppose \(\varphi_1,\varphi_2:Z\rightarrow \mathrm{Coim}(f)\) with \(\beta\circ \varphi_1=\beta\circ \varphi_2\), therefore \(\beta\circ \sigma=0\) where \(\sigma=\varphi_1-\varphi_2\). Consider the pullback \(W=X\times_{\mathrm{Coim}(f)}Z\) with \(\tau:W\rightarrow Z\) and \(\pi:W\rightarrow X\) of the maps \(\mathrm{Coim}(f)\) and \(\sigma\). We note that \(f\circ\pi=\beta\circ\mathrm{Coim}(f)\circ \pi=\beta\circ\sigma\circ\tau=0\), so \(\pi\) factors through \(\mathrm{Ker}(f)\) by \(W\rightarrow \mathrm{Ker}(f)\hookrightarrow X\) say \(w:W\rightarrow \mathrm{Ker}(f)\). Therefore, \(\sigma\circ\tau=\mathrm{Coim}(f)\circ \mathrm{Ker}(f)\circ w=0\circ w=0\). Since pullbacks preserve epimorphisms, \(\tau\) is epic. Thus \(\sigma\circ\tau=0\) implies \(\sigma=0\), so \(\varphi_1=\varphi_2\).</li>
+<li>Left as an exercise.</li>
+</ol>
+
+    </div>
+</div>
+</blockquote>
+<p>For a morphism \(f:A\rightarrow B\) in an abelian category, we factor \(f:A\rightarrow B\) canonically as \(A\twoheadrightarrow \mathrm{Coim}(f)\hookrightarrow B\), and since \(A\twoheadrightarrow \mathrm{Coim}(f)\hookrightarrow B\rightarrow \mathrm{Coker}(f)\) is zero and \(A\twoheadrightarrow \mathrm{Coim}(f)\) is epic, \(\mathrm{Coim}(f)\hookrightarrow B\rightarrow \mathrm{Coker}(f)\) is zero, so we can factor \(\mathrm{Coim}(f)\hookrightarrow B\) as \(\mathrm{Coim}(f)\rightarrow \mathrm{Im}(f)\hookrightarrow B\). We denote by \(\overline{f}:\mathrm{Coim}(f)\rightarrow \mathrm{Im}(f)\) the map induced by this factorization, and say \(f\) is <em>strict</em> if \(\overline{f}\) is an isomorphism. </p>
+<!-- -->
+
+<blockquote>
+<p>Theorem 4. (First isomorphism theorem) In an abelian category, all morphisms are strict.</p>
+<div class="spoiler collapsed">
+    <div class="spoiler-title">
+        Proof
+    </div>
+    <div class="spoiler-content">
+        <p>Suppose \(f:A\rightarrow B\) is a morphism in an abelian category, and factorize as \(A\twoheadrightarrow\mathrm{Coim}(f)\hookrightarrow B\). By Lemma 3, \(\mathrm{Coker}(f)=\mathrm{Coker}(\mathrm{Coim}(f)\hookrightarrow B)\). Since \(\mathrm{Coim}(f)\hookrightarrow B\) is monic, it is the kernel of its cokernel, so it is the kernel of \(\mathrm{Coker}(f)\). Since \(\mathrm{Im}(f)\hookrightarrow B\) in our construction is also the kernel of \(\mathrm{Coker}(f)\), the induced map \(\overline{f}\) is an isomorphism by the universal property of kernels.</p>
+
+    </div>
+</div>
+</blockquote>
+<p>In an abelian category, suppose \(f:A\rightarrow B\) and \(g:B\rightarrow C\) are such that \(g\circ f=0\). We factor \(A\twoheadrightarrow \mathrm{Im}(f)\hookrightarrow B\), and since \(A\twoheadrightarrow \mathrm{Im}(f)\hookrightarrow B\rightarrow C\) is zero and \(A\twoheadrightarrow\mathrm{Im}(f)\) is epic, we have \(\mathrm{Im}(f)\hookrightarrow B\rightarrow C\) is zero. Thus, we can factor \(\mathrm{Im}(f)\hookrightarrow B\) as \(\mathrm{Im}(f)\rightarrow \mathrm{Ker}(g)\hookrightarrow B\), and the map \(\mathrm{Im}(f)\rightarrow \mathrm{Ker}(g)\) is the <em>canonical map</em>. We say such sequence \(A\rightarrow B\rightarrow C\) is <em>exact</em> if the canonical map is an isomorphism. More generally, a sequence \(d_A^i:A^i\rightarrow A^{i+1}\)<br>\[\cdots\longrightarrow A^{i-1}\xrightarrow{\ d^{i-1}_A\ } A^i\xrightarrow{\ \ d^{i}_A\ \ }  A^{i+1}\longrightarrow\cdots\]is called a <em>(co)chain complex</em> if each three term subsequence compose to zero, and exact or acyclic if each three term subsequence is exact. A <em>chain map</em> \(f^\bullet:A^\bullet\rightarrow B^\bullet\) is a commutative diagram<iframe class="quiver-embed" src="https://q.uiver.app/?q=WzAsMTAsWzEsMCwiQV57aS0xfSJdLFsyLDAsIkFee2l9Il0sWzMsMCwiQV57aSsxfSJdLFs0LDAsIlxcY2RvdHMiXSxbMCwwLCJcXGNkb3RzIl0sWzAsMSwiXFxjZG90cyJdLFsxLDEsIkJee2ktMX0iXSxbMiwxLCJCXntpfSJdLFszLDEsIkJee2krMX0iXSxbNCwxLCJcXGNkb3RzIl0sWzAsMV0sWzEsMl0sWzIsM10sWzQsMF0sWzUsNl0sWzYsN10sWzcsOF0sWzgsOV0sWzAsNiwiZl57aS0xfSIsMl0sWzEsNywiZl57aX0iLDJdLFsyLDgsImZee2krMX0iLDJdXQ==&embed" width="400" height="180" style="border-radius: 8px; border: none;"></iframe> A chain homotopy is a collection of maps $h^i:A^i\rightarrow B^{i-1}$ s.t. $f^i-g^i=d^{i-1}_B\circ h^i+h^{i+1}\circ d^i_A$ for all $i$, illustrated by <iframe class="quiver-embed" src="https://q.uiver.app/?q=WzAsMTAsWzAsMCwiXFxjZG90cyJdLFsxLDAsIkFee2ktMX0iXSxbMiwwLCJBXmkiXSxbMywwLCJBXntpKzF9Il0sWzQsMCwiXFxjZG90cyJdLFswLDEsIlxcY2RvdHMiXSxbMSwxLCJCXntpLTF9Il0sWzIsMSwiQl5pIl0sWzMsMSwiQl57aSsxfSJdLFs0LDEsIlxcY2RvdHMiXSxbMCwxXSxbMSwyXSxbMiwzXSxbMyw0XSxbNSw2XSxbNiw3XSxbNyw4XSxbOCw5XSxbMSw2LCIiLDAseyJjdXJ2ZSI6MX1dLFsyLDcsIiIsMCx7ImN1cnZlIjoxfV0sWzMsOCwiIiwwLHsiY3VydmUiOjF9XSxbMiw2LCIiLDEseyJjb2xvdXIiOlswLDYwLDYwXX1dLFszLDcsIiIsMSx7ImNvbG91ciI6WzAsNjAsNjBdfV0sWzEsNiwiIiwwLHsiY3VydmUiOi0xfV0sWzIsNywiIiwwLHsiY3VydmUiOi0xfV0sWzMsOCwiIiwwLHsiY3VydmUiOi0xfV1d&embed" width="400" height="180" style="border-radius: 8px; border: none;"></iframe> which typically does NOT commute. We write \(f^\bullet\simeq g^\bullet\) if they are <em>chain homotopic</em>, and we say \(A^\bullet\) and \(B^\bullet\) are <em>chain homotopy equivalent</em> if there are chain maps \(f^\bullet:A\rightarrow B\) and \(g^\bullet:B\rightarrow A\) s.t. \(f^\bullet\circ g^\bullet \simeq \mathbf{1}_{B^\bullet}\) and \(g^\bullet\circ f^\bullet \simeq \mathbf{1}_{A^\bullet}\), in which case \(f^\bullet\) are \(g^\bullet\) called <em>homotopy pseudo-inverses</em>. If \(A\) is a category, let \(C(\mathcal A)\) be the category of chain complexes in \(\mathcal A\) with chain maps are morphisms. If \(\mathcal A\) is additive, then \(C(\mathcal A)\) inherits an obvious group structure on its morphisms, and they make it an additive category as well. Also, if \(\mathcal A\) is abelian then so is \(C(\mathcal A)\). Let \(C^+(\mathcal A)\) be the full subcategory of \(C(\mathcal A)\) where the complexes are bounded below (exists \(N\in\mathbb Z\) s.t. \(A^i=\mathbb 0\) for \(i &lt; N \)), and similarly \(C^-(\mathcal A)\) is the full subcategory \(C(\mathcal A)\) where the complexes are bounded above. Let \(C^b(\mathcal A)\) be the full subcategory of \(C(\mathcal A)\) where the complexes are bounded below and above.</p>
+<blockquote>
+<p>Definition 5. Let \(A^\bullet\) be a cochain complex in \(\mathcal A\) with canonical morphisms \(\mathrm{Im}(d^{n-1})\rightarrow\mathrm{Ker}(d^{n})\), define<br>\[H^n(A^\bullet)=\mathrm{Coker}(\mathrm{Im}(d^{n-1})\rightarrow\mathrm{Ker}(d^{n}))\]as the \(n\)-th cohomology object. In fact, for a chain map \(f^\bullet: A^\bullet\rightarrow B^\bullet\), we associate an induced morphism \(H^nf^\bullet:H^n(A^\bullet)\rightarrow H^n(B^\bullet)\), which makes \(H^n\) an additive functor \(C(\mathcal A)\rightarrow\mathcal A\). Moreover, \(f^\bullet\) is said to be a <em>quasi-isomorphism</em> if \(H^nf^\bullet\) is an isomorphism for all \(n\in\mathbb Z\).</p>
+</blockquote>
+<p>Let \(\mathcal A\) be an abelian category. The <em>translation functor</em> \(T:C(\mathcal A)\rightarrow C(\mathcal A)\) sends a complex \(A^\bullet =(A^i,d^i)\) to the complex \(T(A^\bullet) =(A^{i+1},-d^{i+1})\), and \(T(f^\bullet):T(A^\bullet)\rightarrow T(B^\bullet)\) for \(f^\bullet:A^\bullet\rightarrow B^\bullet\) is given by \(T(f^\bullet)^i=f^{i+1}\). The functor essentially shifts the complex left by one, where the negative sign of the differential is a convention useful later. We denote by \(A^\bullet[n]=T^n(A^\bullet)\) for \(n\in\mathbb Z\) (negative integers correspond to right translations). The right truncation functor \(\tau_{\le n}:C(\mathcal A)\rightarrow C^-(\mathcal A)\) sends a complex in the following way <iframe class="quiver-embed" src="https://q.uiver.app/?q=WzAsMTAsWzIsMCwiQV5uIl0sWzIsMSwiXFxtYXRocm17S2VyfShkXntufSkiXSxbMSwwLCJBXntuLTF9Il0sWzMsMCwiQV57bisxfSJdLFsxLDEsIkFee24tMX0iXSxbMywxLCJcXG1hdGhiZnswfSJdLFs0LDAsIlxcY2RvdHMiXSxbMCwwLCJcXGNkb3RzIl0sWzAsMSwiXFxjZG90cyJdLFs0LDEsIlxcY2RvdHMiXSxbMCwxLCIiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJtYXBzIHRvIn19fV0sWzIsMF0sWzAsM10sWzQsMSwiIiwyLHsiY29sb3VyIjpbMCw2MCw2MF19XSxbMSw1XSxbMyw2XSxbNywyXSxbOCw0XSxbNSw5XV0=&embed" width="400" height="180" style="border-radius: 8px; border: none;"></iframe> where the red arrow is induced via universal property. The functor \(\tau_{\le n}:C(\mathcal A)\rightarrow \mathcal A\) sends the morphisms in the obvious way. Moreover, we have a canonical monomorphism \(\tau_{\le n}(A^\bullet)\rightarrow A^\bullet\) which induces isomorphisms on their cohomology objects. The left truncation functor \(\tau_{\ge n}:C(\mathcal A)\rightarrow C^+(\mathcal A)\) is defined dually. </p>
+<blockquote>
+<p>Definition 6. Suppose \(f^\bullet:A^\bullet\rightarrow B^\bullet\) is a morphism in \(C(\mathcal A)\) for some abelian category \(\mathcal A\). The <em>cone</em> of \(f^\bullet\) is \(\mathrm{Cone}(f^\bullet)=A^\bullet[1]\oplus B^\bullet\). Spelled out explicitly, the cochain complex consists of objects \(A^{n+1}\oplus B^n\), and the differential \(d^n:A^{n+1}\oplus B^n\rightarrow A^{n+2}\oplus B^{n+1}\) is given by<br>\[d^n=\begin{pmatrix}-d_{A^\bullet}^{n+1}&amp;0\\ f^{n+1}&amp; d_{B^\bullet}^n\end{pmatrix}\]acting as though on column vectors.</p>
+</blockquote>
+<p>We remark that a short exact sequence of complexes induces a long exact sequence of cohomology. Say we have<br>\[\mathbf 0\longrightarrow A^{\bullet}\xrightarrow{\ f^{\bullet}\ } B^\bullet\xrightarrow{\ g^\bullet\ }  C^\bullet\longrightarrow\mathbf 0\]a short exact sequence of complexes, then for each \(n\), exists \(\delta^n:H^n(C^\bullet)\rightarrow H^{n+1}(A^\bullet)\) making<br>\[\cdots\rightarrow H^n(A^\bullet)\rightarrow H^n(B^\bullet)\rightarrow H^n(C^\bullet)\xrightarrow{\delta^n} H^{n+1}(A^\bullet)\rightarrow H^{n+1}(B^\bullet)\rightarrow H^{n+1}(C^\bullet)\rightarrow\cdots\]exact. This is a very common construction in homological algebra, and the way we construct these connecting morphisms is by applying the snake lemma twice. Suppose \(f^\bullet:A^\bullet\rightarrow B^\bullet\) is a chain map with cone \(C^\bullet=\mathrm{Cone}(f^\bullet)\), then the map \(<br>\iota^{n}=0 \oplus \operatorname{Id}_{B^{n}}: B^{n} \rightarrow C^{n}<br>\) and the canonical projection \(\rho^n:C^n\rightarrow A^{n+1}\) gives chain maps \(\iota^\bullet:B^\bullet\rightarrow C^\bullet\) and \(\rho^\bullet:C^\bullet \rightarrow A^\bullet [1]\) which fits into a short exact sequence \[\mathbf 0\longrightarrow B^{\bullet}\xrightarrow{\ \iota^{\bullet}\ } C^\bullet\xrightarrow{\ \rho^\bullet\ }  A^\bullet[1]\longrightarrow\mathbf 0\]Hence this induces a long exact sequence on cohomology objects. Working out the connecting morphism, we find out that the connecting morphisms are nothing more than the induced morphisms \(\delta^n=H^{n+1}f^\bullet\). From this fact, we deduce that \(f^\bullet\) is a quasi-isomorphism iff the cone \(\mathrm{Cone}(f^\bullet)\) is acyclic. </p>
+<blockquote>
+<p>Definition 7. Suppose \(\mathcal A\) is an abelian category. An object \(X\) in \(\mathcal A\) is <em>injective</em> (resp. <em>projective</em>) if the contravariant (resp. covariant) left exact (resp. right exact) hom-functor \(\mathrm{Hom}(-,X):\mathcal A\rightarrow\mathbf{Ab}\) (resp. \(\mathrm{Hom}(X,-):\mathcal A\rightarrow\mathbf{Ab}\)) is exact. Moreover, we say \(\mathcal A\) has <em>enough injectives</em> (resp. <em>enough projectives</em>) if for any object \(Y\) there is an injective object (resp. projective object) \(X\) and a monomorphism \(Y\rightarrow X\) (resp. epimorphism \(X\rightarrow Y\)). An <em>injective resolution</em> of an object \(X\) is a complex \(I^\bullet\) bounded below and a quasi-isomorphism \(X\rightarrow I^\bullet\), or equivalently, an exact sequence<br>\[\mathbf 0\rightarrow X\rightarrow I^0\rightarrow I^1\rightarrow \cdots\]where each \(A^i\) is injective. Dually, a <em>projective resolution</em> of an object \(X\) is a complex \(P_\bullet\) bounded above and a quasi-isomorphism \(P_\bullet\rightarrow X\), or equivalently, an exact sequence\[\cdots\rightarrow P_1\rightarrow P_0\rightarrow X\rightarrow \mathbf 0\]where each \(P_i\) is projective.</p>
+</blockquote>
+<p>It is a familiar result in homological algebra that if an abelian category has enough injectives (resp. enough projectives) then every object has an injective resolution (resp. projective resolution). Moreover, given a long exact sequence \(\mathbf 0\rightarrow X\rightarrow M^\bullet\) and an injective resolution of \(I^\bullet\) of \(Y\), then every \(f:X\rightarrow Y\) extends to a chain map <iframe class="quiver-embed" src="https://q.uiver.app/?q=WzAsMTAsWzAsMCwiXFxtYXRoYmZ7MH0iXSxbMSwwLCJYIl0sWzIsMCwiTV4wIl0sWzMsMCwiTV4xIl0sWzQsMCwiXFxjZG90cyJdLFswLDEsIlxcbWF0aGJmezB9Il0sWzEsMSwiWSJdLFsyLDEsIkleMCJdLFszLDEsIkleMSJdLFs0LDEsIlxcY2RvdHMiXSxbMCwxXSxbMSwyXSxbMiwzXSxbMyw0XSxbNSw2XSxbNiw3XSxbNyw4XSxbOCw5XSxbMSw2LCJmIiwyXSxbMiw3LCIiLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbMyw4LCIiLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XV0=&embed" width="400" height="180" style="border-radius: 8px; border: none;"></iframe> and two such construction of chain maps are homotopic. The dual can be said about projective resolutions. I should also mention the Horseshoe lemma or the simultaneous resolution theorem, which states that if we have a short exact sequence \(\mathbf 0\rightarrow X\rightarrow Y\rightarrow Z\rightarrow\mathbf 0\) and injective resolutions \(I^\bullet\) for \(Y\) and \(K^\bullet\) for \(Z\), then there is an injective resolution \(J^\bullet\) of \(Y\) that and a short exact sequence of complexes \(\mathbf 0\rightarrow I^\bullet\rightarrow J^\bullet \rightarrow K^\bullet\rightarrow\mathbf 0\) which splits.<iframe class="quiver-embed" src="https://q.uiver.app/?q=WzAsMjEsWzEsMSwiWCJdLFsyLDEsIkleMCJdLFszLDEsIkleMSJdLFs0LDEsIlxcY2RvdHMiXSxbMCwxLCJcXG1hdGhiZiAwIl0sWzAsMiwiXFxtYXRoYmYgMCJdLFsxLDIsIlkiXSxbMiwyLCJKXjAiXSxbMywyLCJKXjEiXSxbNCwyLCJcXGNkb3RzIl0sWzAsMywiXFxtYXRoYmYgMCJdLFsxLDMsIloiXSxbMiwzLCJLXjAiXSxbMywzLCJLXjEiXSxbNCwzLCJcXGNkb3RzIl0sWzEsNCwiXFxtYXRoYmYgMCJdLFsxLDAsIlxcbWF0aGJmIDAiXSxbMiwwLCJcXG1hdGhiZiAwIl0sWzIsNCwiXFxtYXRoYmYgMCJdLFszLDAsIlxcbWF0aGJmIDAiXSxbMyw0LCJcXG1hdGhiZiAwIl0sWzAsMV0sWzEsMl0sWzIsM10sWzQsMF0sWzUsNl0sWzYsNywiIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzcsOCwiIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzgsOSwiIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzEwLDExXSxbMTEsMTJdLFsxMiwxM10sWzEzLDE0XSxbMCw2XSxbNiwxMV0sWzE2LDBdLFsxMSwxNV0sWzE3LDFdLFsxLDcsIiIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFs3LDEyLCIiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbMTIsMThdLFsxOSwyXSxbMiw4LCIiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbOCwxMywiIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzEzLDIwXV0=&embed" width="380" height="380" style="border-radius: 8px; border: none;"></iframe> This does NOT commute. This implies that additive functors take split exact sequences to split exact sequences.<br>Suppose \(\mathscr{F}:\mathcal A\rightarrow\mathcal B\) is a left exact functor betweeen abelian categories, then applying \(\mathscr{F}\) to a short exact sequence \(\mathbf 0\rightarrow A\rightarrow B\rightarrow C\) gives a short exact sequence \(\mathbf 0\rightarrow \mathscr{F}(A)\rightarrow \mathscr{F}(B)\rightarrow \mathscr{F}(C)\). A natural question to ask is whether we could continue this exact sequence to the right. It turns out that there is a canonical way of doing so, by defining the right derived functors \(R^i\mathscr{F}:\mathcal A\rightarrow \mathcal B\), we may continue the exact sequence<br>\[\mathbf 0\rightarrow \mathscr{F}(A)\rightarrow\mathscr{F}(B)\rightarrow\mathscr{F}(C)\rightarrow R^1\mathscr{F}(A)\rightarrow R^1\mathscr{F}(B)\rightarrow R^1\mathscr{F}(C)\rightarrow\cdots\]Note that \(\mathscr{F}\) is exact iff \(R^1\mathscr{F}=0\), so in a sense the right derived functors measures how far \(\mathscr{F}\) is from exact.</p>
+<blockquote>
+<p>Definition 8. Let \(\mathcal A,\mathcal B\) be abelian categories and \(\mathcal A\) has enough injectives. Suppose \(\mathscr{F}:\mathcal A\rightarrow\mathcal B\) is a left-exact functor. Let \(X\in\mathcal A\) and suppose \(I^\bullet\) is an injective resolution, then we obtain a complex<br>\[\mathbf 0\rightarrow \mathscr{F}(I^0)\rightarrow\mathscr{F}(I^1)\rightarrow\mathscr{F}(I^2)\rightarrow\cdots\]Define the right derived functors as the additive functors \(R^i\mathscr{F};\mathcal A\rightarrow\mathcal B\)<br>\[R^i\mathscr{F}(X)=H^i(\mathscr{F}I^\bullet)\]for \(i\ge 0\). Left derived functors \(L_i\mathscr{F}\) are defined dually via projective resolution.</p>
+</blockquote>
+<p>The most important examples of derived functors are the Ext and Tor functors. The Ext functor is the right derived functor of the hom-functor, and the Tor functor is the left derived functor of tensor product. Recall that there is a tensor-Hom adjunction \(\mathrm{Hom}(Y\otimes X,Z)\cong \mathrm{Hom}(Y,\mathrm{Hom}(X,Z))\), so these functors are related very closely.</p>
+<blockquote>
+<p>Definition 9. For \(A,B\in \mathbf{Mod}_R\), define the Ext functors\[\begin{aligned}\mathrm{Ext}_R^i(A,B)&amp;=(R^i\mathrm{Hom}_R(A,-))(B)\\ &amp;\cong (R^i\mathrm{Hom}_R(-,B))(A)\end{aligned} \] and the Tor functors \[\begin{aligned}\mathrm{Tor}_i^R(A,B)&amp;= (L_i(A\otimes_R -))(B)\\ &amp;\cong (L_i(-\otimes_R B))(A)\end{aligned}\] for all \(i\ge 0\).</p>
+</blockquote>
+<!--- -->
+
+<blockquote>
+<p>Example 10. Derived functors can help us defined many (co)homology theory.</p>
+<ol>
+<li><em>Sheaf cohomology.</em> Let \(X\) be a topological space, then the global section functor \(\Gamma:\mathrm{Sh}(X)\rightarrow \mathbf{Ab}\) which sends \(\mathscr{F} \mapsto \mathscr{F}(X)\) is left exact, its right derived functor \(H^i(X,-):\mathrm{Sh}(X)\rightarrow \mathbf{Ab}\) is the <em>sheaf cohomology</em> \(H^i(X,\mathscr{F})\). Its special cases include the de Rham cohomology. </li>
+<li><em>Group cohomology.</em> Let \(k\) be an algebraically closed field and \(G\) a group, then the invariant functor \((-)^G:\mathbf{Mod}_{k[G]}\rightarrow\mathbf{Mod}_{k[G]}\), which is the same as \(\mathrm{Hom}_{k[G]}(k,-)\), is left exact, its right derived functor \(H^i(G;-):\mathbf{Mod}_{k[G]}\rightarrow\mathbf{Mod}_{k[G]}\) gives the group cohomology \(H^i(G;M)=\mathrm{Ext}^i_{k[G]}(k,M)\).</li>
+<li><em>Hochschild cohomology.</em> This one I’m not really familiar, so I will not write about it in detail.</li>
+</ol>
+</blockquote>
+<p>The derived functors are natural in the sense that if we have a morphism of two short exact sequence in \(\mathcal A\), then the induced morphisms of the long exact sequences in \(\mathcal B\) commutes with the long exact sequences. Finally, I’d like to finish with the definition of the homotopy category of complexes. We say that a chain map is <em>nullhomotopic</em> if it is homotopic to the zero chain.</p>
+<blockquote>
+<p>Definition 11. Let \(\mathcal A\) be an abelian category, the <em>homotopy category of complexes</em> \( K(\mathcal A)\) is the category where objects are (co)chain complexes in \(\mathcal A\) and morphisms are chain maps up to homotopy, i.e. \[\mathrm{Hom}_{K(\mathcal A)}(A^\bullet,B^\bullet)=\mathrm{Hom}_{C(\mathcal A)}(A^\bullet,B^\bullet)/G\] where \(G\) is the subgroup of nullhomotopic complexes.</p>
+</blockquote>
+<p>There are many things that needs to be checked here for it to be well defined, which we omit. We will see that this category is not typically abelian, but it is triangulated. A triangulated is an approximation of an abelian category.</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+    
+    </div>
+    
+    <div class="columns is-variable is-1 is-multiline is-mobile">
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/Category-theory/">#Category theory</a></span>
+    
+    </div>
+    
+    
+    <div class="columns is-mobile is-multiline article-nav">
+        <span class="column is-12-mobile is-half-desktop is-hidden-mobile article-nav-prev">
+            
+        </span>
+        <span class="column is-12-mobile is-half-desktop  article-nav-next">
+            
+            <a href="/archives/abde43b6/">Things I learned from CUMC 2022</a>
+            
+        </span>
+    </div>
+    
+</article>
+
+
+<div class="sharebox">
+    
+<div class="addthis_inline_share_toolbox"></div>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-603b815e662e1491"></script>
+
+</div>
+
+
+
+<div class="comments">
+    <h3 class="title is-4">Comments</h3>
+    
+<div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script>
+    const gitalk = new Gitalk({
+        clientID: '9caad4c382780c5c4db2',
+        clientSecret: '4132ac79084e3d4b67a63ff19e3096c459f9d725',
+        id: 'archives/4bee11dc/',
+        repo: 'yunhaixiang.github.io-comments',
+        owner: 'YunhaiXiang',
+        admin: ['YunhaiXiang'],
+        language: 'en',
+        distractionFreeMode: false,
+    })
+    gitalk.render('gitalk-container')
+</script>
+
+</div>
+
+    </div>
+</section>
+    <footer class="footer">
+    <div class="container">
+        <div class="columns content">
+            <div class="column is-narrow has-text-centered">
+                &copy; 2022 Yunhai Xiang&nbsp;
+                Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> & <a
+                        target="_blank" rel="noopener" href="http://github.com/ppoffice/hexo-theme-minos">Minos</a>. Icons made by <a target="_blank" rel="noopener" href="https://www.freepik.com" title="Freepik">Freepik</a> from <a target="_blank" rel="noopener" href="https://www.flaticon.com/" title="Flaticon">Flaticon</a>.
+            </div>
+            <div class="column is-hidden-mobile"></div>
+
+            
+            
+        </div>
+    </div>
+</footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+
+<!-- test if the browser is outdated -->
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" target="_blank" rel="noopener" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // plugin function, place inside DOM ready function
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        })
+    });
+</script>
+
+<script>
+    window.FontAwesomeConfig = {
+        searchPseudoElements: true
+    }
+    moment.locale("en-AU");
+</script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script>
+    MathJax.Hub.Config({
+        "HTML-CSS": {matchFontHeight: false},
+        SVG: {matchFontHeight: false},
+        CommonHTML: {matchFontHeight: false}
+    });
+</script>
+
+    
+    
+    
+    
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+<script>
+    (function ($) {
+        $(document).ready(function () {
+            if (typeof($.fn.lightGallery) === 'function') {
+                $('.article.gallery').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof($.fn.justifiedGallery) === 'function') {
+                $('.justified-gallery').justifiedGallery();
+            }
+        });
+    })(jQuery);
+</script>
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <style>
+        .hljs {
+            position: relative;
+        }
+
+        .hljs .clipboard-btn {
+            float: right;
+            color: #9a9a9a;
+            background: none;
+            border: none;
+        }
+
+        .hljs > .clipboard-btn {
+            display: none;
+            position: absolute;
+            right: 4px;
+            top: 4px;
+        }
+
+        .hljs:hover > .clipboard-btn {
+            display: inline;
+        }
+
+        .hljs > figcaption > .clipboard-btn {
+            margin-right: 4px;
+        }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $('figure.hljs').each(function(i, figure) {
+          var codeId = 'code-' + i;
+          var code = figure.querySelector('.code');
+          var copyButton = $('<button>Copy <i class="far fa-clipboard"></i></button>');
+          code.id = codeId;
+          copyButton.addClass('clipboard-btn');
+          copyButton.attr('data-clipboard-target-id', codeId);
+
+          var figcaption = figure.querySelector('figcaption');
+
+          if (figcaption) {
+            figcaption.append(copyButton[0]);
+          } else {
+            figure.prepend(copyButton[0]);
+          }
+        })
+
+        var clipboard = new ClipboardJS('.clipboard-btn', {
+          target: function(trigger) {
+            return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+          }
+        });
+      })
+    </script>
+
+    
+    
+
+    
+
+
+
+<script src="/js/script.js"></script>
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-mask"></div>
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something..." />
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+    
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</body>
+</html>
