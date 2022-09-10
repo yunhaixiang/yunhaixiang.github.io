@@ -17,17 +17,17 @@
 
 
 
-    <meta name="description" content="“It is impossible to be a mathematician without being a poet in soul.”  Sofia Kovalevskaya  Continuing last week where we defined the homotopy category of complexes, we will take a look at triangulate">
+    <meta name="description" content="“It is impossible to be a mathematician without being a poet in soul.”  Sofia Kovalevskaya   Continuing last week where we defined the homotopy category of complexes, we will take a look at triangulat">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Week 7: Triangulated categories">
 <meta property="og:url" content="http://yoursite.com/archives/3e09458/index.html">
 <meta property="og:site_name" content="The Singularity">
-<meta property="og:description" content="“It is impossible to be a mathematician without being a poet in soul.”  Sofia Kovalevskaya  Continuing last week where we defined the homotopy category of complexes, we will take a look at triangulate">
+<meta property="og:description" content="“It is impossible to be a mathematician without being a poet in soul.”  Sofia Kovalevskaya   Continuing last week where we defined the homotopy category of complexes, we will take a look at triangulat">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-09-06T00:00:36.000Z">
-<meta property="article:modified_time" content="2022-09-06T00:09:40.792Z">
+<meta property="article:modified_time" content="2022-09-10T00:34:03.120Z">
 <meta property="article:author" content="Yunhai Xiang">
-<meta property="article:tag" content="Math">
+<meta property="article:tag" content="Category Theory">
 <meta name="twitter:card" content="summary">
 
 
@@ -156,6 +156,11 @@
             <time datetime="2022-09-06T00:00:36.000Z" itemprop="datePublished">Sep 5 2022</time>
         </span>
         
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/This-Week-I-Learned/">This Week I Learned</a>
+        </span>
+        
         
         <span class="column is-narrow">
             
@@ -168,8 +173,10 @@
     
         <blockquote class="pullquote"><p>“It is impossible to be a mathematician without being a poet in soul.”</p>
 <p style="text-align: right;"> Sofia Kovalevskaya </p></blockquote>
+
 <p>Continuing last week where we defined the homotopy category of complexes, we will take a look at triangulated categories. This will help us build towards the definition of derived categories. In some sense, triangulated categories are approximations of abelian categories. They are not strictly speaking a weaker version of abelian categories, and they don’t really imply each other. Triangulated categories takes a different approach to abelian categories. Instead of kernels, cokernels, and strict morphisms, triangulated categories bypass these notions and start out with “distinguished triangles”, which are similar to exact sequences.</p>
 <span id="more"></span>
+
 <p>A translation functor on an additive category \(\mathcal C\) is an automorphism \(T:\mathcal C\rightarrow\mathcal C\) where we denote \(T^n(X)=X[n]\) and \(T^nf=f[n]\) for \(n\in\mathbb Z\). A <em>triangle</em> is a diagram \(X\rightarrow Y\rightarrow Z\rightarrow X[1]\), and a morphism of triangles is a diagram<iframe class="quiver-embed" src="https://q.uiver.app/?q=WzAsOCxbMCwwLCJYIl0sWzEsMCwiWSJdLFsyLDAsIloiXSxbMywwLCJYWzFdIl0sWzAsMSwiWF5cXHByaW1lIl0sWzEsMSwiWV5cXHByaW1lIl0sWzIsMSwiWl5cXHByaW1lIl0sWzMsMSwiWF5cXHByaW1lWzFdIl0sWzAsMV0sWzEsMl0sWzIsM10sWzQsNV0sWzUsNl0sWzYsN10sWzAsNCwidSJdLFsxLDUsInYiXSxbMiw2LCJ3Il0sWzMsNywidVsxXSJdXQ==&embed" width="300" height="180" style="border-radius: 0px; border: none;"></iframe>which commutes. A triangulated category is an additive category \(\mathcal C\) with a translation functor and a family of triangles called <em>distinguished triangles</em> such that the following axioms are satisfied.</p>
 <ol>
 <li>For any \(X\in\mathcal C\), the triangle \(X\xrightarrow{\mathbf 1_X} X\rightarrow \mathbf 0\rightarrow X[1]\) is distinguished.</li>
@@ -212,6 +219,12 @@
 </blockquote>
 <p>Caution: some authors call a category semisimple if all objects are semisimple, which is a stronger definition and is NOT equivalent to our definition. Every semisimple abelian category has a triangulated structure. To do this, we let the translation functor be the identity functor, and we declare a triangle \(X\xrightarrow{u} Y\xrightarrow{v} Z\xrightarrow{w} X\) distinguished if it is “exact” at \(X\), i.e. \(\mathrm{Ker}(u)=\mathrm{Im}(w)\). Verifying this is a triangulated category is a tedious, and we will not do it here. Moreover, all abelian triangulated categories are semisimple. We will not prove this either. In fact, the homotopy category of complexes \(K(\mathcal A)\) is triangulated. To see this, we set the distinguished triangles to be the ones isomorphic to a standard triangle of the form \[X^\bullet\xrightarrow{f^\bullet} Y^\bullet \xrightarrow{i_f^\bullet} \mathrm{Cone}(f^\bullet)\xrightarrow{p_f^\bullet} X^\bullet[1]\] and as expected, the cohomology functor \(H^n:K(\mathcal A)\rightarrow\mathcal A\) is cohomological.</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+    
+    </div>
+    
+    <div class="columns is-variable is-1 is-multiline is-mobile">
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/Category-Theory/">#Category Theory</a></span>
     
     </div>
     
@@ -433,8 +446,23 @@
     })(window);
 </script>
 
-<script src="/js/insight.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<script src="/js/insight.js"></script>
 
     
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
 </html>
