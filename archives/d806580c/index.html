@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+<head>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+<title>Localization of categories and derived category - The Singularity</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
+<link rel="stylesheet" href="https://unpkg.com/vssue/dist/vssue.min.css">
+
+
+
+
+
+
+<meta name="keywords" content="Math">
+
+
+
+    <meta name="description" content="“Algebraic geometry seems to have acquired the reputation of being esoteric, exclusive, and very abstract, with adherents who are secretly plotting to take over all the rest of mathematics. In one res">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Localization of categories and derived category">
+<meta property="og:url" content="http://yoursite.com/archives/d806580c/index.html">
+<meta property="og:site_name" content="The Singularity">
+<meta property="og:description" content="“Algebraic geometry seems to have acquired the reputation of being esoteric, exclusive, and very abstract, with adherents who are secretly plotting to take over all the rest of mathematics. In one res">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-09-08T00:06:49.000Z">
+<meta property="article:modified_time" content="2022-09-28T04:38:37.569Z">
+<meta property="article:author" content="Yunhai Xiang">
+<meta property="article:tag" content="Category Theory">
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+<link rel="icon" href="/images/favicon_package_v0/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_package_v0/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/images/favicon_package_v0/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/images/favicon_package_v0/android-chrome-512x512.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_package_v0/android-chrome-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_package_v0/android-chrome-32x32.png">
+<link rel="manifest" href="/images/favicon_package_v0/site.webmanifest">
+<link rel="mask-icon" href="/images/favicon_package_v0/safari-pinned-tab.svg" color="#ff8a00">
+<meta name="msapplication-TileColor" content="#ff8a00">
+<meta name="msapplication-TileImage" content="/images/favicon_package_v0/mstile-144x144.png">
+<meta name="msapplication-square70x70logo" content="/images/favicon_package_v0/mstile-70x70.png">
+<meta name="msapplication-square150x150logo" content="/images/favicon_package_v0/mstile-150x150.png">
+<meta name="msapplication-wide310x150logo" content="/images/favicon_package_v0/mstile-310x150.png">
+<meta name="msapplication-square310x310logo" content="/images/favicon_package_v0/mstile-310x310.png">
+<meta name="theme-color" content="#ff8a00">
+
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ovo|Source+Code+Pro">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+<script defer src="//use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+
+
+
+
+<meta name="generator" content="Hexo 5.4.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
+<body>
+    
+<!-- hexo-inject:begin --><!-- hexo-inject:end --><nav class="navbar is-transparent is-fixed-top navbar-main" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item navbar-logo" href="/">
+                
+                    
+                    <img src="/images/home-solid.png" alt="" height="28">
+                    
+                
+            </a>
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="navbar-menu navbar-start">
+            
+            <a class="navbar-item "
+               href="/.">Home</a>
+            
+            <a class="navbar-item "
+               href="/archives">Archives</a>
+            
+            <a class="navbar-item "
+               href="/projects">Projects</a>
+            
+            <a class="navbar-item "
+               href="/about">About</a>
+            
+        </div>
+        
+        <div class="navbar-menu navbar-end">
+            
+            <a class="navbar-item search" title="Search" href="javascript:;">
+                <i class="fas fa-search"></i>
+            </a>
+            
+            
+            <div class="navbar-item is-hoverable has-dropdown is-hidden-mobile is-hidden-tablet-only toc">
+                <a class="navbar-item" title="Table of Contents">
+                    <i class="fa fa-list"></i>
+                </a>
+                <div class="navbar-dropdown is-right">
+                    
+                    
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</nav>
+
+    <section class="section">
+    <div class="container">
+    <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            Localization of categories and derived category
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2022-09-08T00:06:49.000Z" itemprop="datePublished">Sep 7 2022</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/This-Week-I-Learned/">This Week I Learned</a>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            11 minutes read (About 1698 words)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <blockquote class="pullquote"><p>“Algebraic geometry seems to have acquired the reputation of being esoteric, exclusive, and very abstract, with adherents who are secretly plotting to take over all the rest of mathematics. In one respect this last point is accurate.”</p>
+<p style="text-align: right;"> David Mumford </p></blockquote>
+
+<p>Continuing last week, we are finally going to define the derived category \(D(\mathcal A)\) for an abelian category \(\mathcal A\). Before we actually do that, we need to introduce localization of categories, and we will define the derived category in terms of a localization of the homotopy category of complexes. Localization of categories is very analogous to localization of rings or modules. Given any category (with no assumption of abelian, additive, triangulated, etc), we formally invert a class of morphisms. We will give one definition in terms of a localization construction and show that it is unsatisfactory in that it does not have a lot of useful and desirable properties. We will then develop a better description of derived categories in terms of roofs.</p>
+<span id="more"></span>
+
+<blockquote>
+<p>Definition 1. Let \(\mathcal A\) be a category and \(S\) a class of morphisms of it, then define its localization as a category \(\mathcal A[S^{-1}]\) and a functor \(Q:\mathcal A\rightarrow A[S^{-1}]\) s.t. \(Q(s)\) is an isomorphism for all \(s\in S\) and \(Q\) is universal w.r.t. this property, i.e. if the functor \(F:\mathcal A\rightarrow\mathcal B\) is such that \(F(s)\) is an isomorphism for each \(s\), then there exists a unique functor \(G:\mathcal A[S^{-1}]\rightarrow\mathcal B\) s.t. \(F=G\circ Q\). </p>
+</blockquote>
+<p>The way we obtain a construction that satisfies this universal property is quite convoluted. We define it this way. Let \(\mathcal A[S^{-1}]\) have the same objects as \(\mathcal A\). For each \(X,Y\in\mathcal A[S^{-1}]\), let a directed edge between them be a morphism \(f\in\mathrm{Hom}(X,Y)\) or if \(s\in S\cap \mathrm{Hom}(X,Y)\), an edge in the opposite direction \(s:Y\rightarrow X\). A path between two objects \(M,N\in A[S^{-1}]\) is a sequence of directed edges \(M=L_0, L_1,\dots,L_n=N\), where the direction does not need to be the same. We define \(\mathrm{Hom}(M,N)\) as the equivalence class of paths where two paths are equivalent if they can be transformed to each other via a sequence of the following transformations.</p>
+<ol>
+<li>for \(X\xrightarrow{f}Y\xrightarrow{g}Z\), replace with \(X\xrightarrow{gf}Z\),</li>
+<li>for \(X\xrightarrow{s} Y\xleftarrow{s}X\) where \(s\in S\), replace with \(X\xrightarrow{\mathbf{1}_X} X\),</li>
+<li>for \(Y\xleftarrow{s} X\xrightarrow{s}Y\) where \(s\in S\), replace with \(Y\xrightarrow{\mathbf{1}_Y} Y\),</li>
+<li>for \(X\xrightarrow{\mathbf{1}_X}X\xleftarrow{s} Y\), replace with \(X\xleftarrow{s}Y\)</li>
+</ol>
+<p>Long story short, this is a well defined equivalence relation, so it forms a category where composition is concatonation. For the localization functor \(Q:\mathcal A\rightarrow \mathcal A[S^{-1}]\), it sends objects to themselves, and morphisms to the equivalence class with the path being the single morphism. Here we should give extra care that the arrows can some times mean directed edges, and is \(Y\leftarrow X\) can mean a path from \(Y\) to \(X\), only with the directed edge in the opposite direction. We can verify that this indeed satisfies the universal property of localization. We may also check that by this localization construciton, one can write morphisms in the form \[\left(Q\left(f_1\right) \circ Q\left(s_1\right)^{-1}\right) \circ \cdots \circ\left(Q\left(f_n\right) \circ Q\left(s_n\right)^{-1}\right)\] where \(s_i\in S\). A <em>localizing class</em> \(S\) of a category \(\mathcal A\) is a class of morphisms such that</p>
+<ol>
+<li>all identity morphisms are in \(S\).</li>
+<li>if two morphisms in \(S\) compose, then their composition in in \(S\).</li>
+<li>for any \(f:M\rightarrow N\) and \(s:L\rightarrow N\) with \(s\in S\), exists \(g:K\rightarrow L\) and \(t:K\rightarrow M\) with \(t\in S\) s.t. <iframe class="quiver-embed" src="https://q.uiver.app/?q=WzAsNCxbMCwxLCJNIl0sWzAsMCwiSyJdLFsxLDAsIkwiXSxbMSwxLCJOIl0sWzEsMCwidCIsMix7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFswLDMsImYiLDJdLFsyLDMsInMiXSxbMSwyLCJnIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV1d&embed" width="180" height="180" style="border-radius: 8px; border: none;"></iframe> commutes.</li>
+<li>for any \(f:N\rightarrow M\) and \(s:N\rightarrow L\) with \(s\in S\), exists \(g:L\rightarrow K\) and \(t:M\rightarrow K\) with \(t\in S\) s.t. <iframe class="quiver-embed" src="https://q.uiver.app/?q=WzAsNCxbMCwxLCJNIl0sWzAsMCwiSyJdLFsxLDAsIkwiXSxbMSwxLCJOIl0sWzAsMSwidCIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFszLDAsImYiXSxbMywyLCJzIiwyXSxbMiwxLCJnIiwyLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV1d&embed" width="180" height="180" style="border-radius: 0px; border: none;"></iframe> commutes.</li>
+<li>for any morphisms \(f,g:M\rightarrow N\), we have \(\exists s\in S, sf=sg \Longleftrightarrow \exists t\in S, ft=gt\)</li>
+</ol>
+<p>This is the categorification of the notion of denominator set when localizing non-commutative rings, see <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Ore_condition">Ore condition</a>. In fact a ring can be viewed as an additive category (by delooping). The localizing classes are classes of “nice” morphisms to localize at for which we could develop a description of roofs.</p>
+<p>For a category \(\mathcal A\) and a localizing class \(S\). A morphism \(Q(f)\circ Q(s)^{-1}\) in \(\mathcal A[S^{-1}]\) is represented by a left roof, which is a diagram \(M\xleftarrow{s}L\xrightarrow{f}N\), and a morphism \(Q(t)^{-1}\circ Q(g)\) with \(t\in S\) is represented by a right roof which is a diagram \(M\xrightarrow{g}L\xleftarrow{t}N\). We say that the two left roofs \(M\xleftarrow{s}L\xrightarrow{f}N\) and \(M\xleftarrow{t}K\xrightarrow{g}N\) are equivalent if there exists \(p:H\rightarrow L\) and \(q:H\rightarrow K\) such that \(sp,tq\in S\) and the diagram <iframe class="quiver-embed" src="https://q.uiver.app/?q=WzAsNSxbMiwwLCJIIl0sWzEsMSwiTCJdLFszLDEsIksiXSxbMCwyLCJNIl0sWzQsMiwiTiJdLFswLDEsInAiLDJdLFswLDIsInEiXSxbMSwzLCJzIiwyXSxbMiw0LCJnIl0sWzIsMywidCJdLFsxLDQsImYiLDJdXQ==&embed" width="350" height="250" style="border-radius: 8px; border: none;"></iframe> commutes. We can show that this is an equivalence relation. The only difficult part is transitivity. This can be done using a diagram chasing argument. We can also define composition of roofs. The composition of the previous two roofs is defined as a composition of the diagram <iframe class="quiver-embed" src="https://q.uiver.app/?q=WzAsNixbMiwwLCJVIl0sWzEsMSwiTCJdLFszLDEsIksiXSxbMCwyLCJNIl0sWzIsMiwiTiJdLFs0LDIsIlAiXSxbMCwxLCJsIiwyXSxbMCwyLCJrIl0sWzEsMywicyIsMl0sWzEsNCwiZiJdLFsyLDQsInQiLDJdLFsyLDUsImciXV0=&embed" width="350" height="250" style="border-radius: 8px; border: none;"></iframe> where \(U\) and the associated maps are induced from the fact that \(S\) is a localizing class. We could check that these satisfies all the desirable properties of a composition. Composition respects equivalence of roofs, is associative, and has an identity given by \(M\xleftarrow{\mathbf{1}_M} M\xrightarrow{\mathbf{1}_M} M\). One can check that the category of (equivalence classes of) left roofs \(\mathcal A_S\) is equivalent to right roofs, so we might as well just work with left roofs. We define a functor \(Q:\mathcal A\rightarrow \mathcal A_S\) by letting it be identity on objects and for each morphism \(f:M\rightarrow N\), let \(Q(f)\) be the equivalence class of roofs \(M\xleftarrow{\mathbf 1_M}M\xrightarrow{f} N\). This satisfies the universal property of localization, hence isomorphic to \(\mathcal A[S^{-1}]\).</p>
+<blockquote>
+<p>Theorem 2. For \(S\) a localizing class of category \(\mathcal A\), the category \(\mathcal A_S\) and functor \(Q:\mathcal A\rightarrow \mathcal A_S\) satisfies the universal property of localization, i.e. \(Q(s)\) is an isomorphism for each \(s\in S\) and is universal w.r.t. it.</p>
+<div class="spoiler collapsed">
+    <div class="spoiler-title">
+        Proof
+    </div>
+    <div class="spoiler-content">
+        <p>For the first property, \(M\xleftarrow{\mathbf{1}_M}M\xrightarrow{s}N\) has an inverse \(N\xleftarrow{s}M\xrightarrow{\mathbf{1}_M}M\). Next, suppose \(F:\mathcal A\rightarrow \mathcal B\) is such that \(F(s)\) is an isomorphism for all \(s\in S\), define functor \(G:\mathcal A_S\rightarrow \mathcal B\) as identity on objects, and for morphisms, the following. If \(\phi:M\rightarrow N\) in \(\mathcal A_S\), choose a representing roof \(M\xleftarrow{s}L\xrightarrow{f}N\), and define \(G(\phi)=F(f)\circ F(s)^{-1}\). It’s not immediately obvious that this is well defined on equivalence classes, but we omit the verification. This obviously satisfies \(F=G\circ Q\). It is left to the reader to verify that \(G\) respects composition, which is the last piece of verification necessary.</p>
+
+    </div>
+</div>
+</blockquote>
+<p>If \(\mathcal A\) is an additive category, then localizing it would also have an additive structure. In fact if \(\mathcal A\) is additive, we may restate the last axiom of localizing class as: for \(f:M\rightarrow N\) exists \(\exists s\in S, sf=0\Longleftrightarrow \exists t\in S, tf=0\). And the inherited additive structure is the obvious one. It is not trivial to check that it is well defined, but again we ommit the verification. Again everything works out as we expected, biproducts, zero objects are preserved, and localization functor is additive. We can also check that \(f=0\) in the localization iff exists \(t\in S\) with \(tf=0\) iff exists \(t\in S\) with \(ft=0\), and \(M=\mathbf 0\) in the localization iff exists \(N\in\mathcal A\) with \((N\xrightarrow{0}M)\in S\) iff exists \(N\in\mathcal A\) with \((M\xrightarrow{0}N)\in S\). These are easy to prove and left as an exercise. Similarly, one can show the localization of abelian categories is abelian. </p>
+<p>Given a triangulated category, a natural question to ask is: when is a localization of it also triangulated? In other words, when is the localizing class compatible with triangulation? For a localizing class \(S\) in the triangulated category \(\mathcal C\), the localization is compatible with triangulation if the following conditions hold</p>
+<ol>
+<li>for each morphism \(f\), we have \(f\in S\) iff \(f[1]\) in \(S\).</li>
+<li>a diagram with \(s,t\in S\) and distinguished rows <iframe class="quiver-embed" src="https://q.uiver.app/?q=WzAsOCxbMCwwLCJYIl0sWzEsMCwiWSJdLFsyLDAsIloiXSxbMywwLCJYWzFdIl0sWzAsMSwiWF5cXHByaW1lIl0sWzEsMSwiWV5cXHByaW1lIl0sWzIsMSwiWl5cXHByaW1lIl0sWzMsMSwiWF5cXHByaW1lWzFdIl0sWzAsNCwicyJdLFsxLDUsInQiXSxbMiw2LCJ1IiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzMsNywic1sxXSJdLFswLDFdLFsxLDJdLFsyLDNdLFs0LDVdLFs1LDZdLFs2LDddXQ==&embed" width="300" height="180" style="border-radius: 8px; border: none;"></iframe> can be completed to a morphism of distinguished triangles. </li>
+</ol>
+<p>We can show that if these conditions hold then the localization \(\mathcal C[S^{-1}]\) inherits the triangulated structure \(QT_{\mathcal C}\), and a triangle is distinguished if it is isomorphic to an image of a distinguished triangle. One can show that a cohomological functor on \(\mathcal C\) induces a corresponding cohomological functor on \(\mathcal C[S^{-1}]\).</p>
+<blockquote>
+<p>Definition 3. The derived category \(D(\mathcal A)\) of an abelian categroy \(\mathcal A\) is the localization \(K(\mathcal A)[S^{-1}]\) where \(S\) is the class of quasi-isomorphisms. Let \(D^{+}(\mathcal A),D^{-}(\mathcal A),D^{b}(\mathcal A)\) be the full subcategory of \(D(\mathcal A)\) to the bounded below, bounded above, and bounded complexes.</p>
+</blockquote>
+<p>It is an arduous process to verify that the class of quasi-isomorphisms is a localizing class compatible with triangulation, which the readers can do in their own time.</p>
+<blockquote>
+<p>Theorem 4. For an abelian category \(\mathcal A\), the functor \(\mathcal A\rightarrow D(\mathcal A)\) by \(X\mapsto X\) is fully faithful.</p>
+<div class="spoiler collapsed">
+    <div class="spoiler-title">
+        Proof
+    </div>
+    <div class="spoiler-content">
+        <p>I will prove this later.</p>
+
+    </div>
+</div></blockquote>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+    
+    </div>
+    
+    <div class="columns is-variable is-1 is-multiline is-mobile">
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/Category-Theory/">#Category Theory</a></span>
+    
+    </div>
+    
+    
+    <div class="columns is-mobile is-multiline article-nav">
+        <span class="column is-12-mobile is-half-desktop is-hidden-mobile article-nav-prev">
+            
+        </span>
+        <span class="column is-12-mobile is-half-desktop  article-nav-next">
+            
+            <a href="/archives/3e09458/">Triangulated categories</a>
+            
+        </span>
+    </div>
+    
+</article>
+
+
+<div class="sharebox">
+    
+<div class="addthis_inline_share_toolbox"></div>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-603b815e662e1491"></script>
+
+</div>
+
+
+
+<div class="comments">
+    <h3 class="title is-4">Comments</h3>
+    
+<div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script>
+    const gitalk = new Gitalk({
+        clientID: '9caad4c382780c5c4db2',
+        clientSecret: '4132ac79084e3d4b67a63ff19e3096c459f9d725',
+        id: 'archives/d806580c/',
+        repo: 'yunhaixiang.github.io-comments',
+        owner: 'YunhaiXiang',
+        admin: ['YunhaiXiang'],
+        language: 'en',
+        distractionFreeMode: false,
+    })
+    gitalk.render('gitalk-container')
+</script>
+
+</div>
+
+    </div>
+</section>
+    <footer class="footer">
+    <div class="container">
+        <div class="columns content">
+            <div class="column is-narrow has-text-centered">
+                &copy; 2022 Yunhai Xiang&nbsp;
+                Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> & <a
+                        target="_blank" rel="noopener" href="http://github.com/ppoffice/hexo-theme-minos">Minos</a>. Icons made by <a target="_blank" rel="noopener" href="https://www.freepik.com" title="Freepik">Freepik</a> from <a target="_blank" rel="noopener" href="https://www.flaticon.com/" title="Flaticon">Flaticon</a>.
+            </div>
+            <div class="column is-hidden-mobile"></div>
+
+            
+            
+        </div>
+    </div>
+</footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+
+<!-- test if the browser is outdated -->
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" target="_blank" rel="noopener" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // plugin function, place inside DOM ready function
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        })
+    });
+</script>
+
+<script>
+    window.FontAwesomeConfig = {
+        searchPseudoElements: true
+    }
+    moment.locale("en-AU");
+</script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script>
+    MathJax.Hub.Config({
+        "HTML-CSS": {matchFontHeight: false},
+        SVG: {matchFontHeight: false},
+        CommonHTML: {matchFontHeight: false}
+    });
+</script>
+
+    
+    
+    
+    
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+<script>
+    (function ($) {
+        $(document).ready(function () {
+            if (typeof($.fn.lightGallery) === 'function') {
+                $('.article.gallery').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof($.fn.justifiedGallery) === 'function') {
+                $('.justified-gallery').justifiedGallery();
+            }
+        });
+    })(jQuery);
+</script>
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <style>
+        .hljs {
+            position: relative;
+        }
+
+        .hljs .clipboard-btn {
+            float: right;
+            color: #9a9a9a;
+            background: none;
+            border: none;
+        }
+
+        .hljs > .clipboard-btn {
+            display: none;
+            position: absolute;
+            right: 4px;
+            top: 4px;
+        }
+
+        .hljs:hover > .clipboard-btn {
+            display: inline;
+        }
+
+        .hljs > figcaption > .clipboard-btn {
+            margin-right: 4px;
+        }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $('figure.hljs').each(function(i, figure) {
+          var codeId = 'code-' + i;
+          var code = figure.querySelector('.code');
+          var copyButton = $('<button>Copy <i class="far fa-clipboard"></i></button>');
+          code.id = codeId;
+          copyButton.addClass('clipboard-btn');
+          copyButton.attr('data-clipboard-target-id', codeId);
+
+          var figcaption = figure.querySelector('figcaption');
+
+          if (figcaption) {
+            figcaption.append(copyButton[0]);
+          } else {
+            figure.prepend(copyButton[0]);
+          }
+        })
+
+        var clipboard = new ClipboardJS('.clipboard-btn', {
+          target: function(trigger) {
+            return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+          }
+        });
+      })
+    </script>
+
+    
+    
+
+    
+
+
+
+<script src="/js/script.js"></script>
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-mask"></div>
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something..." />
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+    
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</body>
+</html>
