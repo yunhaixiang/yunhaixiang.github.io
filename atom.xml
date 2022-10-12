@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2022-09-28T04:38:37.569Z</updated>
+  <updated>2022-10-10T07:27:30.593Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Derived functors via derived categories</title>
+    <link href="http://yoursite.com/archives/72b6b02b/"/>
+    <id>http://yoursite.com/archives/72b6b02b/</id>
+    <published>2022-10-10T07:19:47.000Z</published>
+    <updated>2022-10-10T07:27:30.593Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote class="pullquote"><p>“I am not saying that I believe in the law of the excluded middle, I am just saying that it isn’t not true.”</p><p style="text-align: right;"> Kavin Satheeskumar </p></blockquote><p>So far, we have developed the main part of all the machinery involved for derived categories. Now, we are actually going to use derived categories to help us view derived functors in a new light. This new interpretation of derived functors is arguably more natural and less ad hoc as the definition of it using the cohomology of projective or injective resolutions.</p><span id="more"></span><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;pullquote&quot;&gt;&lt;p&gt;“I am not saying that I believe in the law of the excluded middle, I am just saying that it isn’t not true.”&lt;/p&gt;
+&lt;p style=&quot;text-align: right;&quot;&gt; Kavin Satheeskumar &lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;So far, we have developed the main part of all the machinery involved for derived categories. Now, we are actually going to use derived categories to help us view derived functors in a new light. This new interpretation of derived functors is arguably more natural and less ad hoc as the definition of it using the cohomology of projective or injective resolutions.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="This Week I Learned" scheme="http://yoursite.com/categories/This-Week-I-Learned/"/>
+    
+    
+      <category term="Category Theory" scheme="http://yoursite.com/tags/Category-Theory/"/>
+    
+  </entry>
   
   <entry>
     <title>Localization of categories and derived category</title>
@@ -142,9 +167,9 @@
       <category term="articles" scheme="http://yoursite.com/categories/articles/"/>
     
     
-      <category term="Combinatorics" scheme="http://yoursite.com/tags/Combinatorics/"/>
-    
       <category term="Algebraic Geometry" scheme="http://yoursite.com/tags/Algebraic-Geometry/"/>
+    
+      <category term="Combinatorics" scheme="http://yoursite.com/tags/Combinatorics/"/>
     
   </entry>
   
@@ -299,11 +324,11 @@
     <published>2021-09-13T00:09:01.000Z</published>
     <updated>2022-01-19T16:11:07.516Z</updated>
     
-    <content type="html"><![CDATA[<p><em>Forgetful Functor</em> is an online learning seminar in algebraic geometry held by undergraduate students at University of Waterloo in Fall 2021. Anyone with a strong interest in algebraic geometry is welcomed to join! <del>To join the seminar, contact the organizer Yunhai Xiang via email <a href="mailto:&#121;&#x33;&#56;&#x78;&#x69;&#x61;&#x6e;&#x67;&#64;&#x75;&#119;&#x61;&#116;&#101;&#x72;&#x6c;&#x6f;&#111;&#x2e;&#99;&#x61;">&#121;&#x33;&#56;&#x78;&#x69;&#x61;&#x6e;&#x67;&#64;&#x75;&#119;&#x61;&#116;&#101;&#x72;&#x6c;&#x6f;&#111;&#x2e;&#99;&#x61;</a>.</del> This seminar has ended! I thank all of you wonderful people for participating!</p><p>The main text we follow is <em>Foundations of Algebraic Geometry</em> by Ravi Vakil. We read 0.5 to 1 chapters per week, and have a 30 minute to 1 hour discussion each Sunday on 7 PM EDT, in which a main speaker gives a short overview of the reading material of the past week and we discuss problems together. Some other texts we use are <em>Algebraic Geometry</em> by Robin Hartshorne and <em>Categories and Homological Algebra</em> by Pierre Schapira.</p><span id="more"></span><p>Here are the details for each week’s meeting. Unfortunately, the recordings and notes for some weeks are missing.</p><table>  <tr>    <th>Week</th>    <th>Notes</th>    <th>Recordings</th>    <th>Speaker</th>    <th>Topics</th>  </tr>  <tr>    <td>1</td>    <td><a href="https://drive.google.com/file/d/11DhI4uqiqbPWBqVENJmszKT3vdNodmtC/view?usp=sharing">Sept 18</a></td>    <td><a href="https://youtu.be/hbU7GGfsR6c">Week 1</a></td>    <td>Yunhai Xiang</td>    <td>categories, functors, limits, presheaves, sheaves</td>  </tr>  <tr>    <td>2</td>    <td><a href="https://drive.google.com/file/d/1WRFgUSBcIzHdtUr9MH1yqG16PbumJ_TZ/view?usp=sharing">Sept 26</a></td>    <td><a href="https://youtu.be/kEzMRaKfuxw">Week 2</a></td>    <td>Yunhai Xiang</td>    <td>morphisms of sheaves, sheafification, stalks</td>  </tr>  <tr>    <td>3</td>    <td><a href="https://drive.google.com/file/d/19BytsmZyN4Es3DgrPovoovvSQqn9MbQx/view?usp=sharing">Oct 3</a></td>    <td>Week 3</td>    <td>Jonathan Yang</td>    <td>structure sheaf, schemes, ringed spaces</td>  </tr>  <tr>    <td>4</td>    <td><a href="https://drive.google.com/file/d/1VFDNEHSaYeyeaqf_V9i3oB6oXL-_Uqjp/view?usp=sharing">Oct 10</a></td>    <td><a href="https://youtu.be/0juXlkcrp-I">Week 4</a></td>    <td>Shuo Gao</td>    <td>structure sheaf, OX-modules, pushforward sheaf</td>  </tr>  <tr>    <td>5</td>    <td><a href="https://drive.google.com/file/d/13R_9CyEDzG9a8QsWMF253Gk6v_EJ3LXv/view?usp=sharing">Oct 17</a></td>    <td><a href="https://www.youtube.com/watch?v=YnBSHLGpA9A">Week 5</a></td>    <td>Shuo Gao</td>    <td>sheaf hom, cocycle condition, sheafification</td>  </tr>  <tr>    <td>6</td>    <td>Oct 24</td>    <td><a href="https://youtu.be/OQeEN2nzwDU">Week 6</a></td>    <td>Yunhai Xiang</td>    <td>sheaf on base, sheaf of abelian groups, OX-modules</td>  </tr>  <tr>    <td>7</td>    <td>Oct 31</td>    <td><a href="https://youtu.be/oJTyEC0AEJQ">Week 7</a></td>    <td>Yunhai Xiang</td>    <td>affine space, Hilbert's Nullstellensatz, localization</td>  </tr>  <tr>    <td>8</td>    <td>Nov 7</td>    <td><a href="https://youtu.be/mKbAeIVVvsI">Week 8</a></td>    <td>Yunhai Xiang</td>    <td>Zariski topology, distinguished sets</td>  </tr>  <tr>    <td>9</td>    <td>Nov 14</td>    <td><a href="https://youtu.be/uUxdG96h0Iw">Week 9</a></td>    <td>Yunhai Xiang</td>    <td>specialization, generalization, noetherian properties</td>  </tr>  <tr>    <td>10</td>    <td>Nov 21</td>    <td><a href="https://youtu.be/8L-GL-6v2pA">Week 10</a></td>    <td>Yunhai Xiang</td>    <td>structure sheaf, schemes, projective spaces</td>  </tr>  <tr>    <td>11</td>    <td>Dec 5</td>    <td>Week 11</td>    <td>Yunhai Xiang</td>    <td>properties of schemes</td>  </tr>  <tr>    <td>12</td>    <td>Dec 19</td>    <td>Week 12</td>    <td>Yunhai Xiang</td>    <td>reading of Behrend's notes on moduli spaces</td>  </tr></table><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    <content type="html"><![CDATA[<p><em>Forgetful Functor</em> is an online learning seminar in algebraic geometry held by undergraduate students at University of Waterloo in Fall 2021. Anyone with a strong interest in algebraic geometry is welcomed to join! <del>To join the seminar, contact the organizer Yunhai Xiang via email <a href="mailto:&#121;&#x33;&#x38;&#120;&#x69;&#x61;&#110;&#x67;&#64;&#x75;&#x77;&#x61;&#x74;&#101;&#114;&#108;&#111;&#111;&#x2e;&#x63;&#x61;">&#121;&#x33;&#x38;&#120;&#x69;&#x61;&#110;&#x67;&#64;&#x75;&#x77;&#x61;&#x74;&#101;&#114;&#108;&#111;&#111;&#x2e;&#x63;&#x61;</a>.</del> This seminar has ended! I thank all of you wonderful people for participating!</p><p>The main text we follow is <em>Foundations of Algebraic Geometry</em> by Ravi Vakil. We read 0.5 to 1 chapters per week, and have a 30 minute to 1 hour discussion each Sunday on 7 PM EDT, in which a main speaker gives a short overview of the reading material of the past week and we discuss problems together. Some other texts we use are <em>Algebraic Geometry</em> by Robin Hartshorne and <em>Categories and Homological Algebra</em> by Pierre Schapira.</p><span id="more"></span><p>Here are the details for each week’s meeting. Unfortunately, the recordings and notes for some weeks are missing.</p><table>  <tr>    <th>Week</th>    <th>Notes</th>    <th>Recordings</th>    <th>Speaker</th>    <th>Topics</th>  </tr>  <tr>    <td>1</td>    <td><a href="https://drive.google.com/file/d/11DhI4uqiqbPWBqVENJmszKT3vdNodmtC/view?usp=sharing">Sept 18</a></td>    <td><a href="https://youtu.be/hbU7GGfsR6c">Week 1</a></td>    <td>Yunhai Xiang</td>    <td>categories, functors, limits, presheaves, sheaves</td>  </tr>  <tr>    <td>2</td>    <td><a href="https://drive.google.com/file/d/1WRFgUSBcIzHdtUr9MH1yqG16PbumJ_TZ/view?usp=sharing">Sept 26</a></td>    <td><a href="https://youtu.be/kEzMRaKfuxw">Week 2</a></td>    <td>Yunhai Xiang</td>    <td>morphisms of sheaves, sheafification, stalks</td>  </tr>  <tr>    <td>3</td>    <td><a href="https://drive.google.com/file/d/19BytsmZyN4Es3DgrPovoovvSQqn9MbQx/view?usp=sharing">Oct 3</a></td>    <td>Week 3</td>    <td>Jonathan Yang</td>    <td>structure sheaf, schemes, ringed spaces</td>  </tr>  <tr>    <td>4</td>    <td><a href="https://drive.google.com/file/d/1VFDNEHSaYeyeaqf_V9i3oB6oXL-_Uqjp/view?usp=sharing">Oct 10</a></td>    <td><a href="https://youtu.be/0juXlkcrp-I">Week 4</a></td>    <td>Shuo Gao</td>    <td>structure sheaf, OX-modules, pushforward sheaf</td>  </tr>  <tr>    <td>5</td>    <td><a href="https://drive.google.com/file/d/13R_9CyEDzG9a8QsWMF253Gk6v_EJ3LXv/view?usp=sharing">Oct 17</a></td>    <td><a href="https://www.youtube.com/watch?v=YnBSHLGpA9A">Week 5</a></td>    <td>Shuo Gao</td>    <td>sheaf hom, cocycle condition, sheafification</td>  </tr>  <tr>    <td>6</td>    <td>Oct 24</td>    <td><a href="https://youtu.be/OQeEN2nzwDU">Week 6</a></td>    <td>Yunhai Xiang</td>    <td>sheaf on base, sheaf of abelian groups, OX-modules</td>  </tr>  <tr>    <td>7</td>    <td>Oct 31</td>    <td><a href="https://youtu.be/oJTyEC0AEJQ">Week 7</a></td>    <td>Yunhai Xiang</td>    <td>affine space, Hilbert's Nullstellensatz, localization</td>  </tr>  <tr>    <td>8</td>    <td>Nov 7</td>    <td><a href="https://youtu.be/mKbAeIVVvsI">Week 8</a></td>    <td>Yunhai Xiang</td>    <td>Zariski topology, distinguished sets</td>  </tr>  <tr>    <td>9</td>    <td>Nov 14</td>    <td><a href="https://youtu.be/uUxdG96h0Iw">Week 9</a></td>    <td>Yunhai Xiang</td>    <td>specialization, generalization, noetherian properties</td>  </tr>  <tr>    <td>10</td>    <td>Nov 21</td>    <td><a href="https://youtu.be/8L-GL-6v2pA">Week 10</a></td>    <td>Yunhai Xiang</td>    <td>structure sheaf, schemes, projective spaces</td>  </tr>  <tr>    <td>11</td>    <td>Dec 5</td>    <td>Week 11</td>    <td>Yunhai Xiang</td>    <td>properties of schemes</td>  </tr>  <tr>    <td>12</td>    <td>Dec 19</td>    <td>Week 12</td>    <td>Yunhai Xiang</td>    <td>reading of Behrend's notes on moduli spaces</td>  </tr></table><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;em&gt;Forgetful Functor&lt;/em&gt; is an online learning seminar in algebraic geometry held by undergraduate students at University of Waterloo in Fall 2021. Anyone with a strong interest in algebraic geometry is welcomed to join! &lt;del&gt;To join the seminar, contact the organizer Yunhai Xiang via email &lt;a href=&quot;mailto:&amp;#121;&amp;#x33;&amp;#56;&amp;#x78;&amp;#x69;&amp;#x61;&amp;#x6e;&amp;#x67;&amp;#64;&amp;#x75;&amp;#119;&amp;#x61;&amp;#116;&amp;#101;&amp;#x72;&amp;#x6c;&amp;#x6f;&amp;#111;&amp;#x2e;&amp;#99;&amp;#x61;&quot;&gt;&amp;#121;&amp;#x33;&amp;#56;&amp;#x78;&amp;#x69;&amp;#x61;&amp;#x6e;&amp;#x67;&amp;#64;&amp;#x75;&amp;#119;&amp;#x61;&amp;#116;&amp;#101;&amp;#x72;&amp;#x6c;&amp;#x6f;&amp;#111;&amp;#x2e;&amp;#99;&amp;#x61;&lt;/a&gt;.&lt;/del&gt; This seminar has ended! I thank all of you wonderful people for participating!&lt;/p&gt;
+      &lt;p&gt;&lt;em&gt;Forgetful Functor&lt;/em&gt; is an online learning seminar in algebraic geometry held by undergraduate students at University of Waterloo in Fall 2021. Anyone with a strong interest in algebraic geometry is welcomed to join! &lt;del&gt;To join the seminar, contact the organizer Yunhai Xiang via email &lt;a href=&quot;mailto:&amp;#121;&amp;#x33;&amp;#x38;&amp;#120;&amp;#x69;&amp;#x61;&amp;#110;&amp;#x67;&amp;#64;&amp;#x75;&amp;#x77;&amp;#x61;&amp;#x74;&amp;#101;&amp;#114;&amp;#108;&amp;#111;&amp;#111;&amp;#x2e;&amp;#x63;&amp;#x61;&quot;&gt;&amp;#121;&amp;#x33;&amp;#x38;&amp;#120;&amp;#x69;&amp;#x61;&amp;#110;&amp;#x67;&amp;#64;&amp;#x75;&amp;#x77;&amp;#x61;&amp;#x74;&amp;#101;&amp;#114;&amp;#108;&amp;#111;&amp;#111;&amp;#x2e;&amp;#x63;&amp;#x61;&lt;/a&gt;.&lt;/del&gt; This seminar has ended! I thank all of you wonderful people for participating!&lt;/p&gt;
 &lt;p&gt;The main text we follow is &lt;em&gt;Foundations of Algebraic Geometry&lt;/em&gt; by Ravi Vakil. We read 0.5 to 1 chapters per week, and have a 30 minute to 1 hour discussion each Sunday on 7 PM EDT, in which a main speaker gives a short overview of the reading material of the past week and we discuss problems together. Some other texts we use are &lt;em&gt;Algebraic Geometry&lt;/em&gt; by Robin Hartshorne and &lt;em&gt;Categories and Homological Algebra&lt;/em&gt; by Pierre Schapira.&lt;/p&gt;
     
     </summary>
@@ -341,49 +366,6 @@
       <category term="Algebraic Geometry" scheme="http://yoursite.com/tags/Algebraic-Geometry/"/>
     
       <category term="Arithmetic Geometry" scheme="http://yoursite.com/tags/Arithmetic-Geometry/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Project Lambda: This Week I Learned</title>
-    <link href="http://yoursite.com/archives/1d22c5ec/"/>
-    <id>http://yoursite.com/archives/1d22c5ec/</id>
-    <published>2021-05-22T23:12:57.000Z</published>
-    <updated>2022-04-15T23:01:41.191Z</updated>
-    
-    <content type="html"><![CDATA[<p><em>This Week I Learned</em> is my personal weekly column in mathematics. Each week, I post a new article under the category <a href="/categories/This-Week-I-Learned/">This Week I Learned</a> on <strong>Friday</strong>, <strong>Saturday</strong> or <strong>Sunday</strong>. In each article, I write about interesting theorems I learned, exercises I did, and confusions I had over the past week. Moreover, I write about anything else that interests me: physics, computer science, puzzles, games, anecdotes, math education, and more. Enjoy!</p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;em&gt;This Week I Learned&lt;/em&gt; is my personal weekly column in mathematics. Each week, I post a new article under the category &lt;a href=&quot;/ca
-      
-    
-    </summary>
-    
-      <category term="Projects" scheme="http://yoursite.com/categories/Projects/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Project Sigma: Explorations in Mathematics</title>
-    <link href="http://yoursite.com/archives/2b4d8af0/"/>
-    <id>http://yoursite.com/archives/2b4d8af0/</id>
-    <published>2021-05-08T06:24:07.000Z</published>
-    <updated>2022-04-15T21:10:36.399Z</updated>
-    
-    <content type="html"><![CDATA[<p><em>Explorations in Mathematics</em> is a collection of my personal course notes and expositions in mathematics. I decided to start this project primarily as a motivation for myself to learn and as a way of recording my learning progress. That being said, it would also make me very happy if someone else benefits from them. They will probably contain errors and typos, and should you found one, you are welcomed to open an issue page in the corresponding repository and point out my mistake. See the list below.</p><span id="more"></span><table>  <tr>    <th>Topic</th>    <th>Repository</th>    <th>Release</th>  </tr>  <tr>    <td>Algebraic Geometry</td>    <td><a href="https://github.com/YunhaiXiang/Project-Sigma-ALG">Project-Sigma-ALG</a></td>    <td>Incomplete</td>  </tr></table><p>To download, either click the link under the <strong>Release</strong> tab for a compiled .pdf file or go to the corresponding repository and clone the repository. When writing these notes, I try to adhere to the following principles:</p><ul><li>Consistent and unambiguous notation: I use clear notation, follow the same notation conventions for everything, and clearly state any abuse of notation I use.</li><li>Sketches of proof: In many cases, I provide bullet points of my reasoning for many of the exercises and theorems instead of providing full proofs. I try to make them as perspicuous and coherent as I can.</li><li>Prototypical examples: I give quintessential examples and non-examples for important notions, as they help myself to build intuitions for abstract concepts.</li></ul><p>I hope you enjoy reading them as I enjoyed writing them!</p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;em&gt;Explorations in Mathematics&lt;/em&gt; is a collection of my personal course notes and expositions in mathematics. I decided to start this project primarily as a motivation for myself to learn and as a way of recording my learning progress. That being said, it would also make me very happy if someone else benefits from them. They will probably contain errors and typos, and should you found one, you are welcomed to open an issue page in the corresponding repository and point out my mistake. See the list below.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Projects" scheme="http://yoursite.com/categories/Projects/"/>
-    
     
   </entry>
   

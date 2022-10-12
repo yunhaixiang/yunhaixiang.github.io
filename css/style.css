@@ -501,5 +501,6 @@ iframe {
   position: relative;
   width: auto;
   height: auto;
-  overflow: scroll !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
   -webkit-overflow-scrolling: touch !important; }
