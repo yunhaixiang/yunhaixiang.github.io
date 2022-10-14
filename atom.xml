@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2022-10-10T07:27:30.593Z</updated>
+  <updated>2022-09-28T04:38:37.569Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,31 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Derived functors via derived categories</title>
-    <link href="http://yoursite.com/archives/72b6b02b/"/>
-    <id>http://yoursite.com/archives/72b6b02b/</id>
-    <published>2022-10-10T07:19:47.000Z</published>
-    <updated>2022-10-10T07:27:30.593Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote class="pullquote"><p>“I am not saying that I believe in the law of the excluded middle, I am just saying that it isn’t not true.”</p><p style="text-align: right;"> Kavin Satheeskumar </p></blockquote><p>So far, we have developed the main part of all the machinery involved for derived categories. Now, we are actually going to use derived categories to help us view derived functors in a new light. This new interpretation of derived functors is arguably more natural and less ad hoc as the definition of it using the cohomology of projective or injective resolutions.</p><span id="more"></span><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote class=&quot;pullquote&quot;&gt;&lt;p&gt;“I am not saying that I believe in the law of the excluded middle, I am just saying that it isn’t not true.”&lt;/p&gt;
-&lt;p style=&quot;text-align: right;&quot;&gt; Kavin Satheeskumar &lt;/p&gt;&lt;/blockquote&gt;
-
-&lt;p&gt;So far, we have developed the main part of all the machinery involved for derived categories. Now, we are actually going to use derived categories to help us view derived functors in a new light. This new interpretation of derived functors is arguably more natural and less ad hoc as the definition of it using the cohomology of projective or injective resolutions.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="This Week I Learned" scheme="http://yoursite.com/categories/This-Week-I-Learned/"/>
-    
-    
-      <category term="Category Theory" scheme="http://yoursite.com/tags/Category-Theory/"/>
-    
-  </entry>
   
   <entry>
     <title>Localization of categories and derived category</title>
