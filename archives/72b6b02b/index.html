@@ -2,7 +2,7 @@
 <html class="has-navbar-fixed-top">
 <head>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-<title>Tag: Category Theory - The Singularity</title>
+<title>Derived functors via derived categories - The Singularity</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
@@ -17,13 +17,17 @@
 
 
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="The Singularity">
-<meta property="og:url" content="http://yoursite.com/tags/Category-Theory/index.html">
+    <meta name="description" content="“I am not saying that I believe in the law of the excluded middle, I am just saying that it isn’t not true.”  Kavin Satheeskumar   So far, we have developed the main part of all the machinery involved">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Derived functors via derived categories">
+<meta property="og:url" content="http://yoursite.com/archives/72b6b02b/index.html">
 <meta property="og:site_name" content="The Singularity">
+<meta property="og:description" content="“I am not saying that I believe in the law of the excluded middle, I am just saying that it isn’t not true.”  Kavin Satheeskumar   So far, we have developed the main part of all the machinery involved">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-10-10T07:19:47.000Z">
+<meta property="article:modified_time" content="2022-10-16T05:00:29.489Z">
 <meta property="article:author" content="Yunhai Xiang">
-<meta property="article:tag" content="Math">
+<meta property="article:tag" content="Category Theory">
 <meta name="twitter:card" content="summary">
 
 
@@ -121,25 +125,27 @@
             </a>
             
             
+            <div class="navbar-item is-hoverable has-dropdown is-hidden-mobile is-hidden-tablet-only toc">
+                <a class="navbar-item" title="Table of Contents">
+                    <i class="fa fa-list"></i>
+                </a>
+                <div class="navbar-dropdown is-right">
+                    
+                    
+                </div>
+            </div>
+            
             
         </div>
     </div>
 </nav>
 
-    <section class="section section-heading">
+    <section class="section">
     <div class="container">
-        <div class="content">
-            <h5>#Category Theory</h5>
-        </div>
-    </div>
-</section>
-<section class="section">
-    <div class="container">
-    
-        <article class="article content gallery" itemscope itemprop="blogPost">
+    <article class="article content gallery" itemscope itemprop="blogPost">
     <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
         
-            <a href="/archives/72b6b02b/" itemprop="url">Derived functors via derived categories</a>
+            Derived functors via derived categories
         
     </h1>
     <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
@@ -166,106 +172,62 @@
 <p style="text-align: right;"> Kavin Satheeskumar </p></blockquote>
 
 <p>So far, we have developed the main part of all the machinery involved for derived categories. Now, we are actually going to use derived categories to help us view derived functors in a new light. This new interpretation of derived functors is arguably more natural and less ad hoc as the definition of it using the cohomology of projective or injective resolutions. In particular, we will look at the derived functors Ext and Tor.</p>
-        <p class="article-more-link">
-            <a href="/archives/72b6b02b/#more">Read More</a>
-        </p>
+<span id="more"></span><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
     
     </div>
     
+    <div class="columns is-variable is-1 is-multiline is-mobile">
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/Category-Theory/">#Category Theory</a></span>
+    
+    </div>
+    
+    
+    <div class="columns is-mobile is-multiline article-nav">
+        <span class="column is-12-mobile is-half-desktop is-hidden-mobile article-nav-prev">
+            
+        </span>
+        <span class="column is-12-mobile is-half-desktop  article-nav-next">
+            
+            <a href="/archives/d806580c/">Localization of categories and derived category</a>
+            
+        </span>
+    </div>
     
 </article>
 
 
+<div class="sharebox">
+    
+<div class="addthis_inline_share_toolbox"></div>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-603b815e662e1491"></script>
 
-
-    
-        <article class="article content gallery" itemscope itemprop="blogPost">
-    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
-        
-            <a href="/archives/d806580c/" itemprop="url">Localization of categories and derived category</a>
-        
-    </h1>
-    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
-        <span class="column is-narrow">
-            <time datetime="2022-09-08T00:06:49.000Z" itemprop="datePublished">Sep 7 2022</time>
-        </span>
-        
-        <span class="column is-narrow article-category">
-            <i class="far fa-folder"></i>
-            <a class="article-category-link" href="/categories/This-Week-I-Learned/">This Week I Learned</a>
-        </span>
-        
-        
-        <span class="column is-narrow">
-            
-            
-            11 minutes read (About 1698 words)
-        </span>
-        
-    </div>
-    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
-    
-        <blockquote class="pullquote"><p>“Algebraic geometry seems to have acquired the reputation of being esoteric, exclusive, and very abstract, with adherents who are secretly plotting to take over all the rest of mathematics. In one respect this last point is accurate.”</p>
-<p style="text-align: right;"> David Mumford </p></blockquote>
-
-<p>Continuing last week, we are finally going to define the derived category \(D(\mathcal A)\) for an abelian category \(\mathcal A\). Before we actually do that, we need to introduce localization of categories, and we will define the derived category in terms of a localization of the homotopy category of complexes. Localization of categories is very analogous to localization of rings or modules. Given any category (with no assumption of abelian, additive, triangulated, etc), we formally invert a class of morphisms. We will give one definition in terms of a localization construction and show that it is unsatisfactory in that it does not have a lot of useful and desirable properties. We will then develop a better description of derived categories in terms of roofs.</p>
-        <p class="article-more-link">
-            <a href="/archives/d806580c/#more">Read More</a>
-        </p>
-    
-    </div>
-    
-    
-</article>
+</div>
 
 
 
+<div class="comments">
+    <h3 class="title is-4">Comments</h3>
+    
+<div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script>
+    const gitalk = new Gitalk({
+        clientID: '9caad4c382780c5c4db2',
+        clientSecret: '4132ac79084e3d4b67a63ff19e3096c459f9d725',
+        id: 'archives/72b6b02b/',
+        repo: 'yunhaixiang.github.io-comments',
+        owner: 'YunhaiXiang',
+        admin: ['YunhaiXiang'],
+        language: 'en',
+        distractionFreeMode: false,
+    })
+    gitalk.render('gitalk-container')
+</script>
 
-    
-        <article class="article content gallery" itemscope itemprop="blogPost">
-    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
-        
-            <a href="/archives/3e09458/" itemprop="url">Triangulated categories</a>
-        
-    </h1>
-    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
-        <span class="column is-narrow">
-            <time datetime="2022-09-06T00:00:36.000Z" itemprop="datePublished">Sep 5 2022</time>
-        </span>
-        
-        <span class="column is-narrow article-category">
-            <i class="far fa-folder"></i>
-            <a class="article-category-link" href="/categories/This-Week-I-Learned/">This Week I Learned</a>
-        </span>
-        
-        
-        <span class="column is-narrow">
-            
-            
-            9 minutes read (About 1285 words)
-        </span>
-        
-    </div>
-    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
-    
-        <blockquote class="pullquote"><p>“It is impossible to be a mathematician without being a poet in soul.”</p>
-<p style="text-align: right;"> Sofia Kovalevskaya </p></blockquote>
+</div>
 
-<p>Continuing last week where we defined the homotopy category of complexes, we will take a look at triangulated categories. This will help us build towards the definition of derived categories. In some sense, triangulated categories are approximations of abelian categories. They are not strictly speaking a weaker version of abelian categories, and they don’t really imply each other. Triangulated categories takes a different approach to abelian categories. Instead of kernels, cokernels, and strict morphisms, triangulated categories bypass these notions and start out with “distinguished triangles”, which are similar to exact sequences.</p>
-        <p class="article-more-link">
-            <a href="/archives/3e09458/#more">Read More</a>
-        </p>
-    
-    </div>
-    
-    
-</article>
-
-
-
-
-    
-    
     </div>
 </section>
     <footer class="footer">
