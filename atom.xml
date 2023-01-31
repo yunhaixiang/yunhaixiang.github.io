@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2022-12-24T02:09:05.684Z</updated>
+  <updated>2022-09-28T04:38:37.569Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,28 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Kolzul duality</title>
-    <link href="http://yoursite.com/archives/4015a873/"/>
-    <id>http://yoursite.com/archives/4015a873/</id>
-    <published>2022-12-24T02:08:54.000Z</published>
-    <updated>2022-12-24T02:09:05.684Z</updated>
-    
-    <content type="html"><![CDATA[<!--<blockquote class="pullquote"><p>“And every science, when we understand it not as an instrument of power and domination but as an adventure in knowledge pursued by our species across the ages, is nothing but this harmony, more or less vast, more or less rich from one epoch to another, which unfurls over the course of generations and centuries, by the delicate counterpoint of all the themes appearing in turn, as if summoned from the void.”</p><p style='text-align: right;'> Alexander Grothendieck </p></blockquote><p>–&gt;</p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>-->]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;!--
-&lt;blockquote class=&quot;pullquote&quot;&gt;&lt;p&gt;“And every science, when we understand it not as an instrument of power and domination but as an adven
-      
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>Localization of categories and derived category</title>
