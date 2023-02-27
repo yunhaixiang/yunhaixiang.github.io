@@ -2,7 +2,7 @@
 <html class="has-navbar-fixed-top">
 <head>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-<title>Semisimple Lie algebras, Weyl groups, Cartan subalgebras, and root systems - The Singularity</title>
+<title>Semisimple Lie Algebras, Weyl Groups, and Root Systems - The Singularity</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
@@ -19,7 +19,7 @@
 
     <meta name="description" content="“Mathematics requires a small dose, not of genius, but of an imaginative freedom which, in a larger dose, would be insanity. And if mathematicians tend to burn out early in their careers, it is probab">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Semisimple Lie algebras, Weyl groups, Cartan subalgebras, and root systems">
+<meta property="og:title" content="Semisimple Lie Algebras, Weyl Groups, and Root Systems">
 <meta property="og:url" content="http://yoursite.com/archives/59e692ad/index.html">
 <meta property="og:site_name" content="The Singularity">
 <meta property="og:description" content="“Mathematics requires a small dose, not of genius, but of an imaginative freedom which, in a larger dose, would be insanity. And if mathematicians tend to burn out early in their careers, it is probab">
@@ -30,7 +30,7 @@
 <meta property="og:image" content="http://yoursite.com/images/table.png">
 <meta property="og:image" content="http://yoursite.com/images/IMG_5343.JPG">
 <meta property="article:published_time" content="2022-05-16T19:55:00.000Z">
-<meta property="article:modified_time" content="2022-09-25T23:00:05.118Z">
+<meta property="article:modified_time" content="2023-02-22T09:06:11.497Z">
 <meta property="article:author" content="Yunhai Xiang">
 <meta property="article:tag" content="Lie Groups and Lie Algebras">
 <meta name="twitter:card" content="summary">
@@ -140,7 +140,7 @@
                     
                     
                     
-                    <a class="navbar-item" href="#Root–space-decomposition">1&nbsp;&nbsp;<b>Root–space decomposition</b></a>
+                    <a class="navbar-item" href="#Root—space-decomposition">1&nbsp;&nbsp;<b>Root—space decomposition</b></a>
                     
                     
                     <hr class="navbar-divider">
@@ -173,7 +173,7 @@
     <article class="article content gallery" itemscope itemprop="blogPost">
     <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
         
-            Semisimple Lie algebras, Weyl groups, Cartan subalgebras, and root systems
+            Semisimple Lie Algebras, Weyl Groups, and Root Systems
         
     </h1>
     <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
@@ -198,11 +198,8 @@
     
         <blockquote class="pullquote"><p>“Mathematics requires a small dose, not of genius, but of an imaginative freedom which, in a larger dose, would be insanity. And if mathematicians tend to burn out early in their careers, it is probably because life has forced them to acquire too much common sense, thereby rendering them too sane to work. But by then they are sane enough to teach, so a use can still be found for them.”</p>
 <p style="text-align: right;"> Angus K. Rodgers </p></blockquote>
-
-<p>For this week, I’ll write about the theory of root systems, especially things related to Weyl groups, weight spaces and etc, for the purpose of my URA. This is because one of the objectives of my URA is to generalise my <a href="/archives/66165fd0/">previous blog post</a> about a fraction of an \(S_n\)-orbit on a hyperplane to Weyl groups. First, a Lie algebra is <em>simple</em> if it is of degree greater than \(1\) (so we are excluding the one dimensional abelian Lie algebras) and has no proper ideals, and a semisimple Lie algebra is a direct sum of simple Lie algebras. Equivalently, a Lie algebra \(\mathfrak{g}\) is semisimple if \(\mathrm{rad}(\mathfrak{g})\), the sum of all solvable ideals (or the maximal solvable ideal), is trivial. Any semisimple Lie algebra \(\mathfrak{g}\) is the Lie algebra of an algebraic group \(G\). Let \(\mathrm{ad}:\mathfrak{g}\rightarrow \mathfrak{gl}(\mathfrak{g})\) by \((\mathrm{ad} X)(Z)=[X,Z]\) be the <em>adjoint representation</em>. Let \(B:\mathfrak{g}\times \mathfrak{g}\rightarrow \mathbf C\) be the symmetric bilinear form defined by \(B(X,Y)=\mathrm{tr}(\mathrm{ad}X\mathrm{ad} Y)\), called the <em>Killing form</em> which is invariant in the sense of \(B([X,Y],Z)=B(X,[Y,Z])\). Cartan’s criterion for semisimplicity says that a Lie algebra is semisimple iff the associated Killing form is nondegenerate. From now on, we let \(\mathfrak{g}\) be a semisimple Lie algebra over \(\mathbf C\). We start by discussing the root–space decomposition \(\mathfrak{g}=\mathfrak{h}\oplus \bigoplus_{\alpha\in\Phi}\mathfrak{g}_{\alpha}\) of semisimple Lie algebras.</p>
-<span id="more"></span>
-
-<h4 id="Root–space-decomposition"><a href="#Root–space-decomposition" class="headerlink" title="Root–space decomposition"></a>Root–space decomposition</h4><p>Before we begin, we review some terminology. We say that \(\mathfrak{g}\) is abelian if the Lie bracket is identically zero, and a subspace \(\mathfrak{i}\) is an ideal if \([X,Y]\in\mathfrak{i}\) for all \(X\in \mathfrak{g}\) and \(Y\in\mathfrak{i}\). Examples include \(Z(\mathfrak{g})=\{Z\in\mathfrak{g}:[X,Z]=0,\forall X\in\mathfrak{g}\}\) called the center, \(N_{\mathfrak{g}}(k)=\{X\in\mathfrak{g}:[X,K]\in k,\,\forall K\in k\}\) called the normaliser where \(k\) is a subspace of \(\mathfrak g\), and \(C_{\mathfrak g}(k)=\{X\in\mathfrak{g}:[X,K]=0,\,\forall K\in k\}\) called the centraliser where \(k\) is a subset of \(\mathfrak g\). For ideals \(\mathfrak{i},\mathfrak{j}\) of \(\mathfrak{g}\), define \([\mathfrak{i},\mathfrak{j}]\) to be the ideal spanned by \([X,Y]\) where \(X\in \mathfrak{i},Y\in \mathfrak{j}\). We say \(\mathfrak{g}\) is <em>nilpotent</em> if the chain \(\mathfrak{g}\ge [\mathfrak{g},\mathfrak{g}]\ge [\mathfrak{g},[\mathfrak{g},\mathfrak{g}]]\ge \cdots\) called the lower central series terminates in zero. We say \(\mathfrak{g}\) is <em>solvable</em> if the chain \(\mathfrak{g}\ge [\mathfrak{g},\mathfrak{g}]\ge [[\mathfrak{g},\mathfrak{g}],[\mathfrak{g},\mathfrak{g}]]\ge \cdots\) called the derived series terminates in zero. We say \(X\in\mathfrak{g}\) is <em>ad-nilpotent</em> if \(\mathrm{ad}X\) is a nilpotent endomorphism, and semisimple if \(\mathrm{ad}X\) is diagonalisable. </p>
+<p>For this week, I’ll write about the theory of root systems, especially things related to Weyl groups, weight spaces and etc, for the purpose of my URA. This is because one of the objectives of my URA is to generalise my <a href="/archives/66165fd0/">previous blog post</a> about a fraction of an \(S_n\)-orbit on a hyperplane to Weyl groups. First, a Lie algebra is <em>simple</em> if it is of degree greater than \(1\) (so we are excluding the one dimensional abelian Lie algebras) and has no proper ideals, and a semisimple Lie algebra is a direct sum of simple Lie algebras. Equivalently, a Lie algebra \(\mathfrak{g}\) is semisimple if \(\mathrm{rad}(\mathfrak{g})\), the sum of all solvable ideals (or the maximal solvable ideal), is trivial. Any semisimple Lie algebra \(\mathfrak{g}\) is the Lie algebra of an algebraic group \(G\). Let \(\mathrm{ad}:\mathfrak{g}\rightarrow \mathfrak{gl}(\mathfrak{g})\) by \((\mathrm{ad} X)(Z)=[X,Z]\) be the <em>adjoint representation</em>. Let \(B:\mathfrak{g}\times \mathfrak{g}\rightarrow \mathbf C\) be the symmetric bilinear form defined by \(B(X,Y)=\mathrm{tr}(\mathrm{ad}X\mathrm{ad} Y)\), called the <em>Killing form</em> which is invariant in the sense of \(B([X,Y],Z)=B(X,[Y,Z])\). Cartan’s criterion for semisimplicity says that a Lie algebra is semisimple iff the associated Killing form is nondegenerate. From now on, we let \(\mathfrak{g}\) be a semisimple Lie algebra over \(\mathbf C\). We start by discussing the root—space decomposition \(\mathfrak{g}=\mathfrak{h}\oplus \bigoplus_{\alpha\in\Phi}\mathfrak{g}_{\alpha}\) of semisimple Lie algebras.<br><span id="more"></span></p>
+<h4 id="Root—space-decomposition"><a href="#Root—space-decomposition" class="headerlink" title="Root—space decomposition"></a>Root—space decomposition</h4><p>Before we begin, we review some terminology. We say that \(\mathfrak{g}\) is abelian if the Lie bracket is identically zero, and a subspace \(\mathfrak{i}\) is an ideal if \([X,Y]\in\mathfrak{i}\) for all \(X\in \mathfrak{g}\) and \(Y\in\mathfrak{i}\). Examples include \(Z(\mathfrak{g})=\{Z\in\mathfrak{g}:[X,Z]=0,\forall X\in\mathfrak{g}\}\) called the center, \(N_{\mathfrak{g}}(k)=\{X\in\mathfrak{g}:[X,K]\in k,\,\forall K\in k\}\) called the normaliser where \(k\) is a subspace of \(\mathfrak g\), and \(C_{\mathfrak g}(k)=\{X\in\mathfrak{g}:[X,K]=0,\,\forall K\in k\}\) called the centraliser where \(k\) is a subset of \(\mathfrak g\). For ideals \(\mathfrak{i},\mathfrak{j}\) of \(\mathfrak{g}\), define \([\mathfrak{i},\mathfrak{j}]\) to be the ideal spanned by \([X,Y]\) where \(X\in \mathfrak{i},Y\in \mathfrak{j}\). We say \(\mathfrak{g}\) is <em>nilpotent</em> if the chain \(\mathfrak{g}\ge [\mathfrak{g},\mathfrak{g}]\ge [\mathfrak{g},[\mathfrak{g},\mathfrak{g}]]\ge \cdots\) called the lower central series terminates in zero. We say \(\mathfrak{g}\) is <em>solvable</em> if the chain \(\mathfrak{g}\ge [\mathfrak{g},\mathfrak{g}]\ge [[\mathfrak{g},\mathfrak{g}],[\mathfrak{g},\mathfrak{g}]]\ge \cdots\) called the derived series terminates in zero. We say \(X\in\mathfrak{g}\) is <em>ad-nilpotent</em> if \(\mathrm{ad}X\) is a nilpotent endomorphism, and semisimple if \(\mathrm{ad}X\) is diagonalisable. </p>
 <blockquote>
 <p>Definition 1. A subalgebra \(\mathfrak{h}\) of \(\mathfrak{g}\) is <em>Cartan</em> if \(\mathfrak h\) satisfies one of the equivalent conditions</p>
 <ol>
@@ -236,7 +233,7 @@
 <p align="center">
 <img src="/images/Root_system_G2.svg" alt="The root system G2" style="height: 300px; width: 300px;"></p>
 
-<p>I credit this picture to <a target="_blank" rel="noopener" href="https://commons.wikimedia.org/wiki/File:Root_system_G2.svg">this page</a> of the wikipedia media repository. Here’s another picture of the root system \(C_3\) (arising from the sympletic Lie algebra \(\mathfrak{sp}_{6}\)) drawn by my friend Maya, and a physical model we made together using coffee stirrers (it may not be the most accurate model but it’s hard work). </p>
+<p>I credit this picture to <a target="_blank" rel="noopener" href="https://commons.wikimedia.org/wiki/File:Root_system_G2.svg">this page</a> of the wikipedia media repository. Here’s another picture of the root system \(C<em>3\) (arising from the sympletic Lie algebra \(\mathfrak{sp}\</em>{6}\)) drawn by my friend Maya, and a physical model we made together using coffee stirrers (it may not be the most accurate model but it’s hard work). </p>
 <p align="center">
 <img src="/images/IMG_5337.JPG" alt="The root system C3" style="height: 300px; width: 300px;">
 <img src="/images/IMG_5342.JPG" alt="Physical model of the root system C3" style="height: 300px; width: 300px;">
@@ -280,12 +277,12 @@
     <div class="columns is-mobile is-multiline article-nav">
         <span class="column is-12-mobile is-half-desktop  article-nav-prev">
             
-            <a href="/archives/31598439/">A topological proof of the insolvability of the quintic</a>
+            <a href="/archives/31598439/">A Topological Proof of the Insolvability of the Quintic</a>
             
         </span>
         <span class="column is-12-mobile is-half-desktop  article-nav-next">
             
-            <a href="/archives/66165fd0/">Bruhat order, Sperner property, and the fraction of an Sn-orbit on a hyperplane</a>
+            <a href="/archives/66165fd0/">Bruhat Order and Sperner Property</a>
             
         </span>
     </div>
@@ -496,8 +493,23 @@
     })(window);
 </script>
 
-<script src="/js/insight.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<script src="/js/insight.js"></script>
 
     
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
 </html>

@@ -137,7 +137,7 @@
                 <div class="article content>">
                     <time class="is-text-small" datetime="2022-06-27T18:43:08.000Z" itemprop="datePublished">
                         Jun 27</time>
-                    <h6 class="title is-6"><a href="/archives/31598439/">A topological proof of the insolvability of the quintic</a></h6>
+                    <h6 class="title is-6"><a href="/archives/31598439/">A Topological Proof of the Insolvability of the Quintic</a></h6>
                 </div>
             
             </div>
@@ -316,8 +316,23 @@
     })(window);
 </script>
 
-<script src="/js/insight.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<script src="/js/insight.js"></script>
 
     
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
 </html>

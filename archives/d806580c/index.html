@@ -2,7 +2,7 @@
 <html class="has-navbar-fixed-top">
 <head>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-<title>Localization of categories and derived category - The Singularity</title>
+<title>Localization of Categories and Derived category - The Singularity</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
@@ -19,13 +19,13 @@
 
     <meta name="description" content="“Algebraic geometry seems to have acquired the reputation of being esoteric, exclusive, and very abstract, with adherents who are secretly plotting to take over all the rest of mathematics. In one res">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Localization of categories and derived category">
+<meta property="og:title" content="Localization of Categories and Derived category">
 <meta property="og:url" content="http://yoursite.com/archives/d806580c/index.html">
 <meta property="og:site_name" content="The Singularity">
 <meta property="og:description" content="“Algebraic geometry seems to have acquired the reputation of being esoteric, exclusive, and very abstract, with adherents who are secretly plotting to take over all the rest of mathematics. In one res">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-09-08T00:06:49.000Z">
-<meta property="article:modified_time" content="2022-09-28T04:38:37.569Z">
+<meta property="article:modified_time" content="2023-02-22T09:05:32.340Z">
 <meta property="article:author" content="Yunhai Xiang">
 <meta property="article:tag" content="Category Theory">
 <meta name="twitter:card" content="summary">
@@ -145,7 +145,7 @@
     <article class="article content gallery" itemscope itemprop="blogPost">
     <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
         
-            Localization of categories and derived category
+            Localization of Categories and Derived category
         
     </h1>
     <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
@@ -170,10 +170,8 @@
     
         <blockquote class="pullquote"><p>“Algebraic geometry seems to have acquired the reputation of being esoteric, exclusive, and very abstract, with adherents who are secretly plotting to take over all the rest of mathematics. In one respect this last point is accurate.”</p>
 <p style="text-align: right;"> David Mumford </p></blockquote>
-
 <p>Continuing last week, we are finally going to define the derived category \(D(\mathcal A)\) for an abelian category \(\mathcal A\). Before we actually do that, we need to introduce localization of categories, and we will define the derived category in terms of a localization of the homotopy category of complexes. Localization of categories is very analogous to localization of rings or modules. Given any category (with no assumption of abelian, additive, triangulated, etc), we formally invert a class of morphisms. We will give one definition in terms of a localization construction and show that it is unsatisfactory in that it does not have a lot of useful and desirable properties. We will then develop a better description of derived categories in terms of roofs.</p>
 <span id="more"></span>
-
 <blockquote>
 <p>Definition 1. Let \(\mathcal A\) be a category and \(S\) a class of morphisms of it, then define its localization as a category \(\mathcal A[S^{-1}]\) and a functor \(Q:\mathcal A\rightarrow A[S^{-1}]\) s.t. \(Q(s)\) is an isomorphism for all \(s\in S\) and \(Q\) is universal w.r.t. this property, i.e. if the functor \(F:\mathcal A\rightarrow\mathcal B\) is such that \(F(s)\) is an isomorphism for each \(s\), then there exists a unique functor \(G:\mathcal A[S^{-1}]\rightarrow\mathcal B\) s.t. \(F=G\circ Q\). </p>
 </blockquote>
@@ -195,8 +193,7 @@
 <p>This is the categorification of the notion of denominator set when localizing non-commutative rings, see <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Ore_condition">Ore condition</a>. In fact a ring can be viewed as an additive category (by delooping). The localizing classes are classes of “nice” morphisms to localize at for which we could develop a description of roofs.</p>
 <p>For a category \(\mathcal A\) and a localizing class \(S\). A morphism \(Q(f)\circ Q(s)^{-1}\) in \(\mathcal A[S^{-1}]\) is represented by a left roof, which is a diagram \(M\xleftarrow{s}L\xrightarrow{f}N\), and a morphism \(Q(t)^{-1}\circ Q(g)\) with \(t\in S\) is represented by a right roof which is a diagram \(M\xrightarrow{g}L\xleftarrow{t}N\). We say that the two left roofs \(M\xleftarrow{s}L\xrightarrow{f}N\) and \(M\xleftarrow{t}K\xrightarrow{g}N\) are equivalent if there exists \(p:H\rightarrow L\) and \(q:H\rightarrow K\) such that \(sp,tq\in S\) and the diagram <iframe class="quiver-embed" src="https://q.uiver.app/?q=WzAsNSxbMiwwLCJIIl0sWzEsMSwiTCJdLFszLDEsIksiXSxbMCwyLCJNIl0sWzQsMiwiTiJdLFswLDEsInAiLDJdLFswLDIsInEiXSxbMSwzLCJzIiwyXSxbMiw0LCJnIl0sWzIsMywidCJdLFsxLDQsImYiLDJdXQ==&embed" width="350" height="250" style="border-radius: 8px; border: none;"></iframe> commutes. We can show that this is an equivalence relation. The only difficult part is transitivity. This can be done using a diagram chasing argument. We can also define composition of roofs. The composition of the previous two roofs is defined as a composition of the diagram <iframe class="quiver-embed" src="https://q.uiver.app/?q=WzAsNixbMiwwLCJVIl0sWzEsMSwiTCJdLFszLDEsIksiXSxbMCwyLCJNIl0sWzIsMiwiTiJdLFs0LDIsIlAiXSxbMCwxLCJsIiwyXSxbMCwyLCJrIl0sWzEsMywicyIsMl0sWzEsNCwiZiJdLFsyLDQsInQiLDJdLFsyLDUsImciXV0=&embed" width="350" height="250" style="border-radius: 8px; border: none;"></iframe> where \(U\) and the associated maps are induced from the fact that \(S\) is a localizing class. We could check that these satisfies all the desirable properties of a composition. Composition respects equivalence of roofs, is associative, and has an identity given by \(M\xleftarrow{\mathbf{1}_M} M\xrightarrow{\mathbf{1}_M} M\). One can check that the category of (equivalence classes of) left roofs \(\mathcal A_S\) is equivalent to right roofs, so we might as well just work with left roofs. We define a functor \(Q:\mathcal A\rightarrow \mathcal A_S\) by letting it be identity on objects and for each morphism \(f:M\rightarrow N\), let \(Q(f)\) be the equivalence class of roofs \(M\xleftarrow{\mathbf 1_M}M\xrightarrow{f} N\). This satisfies the universal property of localization, hence isomorphic to \(\mathcal A[S^{-1}]\).</p>
 <blockquote>
-<p>Theorem 2. For \(S\) a localizing class of category \(\mathcal A\), the category \(\mathcal A_S\) and functor \(Q:\mathcal A\rightarrow \mathcal A_S\) satisfies the universal property of localization, i.e. \(Q(s)\) is an isomorphism for each \(s\in S\) and is universal w.r.t. it.</p>
-<div class="spoiler collapsed">
+<p>Theorem 2. For \(S\) a localizing class of category \(\mathcal A\), the category \(\mathcal A_S\) and functor \(Q:\mathcal A\rightarrow \mathcal A_S\) satisfies the universal property of localization, i.e. \(Q(s)\) is an isomorphism for each \(s\in S\) and is universal w.r.t. it.<br><div class="spoiler collapsed">
     <div class="spoiler-title">
         Proof
     </div>
@@ -204,7 +201,7 @@
         <p>For the first property, \(M\xleftarrow{\mathbf{1}_M}M\xrightarrow{s}N\) has an inverse \(N\xleftarrow{s}M\xrightarrow{\mathbf{1}_M}M\). Next, suppose \(F:\mathcal A\rightarrow \mathcal B\) is such that \(F(s)\) is an isomorphism for all \(s\in S\), define functor \(G:\mathcal A_S\rightarrow \mathcal B\) as identity on objects, and for morphisms, the following. If \(\phi:M\rightarrow N\) in \(\mathcal A_S\), choose a representing roof \(M\xleftarrow{s}L\xrightarrow{f}N\), and define \(G(\phi)=F(f)\circ F(s)^{-1}\). It’s not immediately obvious that this is well defined on equivalence classes, but we omit the verification. This obviously satisfies \(F=G\circ Q\). It is left to the reader to verify that \(G\) respects composition, which is the last piece of verification necessary.</p>
 
     </div>
-</div>
+</div></p>
 </blockquote>
 <p>If \(\mathcal A\) is an additive category, then localizing it would also have an additive structure. In fact if \(\mathcal A\) is additive, we may restate the last axiom of localizing class as: for \(f:M\rightarrow N\) exists \(\exists s\in S, sf=0\Longleftrightarrow \exists t\in S, tf=0\). And the inherited additive structure is the obvious one. It is not trivial to check that it is well defined, but again we ommit the verification. Again everything works out as we expected, biproducts, zero objects are preserved, and localization functor is additive. We can also check that \(f=0\) in the localization iff exists \(t\in S\) with \(tf=0\) iff exists \(t\in S\) with \(ft=0\), and \(M=\mathbf 0\) in the localization iff exists \(N\in\mathcal A\) with \((N\xrightarrow{0}M)\in S\) iff exists \(N\in\mathcal A\) with \((M\xrightarrow{0}N)\in S\). These are easy to prove and left as an exercise. Similarly, one can show the localization of abelian categories is abelian. </p>
 <p>Given a triangulated category, a natural question to ask is: when is a localization of it also triangulated? In other words, when is the localizing class compatible with triangulation? For a localizing class \(S\) in the triangulated category \(\mathcal C\), the localization is compatible with triangulation if the following conditions hold</p>
@@ -218,8 +215,7 @@
 </blockquote>
 <p>It is an arduous process to verify that the class of quasi-isomorphisms is a localizing class compatible with triangulation, which the readers can do in their own time.</p>
 <blockquote>
-<p>Theorem 4. For an abelian category \(\mathcal A\), the functor \(\mathcal A\rightarrow D(\mathcal A)\) by \(X\mapsto X\) is fully faithful.</p>
-<div class="spoiler collapsed">
+<p>Theorem 4. For an abelian category \(\mathcal A\), the functor \(\mathcal A\rightarrow D(\mathcal A)\) by \(X\mapsto X\) is fully faithful.<br><div class="spoiler collapsed">
     <div class="spoiler-title">
         Proof
     </div>
@@ -227,7 +223,8 @@
         <p>I will prove this later.</p>
 
     </div>
-</div></blockquote>
+</div></p>
+</blockquote>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
     
     </div>
@@ -245,7 +242,7 @@
         </span>
         <span class="column is-12-mobile is-half-desktop  article-nav-next">
             
-            <a href="/archives/3e09458/">Triangulated categories</a>
+            <a href="/archives/3e09458/">Triangulated Categories</a>
             
         </span>
     </div>
@@ -456,8 +453,23 @@
     })(window);
 </script>
 
-<script src="/js/insight.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<script src="/js/insight.js"></script>
 
     
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
 </html>
