@@ -2,7 +2,7 @@
 <html class="has-navbar-fixed-top">
 <head>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-<title>Tag: Category Theory - The Singularity</title>
+<title>An Excursion in Algebraic K-theory, Part I - The Singularity</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
@@ -17,13 +17,19 @@
 
 
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="The Singularity">
-<meta property="og:url" content="http://yoursite.com/tags/Category-Theory/index.html">
+    <meta name="description" content="“And every science, when we understand it not as an instrument of power and domination but as an adventure in knowledge pursued by our species across the ages, is nothing but this harmony, more or les">
+<meta property="og:type" content="article">
+<meta property="og:title" content="An Excursion in Algebraic K-theory, Part I">
+<meta property="og:url" content="http://yoursite.com/archives/2d7cc97b/index.html">
 <meta property="og:site_name" content="The Singularity">
+<meta property="og:description" content="“And every science, when we understand it not as an instrument of power and domination but as an adventure in knowledge pursued by our species across the ages, is nothing but this harmony, more or les">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-02-22T08:56:52.000Z">
+<meta property="article:modified_time" content="2023-03-10T02:34:17.108Z">
 <meta property="article:author" content="Yunhai Xiang">
-<meta property="article:tag" content="Math">
+<meta property="article:tag" content="Algebraic Geometry">
+<meta property="article:tag" content="Algebraic Topology">
+<meta property="article:tag" content="Algebraic K-theory">
 <meta name="twitter:card" content="summary">
 
 
@@ -121,140 +127,120 @@
             </a>
             
             
+            <div class="navbar-item is-hoverable has-dropdown is-hidden-mobile is-hidden-tablet-only toc">
+                <a class="navbar-item" title="Table of Contents">
+                    <i class="fa fa-list"></i>
+                </a>
+                <div class="navbar-dropdown is-right">
+                    
+                    
+                    
+                    
+                    <a class="navbar-item" href="#The-mathrm-K-0-groups">1&nbsp;&nbsp;<b>The \(\mathrm{K}_0\) groups</b></a>
+                    
+                </div>
+            </div>
+            
             
         </div>
     </div>
 </nav>
 
-    <section class="section section-heading">
+    <section class="section">
     <div class="container">
-        <div class="content">
-            <h5>#Category Theory</h5>
-        </div>
-    </div>
-</section>
-<section class="section">
-    <div class="container">
-    
-        <article class="article content gallery" itemscope itemprop="blogPost">
+    <article class="article content gallery" itemscope itemprop="blogPost">
     <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
         
-            <a href="/archives/ee8dd51d/" itemprop="url">Talk on SASMS: Category Theory Demystified</a>
+            An Excursion in Algebraic K-theory, Part I
         
     </h1>
     <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
         <span class="column is-narrow">
-            <time datetime="2023-02-11T16:16:57.000Z" itemprop="datePublished">Feb 11 2023</time>
+            <time datetime="2023-02-22T08:56:52.000Z" itemprop="datePublished">Feb 22 2023</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/This-Week-I-Learned/">This Week I Learned</a>
         </span>
         
         
         <span class="column is-narrow">
             
             
-            a minute read (About 125 words)
+            3 minutes read (About 508 words)
         </span>
         
     </div>
     <div class="article-entry is-size-6-mobile" itemprop="articleBody">
     
-        <p>Recently, I gave another talk on the <a target="_blank" rel="noopener" href="https://puremath.club/events/w23#14">Short Attention Span Math Seminars</a> which is a friendly introduction to category theory. Here are my <a href="/documents/category.pdf">slides</a>, and here are the <a href="/documents/abstractions.pdf">slides</a> for the first five minutes. In my talk, I first talked about the idea of abstractions, then I talked about the categorical way of thing and along the way talked about many ideas like universal properties, functors, natural transformations. In the end, this culminated in the Yoneda lemma or the fundamental theorem of category theory. I also discussed a little an application of it to algebraic geometry, the functor of points, and how this could be used to construct (fine) moduli spaces such as Grassmannians.</p>
+        <blockquote class="pullquote"><p>“And every science, when we understand it not as an instrument of power and domination but as an adventure in knowledge pursued by our species across the ages, is nothing but this harmony, more or less vast, more or less rich from one epoch to another, which unfurls over the course of generations and centuries, by the delicate counterpoint of all the themes appearing in turn, as if summoned from the void.”</p>
+<p style="text-align: right;"> Alexander Grothendieck </p></blockquote>
+<p>I’ve wanted to learn about algebraic K-theory for a long time, but never really had the time. Recently, I finally have time to read up on some algebraic K-theory. I summerize what I learned about in the past few days in this blog post. We will mostly be focusing on the algebraic K-theory of rings. For those who have not heard of algebraic K-theory, here’s a rough idea of it from my understanding. The idea of algebraic K-theory of rings is to assign a ring \(R\), assumed unital but not necessarily commutative, an abelian group \(\mathrm{K}_n(R)\) for each \(n\in\mathbb N\), which we call the \(n\)-th K-group. This is analogous to topological K-theory, which is a different topic. These groups are defined in a way that contains very detailed and sophisticated information about \(R\), but are very hard to compute. In fact, the K-groups of \(\mathbb Z/p^n\) were for a long time a mystery until a very recent breakthrough by Krause-Nikolaus-Antieau. Algebraic K-theory are related to algebraic geometry, algebraic topology, algebraic number theory, and arithmetic geometry. In this post, we will focus only on the lower K-groups.<br><span id="more"></span></p>
+<h4 id="The-mathrm-K-0-groups"><a href="#The-mathrm-K-0-groups" class="headerlink" title="The \(\mathrm{K}_0\) groups"></a>The \(\mathrm{K}_0\) groups</h4><p>A fundamental object of study in algebraic K-theory is projective modules over a ring, or more generally vector bundles over a scheme. We recall Serre-Swan theorem identifies vector bundles with projective modules by taking sections. We will see later that the \(\mathrm K_0(R)\) group of a ring \(R\) is defined in terms of projective modules over \(R\). The \(\mathrm K_0(R)\) is intimately related to the rank of modules over \(R\). Recall that if \(R\) is a field, then a module over \(R\) is a vector space, so the rank (dimension) determines it up to isomorphism. This does not hold if \(R\) is not a field. To get rid of this pathology, we introduce the notion of <em>invariant basis property (IBP)</em> of a ring \(R\): if the modules \(R^{\oplus n}\cong R^{\oplus m}\) then \(m=n\). All commutative rings and group rings satisfy IBP. An \(R\)-module \(P\) is <em>stably free of rank \(n-m\)</em> if \(P\oplus R^{\oplus m}\cong R^{\oplus n}\). They are kernels of surjections \(R^{\oplus n}\rightarrow R^{\oplus m}\). When are stably free modules free? The row vector that represents the case \(R^{\oplus n}\rightarrow R\) i.e. \(m=1\) is called unimodular. </p>
+<p>This is not finished, I will write more when I have time.</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
     
     </div>
     
+    <div class="columns is-variable is-1 is-multiline is-mobile">
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/Algebraic-Geometry/">#Algebraic Geometry</a></span>
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/Algebraic-Topology/">#Algebraic Topology</a></span>
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/Algebraic-K-theory/">#Algebraic K-theory</a></span>
+    
+    </div>
+    
+    
+    <div class="columns is-mobile is-multiline article-nav">
+        <span class="column is-12-mobile is-half-desktop  article-nav-prev">
+            
+            <a href="/archives/a5ffa1b4/">A Brainstorm of Otherworldly Mathematics</a>
+            
+        </span>
+        <span class="column is-12-mobile is-half-desktop  article-nav-next">
+            
+            <a href="/archives/ee8dd51d/">Talk on SASMS: Category Theory Demystified</a>
+            
+        </span>
+    </div>
     
 </article>
 
 
+<div class="sharebox">
+    
+<div class="addthis_inline_share_toolbox"></div>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-603b815e662e1491"></script>
 
-
-    
-        <article class="article content gallery" itemscope itemprop="blogPost">
-    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
-        
-            <a href="/archives/d806580c/" itemprop="url">Localization of Categories and Derived Category</a>
-        
-    </h1>
-    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
-        <span class="column is-narrow">
-            <time datetime="2022-09-08T00:06:49.000Z" itemprop="datePublished">Sep 7 2022</time>
-        </span>
-        
-        <span class="column is-narrow article-category">
-            <i class="far fa-folder"></i>
-            <a class="article-category-link" href="/categories/This-Week-I-Learned/">This Week I Learned</a>
-        </span>
-        
-        
-        <span class="column is-narrow">
-            
-            
-            11 minutes read (About 1698 words)
-        </span>
-        
-    </div>
-    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
-    
-        <blockquote class="pullquote"><p>“Algebraic geometry seems to have acquired the reputation of being esoteric, exclusive, and very abstract, with adherents who are secretly plotting to take over all the rest of mathematics. In one respect this last point is accurate.”</p>
-<p style="text-align: right;"> David Mumford </p></blockquote>
-
-<p>Continuing last week, we are finally going to define the derived category \(D(\mathcal A)\) for an abelian category \(\mathcal A\). Before we actually do that, we need to introduce localization of categories, and we will define the derived category in terms of a localization of the homotopy category of complexes. Localization of categories is very analogous to localization of rings or modules. Given any category (with no assumption of abelian, additive, triangulated, etc), we formally invert a class of morphisms. We will give one definition in terms of a localization construction and show that it is unsatisfactory in that it does not have a lot of useful and desirable properties. We will then develop a better description of derived categories in terms of roofs.</p>
-        <p class="article-more-link">
-            <a href="/archives/d806580c/#more">Read More</a>
-        </p>
-    
-    </div>
-    
-    
-</article>
+</div>
 
 
 
+<div class="comments">
+    <h3 class="title is-4">Comments</h3>
+    
+<div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script>
+    const gitalk = new Gitalk({
+        clientID: '9caad4c382780c5c4db2',
+        clientSecret: '4132ac79084e3d4b67a63ff19e3096c459f9d725',
+        id: 'archives/2d7cc97b/',
+        repo: 'yunhaixiang.github.io-comments',
+        owner: 'YunhaiXiang',
+        admin: ['YunhaiXiang'],
+        language: 'en',
+        distractionFreeMode: false,
+    })
+    gitalk.render('gitalk-container')
+</script>
 
-    
-        <article class="article content gallery" itemscope itemprop="blogPost">
-    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
-        
-            <a href="/archives/3e09458/" itemprop="url">Triangulated Categories</a>
-        
-    </h1>
-    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
-        <span class="column is-narrow">
-            <time datetime="2022-09-06T00:00:36.000Z" itemprop="datePublished">Sep 5 2022</time>
-        </span>
-        
-        <span class="column is-narrow article-category">
-            <i class="far fa-folder"></i>
-            <a class="article-category-link" href="/categories/This-Week-I-Learned/">This Week I Learned</a>
-        </span>
-        
-        
-        <span class="column is-narrow">
-            
-            
-            9 minutes read (About 1285 words)
-        </span>
-        
-    </div>
-    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
-    
-        <blockquote class="pullquote"><p>“It is impossible to be a mathematician without being a poet in soul.”</p>
-<p style="text-align: right;"> Sofia Kovalevskaya </p></blockquote>
-<p>Continuing last week where we defined the homotopy category of complexes, we will take a look at triangulated categories. This will help us build towards the definition of derived categories. In some sense, triangulated categories are approximations of abelian categories. They are not strictly speaking a weaker version of abelian categories, and they don’t really imply each other. Triangulated categories takes a different approach to abelian categories. Instead of kernels, cokernels, and strict morphisms, triangulated categories bypass these notions and start out with “distinguished triangles”, which are similar to exact sequences.</p>
-        <p class="article-more-link">
-            <a href="/archives/3e09458/#more">Read More</a>
-        </p>
-    
-    </div>
-    
-    
-</article>
+</div>
 
-
-
-
-    
-    
     </div>
 </section>
     <footer class="footer">
