@@ -17,18 +17,18 @@
 
 
 
-    <meta name="description" content="“In mathematics the art of proposing a question must be held of higher value than solving it.”   George Cantor  This week I finally finished my final project for my PMATH 499 reading course in arithme">
+    <meta name="description" content="“In mathematics the art of proposing a question must be held of higher value than solving it.”   George Cantor   This week I finally finished my final project for my PMATH 499 reading course in arithm">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Galois Cohomology and Mordell—Weil Theorem">
 <meta property="og:url" content="http://yoursite.com/archives/7dbb66b9/index.html">
 <meta property="og:site_name" content="The Singularity">
-<meta property="og:description" content="“In mathematics the art of proposing a question must be held of higher value than solving it.”   George Cantor  This week I finally finished my final project for my PMATH 499 reading course in arithme">
+<meta property="og:description" content="“In mathematics the art of proposing a question must be held of higher value than solving it.”   George Cantor   This week I finally finished my final project for my PMATH 499 reading course in arithm">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-07-05T03:26:30.000Z">
 <meta property="article:modified_time" content="2023-02-22T09:08:59.191Z">
 <meta property="article:author" content="Yunhai Xiang">
-<meta property="article:tag" content="Number Theory">
 <meta property="article:tag" content="Algebraic Geometry">
+<meta property="article:tag" content="Number Theory">
 <meta property="article:tag" content="Arithmetic Geometry">
 <meta name="twitter:card" content="summary">
 
@@ -172,17 +172,20 @@
     
         <blockquote class="pullquote"><p>“In mathematics the art of proposing a question must be held of higher value than solving it.” </p>
 <p style="text-align: right;"> George Cantor </p></blockquote>
-<p>This week I finally finished my final project for my PMATH 499 reading course in arithmetic geometry. My project is called “Galois cohomology and weak Mordell—Weil theorem”, which is available <a href="/documents/Galois_Cohomology.pdf">here</a>. Galois cohomology is the application of group cohomology to Galois groups. In particular, we know that for a perfect field \(k\) with an algebraic closure \(K\), the Galois group \(\mathrm{Gal}(K/k)\) is isomorphic to an inverse limit of topological Galois groups \(\mathrm{Gal}(L/k)\) ranging over the finite Galois extensions \(L/k\) with the natural projections. This fact makes \(G\) a profinite group, and the Krull topology, the topology of \(G\) endowed by the inverse limit process by viewing each finite Galois group as a topological group with the discrete topology, is a topology  where a basis for the neighborhood at the identity is the collection of normal subgroups having finite index in \(G\). This is a motivation to use homological algebra in such situation.<br><span id="more"></span></p>
-<p>My final project focuses on the proof of the weak Mordell—Weil theorem, which states that for any elliptic curve \(E\), the group \(E(k)/nE(k)\) is finite for all \(n\ge 2\). This is an important step in the proof of the Mordell—Weil theorem which states the elliptic curve groups are finitely generated. The proof of Mordell—Weil involves in applying an infinite descent argument to weak Mordell—Weil, which I will not go into detail. The motivating observation is that we have an exact sequence of topological \(\mathrm{Gal}(K/k)\)-modules \[\mathbf{0}\rightarrow E(K)[n]\rightarrow E(K)\xrightarrow{n}E(K)\rightarrow\mathbf{0}\]This short exact sequence induces a long exact sequence of cohomology groups, which we truncate after the first cohomology groups. The first cohomology group can be viewed as the group of crossed homomorphisms module the principal crossed homomorphisms, where a crossed homomorphism is some \(f\) with \(f(gh)=gf(h)+f(g)\) for all \(g,h\) and a principal crossed homomorphism is a homomorphism where there exists \(m\) with \(f(g)=gm-m\) for all \(g\). This can be verified by just computing out the differential. Next, we define the \(n\)-Selmer groups and the Tate-Shafarevich group, which is applied to the induced exact sequence we just found in order to obtain a better bound for the group \(E(k)/nE(k)\). Finally, the finiteness of \(E(k)/nE(k)\) is obtained from the finiteness of the Selmer groups.</p>
+
+<p>This week I finally finished my final project for my PMATH 499 reading course in arithmetic geometry. My project is called “Galois cohomology and weak Mordell–Weil theorem”, which is available <a href="/documents/Galois_Cohomology.pdf">here</a>. Galois cohomology is the application of group cohomology to Galois groups. In particular, we know that for a perfect field \(k\) with an algebraic closure \(K\), the Galois group \(\mathrm{Gal}(K/k)\) is isomorphic to an inverse limit of topological Galois groups \(\mathrm{Gal}(L/k)\) ranging over the finite Galois extensions \(L/k\) with the natural projections. This fact makes \(G\) a profinite group, and the Krull topology, the topology of \(G\) endowed by the inverse limit process by viewing each finite Galois group as a topological group with the discrete topology, is a topology  where a basis for the neighborhood at the identity is the collection of normal subgroups having finite index in \(G\). This is a motivation to use homological algebra in such situation. </p>
+<span id="more"></span>
+
+<p>My final project focuses on the proof of the weak Mordell–Weil theorem, which states that for any elliptic curve \(E\), the group \(E(k)/nE(k)\) is finite for all \(n\ge 2\). This is an important step in the proof of the Mordell–Weil theorem which states the elliptic curve groups are finitely generated. The proof of Mordell–Weil involves in applying an infinite descent argument to weak Mordell–Weil, which I will not go into detail. The motivating observation is that we have an exact sequence of topological \(\mathrm{Gal}(K/k)\)-modules \[\mathbf{0}\rightarrow E(K)[n]\rightarrow E(K)\xrightarrow{n}E(K)\rightarrow\mathbf{0}\]This short exact sequence induces a long exact sequence of cohomology groups, which we truncate after the first cohomology groups. The first cohomology group can be viewed as the group of crossed homomorphisms module the principal crossed homomorphisms, where a crossed homomorphism is some \(f\) with \(f(gh)=gf(h)+f(g)\) for all \(g,h\) and a principal crossed homomorphism is a homomorphism where there exists \(m\) with \(f(g)=gm-m\) for all \(g\). This can be verified by just computing out the differential. Next, we define the \(n\)-Selmer groups and the Tate-Shafarevich group, which is applied to the induced exact sequence we just found in order to obtain a better bound for the group \(E(k)/nE(k)\). Finally, the finiteness of \(E(k)/nE(k)\) is obtained from the finiteness of the Selmer groups.</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
     
     </div>
     
     <div class="columns is-variable is-1 is-multiline is-mobile">
     
-        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/Number-Theory/">#Number Theory</a></span>
-    
         <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/Algebraic-Geometry/">#Algebraic Geometry</a></span>
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/Number-Theory/">#Number Theory</a></span>
     
         <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/Arithmetic-Geometry/">#Arithmetic Geometry</a></span>
     
