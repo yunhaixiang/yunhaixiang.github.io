@@ -149,7 +149,7 @@
         <span class="column is-narrow">
             
             
-            29 minutes read (About 4359 words)
+            29 minutes read (About 4360 words)
         </span>
         
     </div>
@@ -158,12 +158,8 @@
         <!--
 <blockquote class="pullquote"><p>“I am not saying that I believe in the law of the excluded middle, I am just saying that it isn’t not true.”</p>
 <p style='text-align: right;'> Kavin Satheeskumar </p></blockquote>-->
-
-
 <blockquote class="pullquote"><p>“My first impression on seeing him (Grothendieck) lecture was that he had been transported from an advanced alien civilization in some distant solar system to visit ours in order to speed up our intellectual evolution.”</p>
 <p style="text-align: right;"> Marvin Greenberg </p></blockquote>
-
-
 <p>I was very hesitant about writing this article, for the fear that my ignorance of logic theory and philosophy might prompt me to say something profoundly stupid and embarrass myself (which I probably will anyway). Nevertheless, I couldn’t resist the temptation. These ideas have circulated in my mind for too long, and I couldn’t help but share it with others. Therefore, I ask the reader to indulge me in spilling some nonsense, which, in my defense, even if worthless mathematically, may still serve as a fun sci-fi project or thought experiment. The question I’m interested in is the following. Imagine an alien civilization on a distant planet in a solar system millions of lightyears away which is advanced enough to have developed their own “mathematics” (whatever it means). <em>What would their mathematics be like?</em> To break this down into several smaller questions: firstly, what would their formal logical system (to make things interesting, we assume they do use one) be like; secondly, what would the mathematical objects they study be like; and thirdly, what would their theorems be like? </p>
         <p class="article-more-link">
             <a href="/archives/a5ffa1b4/#more">Read More</a>
@@ -739,8 +735,23 @@
     })(window);
 </script>
 
-<script src="/js/insight.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<script src="/js/insight.js"></script>
 
     
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
 </html>
