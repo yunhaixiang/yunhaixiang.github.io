@@ -2,7 +2,7 @@
 <html class="has-navbar-fixed-top">
 <head>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-<title>Tag: Category theory - The Singularity</title>
+<title>Tag: Category Theory - The Singularity</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
@@ -19,7 +19,7 @@
 
     <meta property="og:type" content="website">
 <meta property="og:title" content="The Singularity">
-<meta property="og:url" content="http://yoursite.com/tags/Category-theory/index.html">
+<meta property="og:url" content="http://yoursite.com/tags/Category-Theory/index.html">
 <meta property="og:site_name" content="The Singularity">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="Yunhai Xiang">
@@ -129,7 +129,7 @@
     <section class="section section-heading">
     <div class="container">
         <div class="content">
-            <h5>#Category theory</h5>
+            <h5>#Category Theory</h5>
         </div>
     </div>
 </section>
@@ -139,12 +139,45 @@
         <article class="article content gallery" itemscope itemprop="blogPost">
     <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
         
-            <a href="/archives/4bee11dc/" itemprop="url">Abelian Categories and Derived Functors</a>
+            <a href="/archives/ee8dd51d/" itemprop="url">Talk on SASMS: Category Theory Demystified</a>
         
     </h1>
     <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
         <span class="column is-narrow">
-            <time datetime="2022-07-25T19:28:14.000Z" itemprop="datePublished">Jul 25 2022</time>
+            <time datetime="2023-02-11T16:16:57.000Z" itemprop="datePublished">Feb 11 2023</time>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            a minute read (About 125 words)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <p>Recently, I gave another talk on the <a target="_blank" rel="noopener" href="https://puremath.club/events/w23#14">Short Attention Span Math Seminars</a> which is a friendly introduction to category theory. Here are my <a href="/documents/category.pdf">slides</a>, and here are the <a href="/documents/abstractions.pdf">slides</a> for the first five minutes. In my talk, I first talked about the idea of abstractions, then I talked about the categorical way of thing and along the way talked about many ideas like universal properties, functors, natural transformations. In the end, this culminated in the Yoneda lemma or the fundamental theorem of category theory. I also discussed a little an application of it to algebraic geometry, the functor of points, and how this could be used to construct (fine) moduli spaces such as Grassmannians.</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/archives/d806580c/" itemprop="url">Localization of Categories and Derived Category</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2022-09-08T00:06:49.000Z" itemprop="datePublished">Sep 7 2022</time>
         </span>
         
         <span class="column is-narrow article-category">
@@ -156,18 +189,61 @@
         <span class="column is-narrow">
             
             
-            24 minutes read (About 3649 words)
+            11 minutes read (About 1698 words)
         </span>
         
     </div>
     <div class="article-entry is-size-6-mobile" itemprop="articleBody">
     
-        <blockquote class="pullquote"><p>“A mathematician is a person who can find analogies between theorems; a better mathematician is one who can see analogies between proofs and the best mathematician can notice analogies between theories. One can imagine that the ultimate mathematician is one who can see analogies between analogies.”</p>
-<p style="text-align: right;"> Stefan Banach </p></blockquote>
+        <blockquote class="pullquote"><p>“Algebraic geometry seems to have acquired the reputation of being esoteric, exclusive, and very abstract, with adherents who are secretly plotting to take over all the rest of mathematics. In one respect this last point is accurate.”</p>
+<p style="text-align: right;"> David Mumford </p></blockquote>
 
-<p>I have always been curious about derived categories. In particular, I read from the wikipedia page on <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Homological_mirror_symmetry">homological mirror symmetry</a> that the derived category of coherent sheaves is a popular research topic in algebraic geometry. Also, I’ve been told by a professor that derived categories are related to something called geometric Satake correspondance, which is also something I totally don’t understand but it sounds very cool. Therefore, I decided to study a little about derived categories, and write about my progress here. I want this post to be the first part in several parts of my notes. In this first part, we will focus on abelian categoires, derived functors, and homotopy category of complexes. We begin by reviewing abelian categories and their properties. In particular, the (co)chain complexes in an abelian category and their related notions. After that, we define derived functors. Eventually, we finish by defining the homotopy category of complexes \(K(\mathcal A)\).</p>
+<p>Continuing last week, we are finally going to define the derived category \(D(\mathcal A)\) for an abelian category \(\mathcal A\). Before we actually do that, we need to introduce localization of categories, and we will define the derived category in terms of a localization of the homotopy category of complexes. Localization of categories is very analogous to localization of rings or modules. Given any category (with no assumption of abelian, additive, triangulated, etc), we formally invert a class of morphisms. We will give one definition in terms of a localization construction and show that it is unsatisfactory in that it does not have a lot of useful and desirable properties. We will then develop a better description of derived categories in terms of roofs.</p>
         <p class="article-more-link">
-            <a href="/archives/4bee11dc/#more">Read More</a>
+            <a href="/archives/d806580c/#more">Read More</a>
+        </p>
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/archives/3e09458/" itemprop="url">Triangulated Categories</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2022-09-06T00:00:36.000Z" itemprop="datePublished">Sep 5 2022</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/This-Week-I-Learned/">This Week I Learned</a>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            9 minutes read (About 1285 words)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <blockquote class="pullquote"><p>“It is impossible to be a mathematician without being a poet in soul.”</p>
+<p style="text-align: right;"> Sofia Kovalevskaya </p></blockquote>
+
+<p>Continuing last week where we defined the homotopy category of complexes, we will take a look at triangulated categories. This will help us build towards the definition of derived categories. In some sense, triangulated categories are approximations of abelian categories. They are not strictly speaking a weaker version of abelian categories, and they don’t really imply each other. Triangulated categories takes a different approach to abelian categories. Instead of kernels, cokernels, and strict morphisms, triangulated categories bypass these notions and start out with “distinguished triangles”, which are similar to exact sequences.</p>
+        <p class="article-more-link">
+            <a href="/archives/3e09458/#more">Read More</a>
         </p>
     
     </div>
@@ -352,132 +428,23 @@
     })(window);
 </script>
 
-<script src="/js/insight.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<script src="/js/insight.js"></script>
 
     
-</body>
-</html>ntHeight: false},
-        CommonHTML: {matchFontHeight: false}
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
     });
 </script>
-
-    
-    
-    
-    
-<script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
-<script>
-    (function ($) {
-        $(document).ready(function () {
-            if (typeof($.fn.lightGallery) === 'function') {
-                $('.article.gallery').lightGallery({ selector: '.gallery-item' });
-            }
-            if (typeof($.fn.justifiedGallery) === 'function') {
-                $('.justified-gallery').justifiedGallery();
-            }
-        });
-    })(jQuery);
-</script>
-
-    
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
-    <style>
-        .hljs {
-            position: relative;
-        }
-
-        .hljs .clipboard-btn {
-            float: right;
-            color: #9a9a9a;
-            background: none;
-            border: none;
-        }
-
-        .hljs > .clipboard-btn {
-            display: none;
-            position: absolute;
-            right: 4px;
-            top: 4px;
-        }
-
-        .hljs:hover > .clipboard-btn {
-            display: inline;
-        }
-
-        .hljs > figcaption > .clipboard-btn {
-            margin-right: 4px;
-        }
-    </style>
-    <script>
-      $(document).ready(function () {
-        $('figure.hljs').each(function(i, figure) {
-          var codeId = 'code-' + i;
-          var code = figure.querySelector('.code');
-          var copyButton = $('<button>Copy <i class="far fa-clipboard"></i></button>');
-          code.id = codeId;
-          copyButton.addClass('clipboard-btn');
-          copyButton.attr('data-clipboard-target-id', codeId);
-
-          var figcaption = figure.querySelector('figcaption');
-
-          if (figcaption) {
-            figcaption.append(copyButton[0]);
-          } else {
-            figure.prepend(copyButton[0]);
-          }
-        })
-
-        var clipboard = new ClipboardJS('.clipboard-btn', {
-          target: function(trigger) {
-            return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
-          }
-        });
-      })
-    </script>
-
-    
-    
-
-    
-
-
-
-<script src="/js/script.js"></script>
-
-
-    
-    <div class="searchbox ins-search">
-    <div class="searchbox-mask"></div>
-    <div class="searchbox-container ins-search-container">
-        <div class="searchbox-input-wrapper">
-            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something..." />
-            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
-        </div>
-        <div class="searchbox-result-wrapper ins-section-wrapper">
-            <div class="ins-section-container"></div>
-        </div>
-    </div>
-</div>
-<script>
-    (function (window) {
-        var INSIGHT_CONFIG = {
-            TRANSLATION: {
-                POSTS: 'Posts',
-                PAGES: 'Pages',
-                CATEGORIES: 'Categories',
-                TAGS: 'Tags',
-                UNTITLED: '(Untitled)',
-            },
-            CONTENT_URL: '/content.json',
-        };
-        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-    })(window);
-</script>
-
-<script src="/js/insight.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
-
-    
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
 </html>
