@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2023-04-18T21:01:14.131Z</updated>
+  <updated>2023-05-24T13:44:32.842Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://yoursite.com/archives/4cd60098/"/>
     <id>http://yoursite.com/archives/4cd60098/</id>
     <published>2023-03-22T02:47:20.000Z</published>
-    <updated>2023-04-18T21:01:14.131Z</updated>
+    <updated>2023-05-24T13:44:32.842Z</updated>
     
-    <content type="html"><![CDATA[<blockquote class="pullquote"><p>“The introduction of the cipher 0 or the group concept was general nonsense too, and mathematics was more or less stagnating for thousands of years because nobody was around to take such childish steps.” </p><p style="text-align: right;"> Alexander Grothendieck </p></blockquote><p>One thing I really love about math is that acute observations of basic facts often lead to profound insights. Many great discoveries are driven by the desire to understand simple things in a deeper manner. Recently, I came across a <a href="https://www.jstor.org/stable/3072368">paper</a> by Dan Isaksen, which I believe is a quintessential example of this form of inquiry. It shows that even incredibly basic math, such as the way we learned to add integers in elementary school, could be seen from a much deeper and beautifully illuminating light. The original paper is very accessibe, but I still wanted to share this with you in my own exposition. In elementary school, we all learned the standared algorthim for adding and subtracting non-negative whole numbers: we align the numbers vertically, we do the operation digit-by-digit, with carrying when needed. The paper tells us that we could understand this algorithm from the perspective of group cohomology. </p><span id="more"></span><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    <content type="html"><![CDATA[<blockquote class="pullquote"><p>“The introduction of the cipher 0 or the group concept was general nonsense too, and mathematics was more or less stagnating for thousands of years because nobody was around to take such childish steps.” </p><p style="text-align: right;"> Alexander Grothendieck </p></blockquote><p>One thing I really love about math is that acute observations of basic facts often lead to profound insights. Many great discoveries are driven by the desire to understand simple things in a deeper manner. Recently, I came across a <a href="https://www.jstor.org/stable/3072368">paper</a> by Dan Isaksen, which I believe is a quintessential example of this form of inquiry. It shows that even incredibly basic math, such as the way we learned to add integers in elementary school, could be seen from a much deeper and beautifully illuminating light. The original paper is very accessibe, but I still wanted to share this with you in my own exposition. In elementary school, we all learned the standared algorthim for adding and subtracting non-negative whole numbers: we align the numbers vertically, we do the operation digit-by-digit, with carrying when needed. The paper tells us that we could understand this algorithm from the perspective of group cohomology. </p><p>(unfinished)</p><span id="more"></span><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
     
     <summary type="html">
     
@@ -31,6 +31,7 @@
 &lt;p style=&quot;text-align: right;&quot;&gt; Alexander Grothendieck &lt;/p&gt;&lt;/blockquote&gt;
 
 &lt;p&gt;One thing I really love about math is that acute observations of basic facts often lead to profound insights. Many great discoveries are driven by the desire to understand simple things in a deeper manner. Recently, I came across a &lt;a href=&quot;https://www.jstor.org/stable/3072368&quot;&gt;paper&lt;/a&gt; by Dan Isaksen, which I believe is a quintessential example of this form of inquiry. It shows that even incredibly basic math, such as the way we learned to add integers in elementary school, could be seen from a much deeper and beautifully illuminating light. The original paper is very accessibe, but I still wanted to share this with you in my own exposition. In elementary school, we all learned the standared algorthim for adding and subtracting non-negative whole numbers: we align the numbers vertically, we do the operation digit-by-digit, with carrying when needed. The paper tells us that we could understand this algorithm from the perspective of group cohomology. &lt;/p&gt;
+&lt;p&gt;(unfinished)&lt;/p&gt;
     
     </summary>
     
@@ -221,9 +222,9 @@
       <category term="Articles" scheme="http://yoursite.com/categories/Articles/"/>
     
     
-      <category term="Combinatorics" scheme="http://yoursite.com/tags/Combinatorics/"/>
-    
       <category term="Algebraic Geometry" scheme="http://yoursite.com/tags/Algebraic-Geometry/"/>
+    
+      <category term="Combinatorics" scheme="http://yoursite.com/tags/Combinatorics/"/>
     
   </entry>
   
@@ -392,9 +393,9 @@
       <category term="This Week I Learned" scheme="http://yoursite.com/categories/This-Week-I-Learned/"/>
     
     
-      <category term="Number Theory" scheme="http://yoursite.com/tags/Number-Theory/"/>
-    
       <category term="Algebraic Geometry" scheme="http://yoursite.com/tags/Algebraic-Geometry/"/>
+    
+      <category term="Number Theory" scheme="http://yoursite.com/tags/Number-Theory/"/>
     
       <category term="Arithmetic Geometry" scheme="http://yoursite.com/tags/Arithmetic-Geometry/"/>
     
