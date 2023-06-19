@@ -415,10 +415,9 @@ figure.highlight {
     line-height: 1.5; }
 
 .katex {
-  font-size: 1.1em !important; }
-
-.katex {
-  overflow-x: scroll; }
+  font-size: 1.1em !important;
+  overflow-x: auto;
+  overflow-y: auto; }
 
 .MathJax_Display, .MJXc-display, .MathJax_SVG_Display {
   overflow-x: auto;
