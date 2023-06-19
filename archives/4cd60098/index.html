@@ -25,7 +25,7 @@
 <meta property="og:description" content="“The introduction of the cipher 0 or the group concept was general nonsense too, and mathematics was more or less stagnating for thousands of years because nobody was around to take such childish step">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-03-22T02:47:20.000Z">
-<meta property="article:modified_time" content="2023-05-24T13:44:32.842Z">
+<meta property="article:modified_time" content="2023-06-19T09:54:06.025Z">
 <meta property="article:author" content="Yunhai Xiang">
 <meta property="article:tag" content="Algebra">
 <meta name="twitter:card" content="summary">
@@ -162,7 +162,7 @@
         <span class="column is-narrow">
             
             
-            a minute read (About 200 words)
+            7 minutes read (About 1041 words)
         </span>
         
     </div>
@@ -171,10 +171,43 @@
         <blockquote class="pullquote"><p>“The introduction of the cipher 0 or the group concept was general nonsense too, and mathematics was more or less stagnating for thousands of years because nobody was around to take such childish steps.” </p>
 <p style="text-align: right;"> Alexander Grothendieck </p></blockquote>
 
-<p>One thing I really love about math is that acute observations of basic facts often lead to profound insights. Many great discoveries are driven by the desire to understand simple things in a deeper manner. Recently, I came across a <a target="_blank" rel="noopener" href="https://www.jstor.org/stable/3072368">paper</a> by Dan Isaksen, which I believe is a quintessential example of this form of inquiry. It shows that even incredibly basic math, such as the way we learned to add integers in elementary school, could be seen from a much deeper and beautifully illuminating light. The original paper is very accessibe, but I still wanted to share this with you in my own exposition. In elementary school, we all learned the standared algorthim for adding and subtracting non-negative whole numbers: we align the numbers vertically, we do the operation digit-by-digit, with carrying when needed. The paper tells us that we could understand this algorithm from the perspective of group cohomology. </p>
-<p>(unfinished)</p>
+<p>Recently, I came across a <a target="_blank" rel="noopener" href="https://www.jstor.org/stable/3072368">paper</a> by Dan Isaksen, which I find very interesting. It shows that even incredibly basic math, such as the way we learned to add integers in elementary school, could be seen from a much deeper and beautifully illuminating light of group cohomology. The original paper is very accessibe, but I still wanted to share this with you in my own exposition. We begin by revisiting the classic  algorthim for adding and subtracting non-negative whole numbers: we align the numbers vertically, we do the operation digit-by-digit, and carrying a \(1\) when the digits add to \(10\) or more. The “carrying” here is the essence, we will see that this could be interpreted as 2-cocycles in a certain group cohomology.</p>
 <span id="more"></span>
 
+<blockquote>
+<p>Definition. Suppose \(Q,N\) are two groups, then an extension group of \(Q\) by \(N\) is a group \(G\) along with a short exact sequence of groups \[\mathbb{1}\rightarrow N \xrightarrow{\  i\ } G\xrightarrow{\ \pi\ }Q\rightarrow \mathbb{1}\]i.e. we have (the image of) \(N\) is a normal subgroup of \(G\) and \(G/N\cong Q\). The extension is said to be a central extension if \(N\) lies in the center of \(G\), a cyclic extension if \(G\) is cyclic, and a split extension if the exact sequence splits, i.e. there exists a map \(\tau:Q\rightarrow G\) such that \(\pi\circ \tau=\mathrm{id}\) (this is a proper generalization of split exact sequences in the category of abelian groups).</p>
+</blockquote>
+<p>The archetypical example in this article is the following. Let \(\mathbb Z/100\mathbb Z\) be our simplified model of the classic addition algorithm, which captures carrying from the ones digit to the tens digit, so it will suffice for our purpose. Let \(T\) be the subgroup of \(\mathbb Z/100\mathbb Z\) consisting of multiples of \(10\), which we call “tens”, and \(O\) be the quotient group of \(\mathbb Z/100\mathbb Z\) by \(T\) which we call the “ones”. Obviously \(T\cong \mathbb Z/10\mathbb Z\cong O\), but we note that they have different relationships to \(\mathbb Z/100\mathbb Z\). We then have a short exact sequence \(\mathbb{1}\rightarrow T \hookrightarrow \mathbb Z/100\mathbb Z\xrightarrow{\ \pi\ }O\rightarrow \mathbb{1}\), viewed as a group extension. This extension is central, cyclic, but not split. </p>
+<p>In the following, we will work more generally with an arbitrary extension \(G\) of \(Q\) by \(N\), where all these groups are assumed abelian and written additively. We pick a set-theoretic map \(\tau:Q\rightarrow G\) s.t. \(\pi\circ\tau=\mathrm{id}\) and \(\tau(0)=0\), and then we have a (set-theoretic) bijective correspondance \(G\leftrightharpoons N\times Q\) given by \[G\ \xrightleftharpoons[(n,q)\mapsto n+\tau(q)]{g\mapsto (g-\tau(\pi(g)),\pi(g))}\ N\times Q\]</p>
+<p>Bijectivity is easily verified. In the case of the archetypical example, this bijective correspondance \(\mathbb Z/100\mathbb Z\leftrightharpoons T\times O\) separates the tens and ones digit, e.g. \(14\mapsto (10,4)\), when \(\tau\) is appropriately chosen. We can then express the new addition function in this form, we could easily calculate as \[(n_1,q_1)+(n_2,q_2)=(n_1+n_2+z(q_1,q_2), q_1+q_2)\] where \(z(q_1,q_2)=\tau(q_1)+\tau(q_2)-\tau(q_1+q_2)\), which we call the carrying function. In the case of our example, we have e.g. \(z(6,7)=10\) and \(z(4,5)=0\), when \(\tau\) is appropriately chosen. More generally,</p>
+<blockquote>
+<p>Definition. We say that a function \(z:Q\times Q\rightarrow N\) is a carrying function if it satisfies </p>
+<ol>
+<li>(cocycle condition) \(z\left(b, c\right)-z\left(a+b, c\right)+z\left(a, b+c\right)-z\left(a, b\right)=0\)</li>
+<li>(normalization condition) \(z(a,0)=z(0,a)=0\)</li>
+</ol>
+</blockquote>
+<p>We can verify that \(z(q_1,q_2)=\tau(q_1)+\tau(q_2)-\tau(q_1+q_2)\) does satisfy these two conditions. The cocycle condition is derived from the associativity of addition, and the normalization condition is easily verified. Conversely, given two abelian groups \(N,Q\) and a (set-theoretic) carrying function \(z:Q\times Q\rightarrow N\), the set \(N\times Q\) with addition \((n_1,q_1)+(n_2,q_2)=(n_1+n_2+z(q_1,q_2), q_1+q_2)\) is a well-defined abelian group. Let \(G\) be this group, then \(G\) is a group extension of \(Q\) by \(N\) in the obvious way. For example, let \(Q=O\) and \(N=T\), and let the carrying function carry 2 when it normally carries 1, then we get the group \(G=\mathbb Z/50\oplus \mathbb Z/2\mathbb Z\).</p>
+<p>We saw that an extension gives a carrying function, and a carrying function gives rise to an extension. This correspondance is, however, not bijective. An isomorphism of extension is \(\phi:G\rightarrow G^\prime\) which restricts to the identity map on \(N\rightarrow N^\prime\) and induces isomorphism \(Q\rightarrow Q^\prime\), i.e. an isomorphism must preserve \(N\) and \(Q\). We then have the following</p>
+<blockquote>
+<p>Theorem. Suppose \(G,G^\prime\) are extensions with induced carrying functions \(z,z^\prime\), then TAFE</p>
+<ol>
+<li><p>exists a function \(h:Q\rightarrow N\) s.t. for all \(q_1,q_2\in Q\) \[z(q_1,q_2)-z^\prime(q_1,q_2)=h(q_1)+h(q_2)-h(q_1+q_2)\] and satisfies \(h(0)=0\) </p>
+</li>
+<li><p>\(G\cong G^\prime\) as extensions.</p>
+</li>
+</ol>
+<div class="spoiler collapsed">
+    <div class="spoiler-title">
+        Proof
+    </div>
+    <div class="spoiler-content">
+        <p>In one direction, define isomorphism \(\phi:G\rightarrow G^\prime\) by \(\phi(n,q)=(n+h(q),q)\), and the rest is a routine check. In the other direction, define \(h\) by the formula \(\phi(0,q)=(h(q),q)\). Then we compare the first component of \(\phi(0,q_1)+\phi(0,q_2)=\phi((0,q_1)+(0,q_2))\)</p>
+
+    </div>
+</div>
+</blockquote>
+<p>This gives us motivation to link this to group cohomology. We note that the carrying functions are precisely the 2-cocycles, and the RHS are the 2-coboundaries in the group cohomology \(H^2(Q;N)=\operatorname{Ext}^1_{\mathbb{Z}}(Q, N)\). Where \(N\) is a \(Q\)-module acting by conjugation. We can write out explicitly the coboundary map \(d^{2}: C^1(Q, N) \rightarrow C^{2}(Q, N)\) by \((dh)(q_1,q_2)=h(q_1)+h(q_2)-h(q_1+q_2)\), which checks out comparing to the previous calculations. </p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
     
     </div>
@@ -187,7 +220,9 @@
     
     
     <div class="columns is-mobile is-multiline article-nav">
-        <span class="column is-12-mobile is-half-desktop is-hidden-mobile article-nav-prev">
+        <span class="column is-12-mobile is-half-desktop  article-nav-prev">
+            
+            <a href="/archives/14bc455e/">A Go Variant: Terrain Go</a>
             
         </span>
         <span class="column is-12-mobile is-half-desktop  article-nav-next">
@@ -199,13 +234,6 @@
     
 </article>
 
-
-<div class="sharebox">
-    
-<div class="addthis_inline_share_toolbox"></div>
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-603b815e662e1491"></script>
-
-</div>
 
 
 
@@ -239,7 +267,7 @@
             <div class="column is-narrow has-text-centered">
                 &copy; 2023 Yunhai Xiang&nbsp;
                 Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> & <a
-                        target="_blank" rel="noopener" href="http://github.com/ppoffice/hexo-theme-minos">Minos</a>. Icons made by Ahmad Roaayala.
+                        target="_blank" rel="noopener" href="http://github.com/ppoffice/hexo-theme-minos">Minos</a>. Icons made by Freepik from Flaticon.
             </div>
             <div class="column is-hidden-mobile"></div>
 
@@ -290,6 +318,19 @@
 
     
     
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+        // ...options...
+    });
+});
+</script>
+
     
     
 <script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
