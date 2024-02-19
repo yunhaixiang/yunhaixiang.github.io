@@ -2,7 +2,7 @@
 <html class="has-navbar-fixed-top">
 <head>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-<title>Triangulated Categories - The Singularity</title>
+<title>Bundles and Divisors on Schemes - The Singularity</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
@@ -17,17 +17,17 @@
 
 
 
-    <meta name="description" content="“It is impossible to be a mathematician without being a poet in soul.”  Sofia Kovalevskaya   Continuing last week where we defined the homotopy category of complexes, we will take a look at triangulat">
+    <meta name="description" content="“Algebra is but written geometry and geometry is but figured algebra.”   Sophie Germain  Recall that for a topological space \(X\), a fibre bundle of fibres \(F\), where \(F\) is a topological space,">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Triangulated Categories">
-<meta property="og:url" content="http://yoursite.com/archives/3e09458/index.html">
+<meta property="og:title" content="Bundles and Divisors on Schemes">
+<meta property="og:url" content="http://yoursite.com/archives/9e4b6689/index.html">
 <meta property="og:site_name" content="The Singularity">
-<meta property="og:description" content="“It is impossible to be a mathematician without being a poet in soul.”  Sofia Kovalevskaya   Continuing last week where we defined the homotopy category of complexes, we will take a look at triangulat">
+<meta property="og:description" content="“Algebra is but written geometry and geometry is but figured algebra.”   Sophie Germain  Recall that for a topological space \(X\), a fibre bundle of fibres \(F\), where \(F\) is a topological space,">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-09-06T00:00:36.000Z">
-<meta property="article:modified_time" content="2023-02-22T09:05:40.701Z">
+<meta property="article:published_time" content="2024-01-25T06:09:37.000Z">
+<meta property="article:modified_time" content="2024-02-19T04:08:22.614Z">
 <meta property="article:author" content="Yunhai Xiang">
-<meta property="article:tag" content="Category Theory">
+<meta property="article:tag" content="Algebraic Geometry">
 <meta name="twitter:card" content="summary">
 
 
@@ -132,6 +132,22 @@
                 <div class="navbar-dropdown is-right">
                     
                     
+                    
+                    
+                    <a class="navbar-item" href="#Symmetric-Algebra-and-Quasi-coherent-Bundles">1&nbsp;&nbsp;<b>Symmetric Algebra and Quasi-coherent Bundles</b></a>
+                    
+                    
+                    <hr class="navbar-divider">
+                    
+                    
+                    <a class="navbar-item" href="#Cartier-Divisors-and-Weil-divisors">2&nbsp;&nbsp;<b>Cartier Divisors and Weil divisors</b></a>
+                    
+                    
+                    <hr class="navbar-divider">
+                    
+                    
+                    <a class="navbar-item" href="#Torsors">3&nbsp;&nbsp;<b>Torsors</b></a>
+                    
                 </div>
             </div>
             
@@ -145,12 +161,12 @@
     <article class="article content gallery" itemscope itemprop="blogPost">
     <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
         
-            Triangulated Categories
+            Bundles and Divisors on Schemes
         
     </h1>
     <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
         <span class="column is-narrow">
-            <time datetime="2022-09-06T00:00:36.000Z" itemprop="datePublished">Sep 5 2022</time>
+            <time datetime="2024-01-25T06:09:37.000Z" itemprop="datePublished">Jan 25 2024</time>
         </span>
         
         <span class="column is-narrow article-category">
@@ -162,79 +178,51 @@
         <span class="column is-narrow">
             
             
-            9 minutes read (About 1285 words)
+            12 minutes read (About 1832 words)
         </span>
         
     </div>
     <div class="article-entry is-size-6-mobile" itemprop="articleBody">
     
-        <blockquote class="pullquote"><p>“It is impossible to be a mathematician without being a poet in soul.”</p>
-<p style="text-align: right;"> Sofia Kovalevskaya </p></blockquote>
-
-<p>Continuing last week where we defined the homotopy category of complexes, we will take a look at triangulated categories. This will help us build towards the definition of derived categories. In some sense, triangulated categories are approximations of abelian categories. They are not strictly speaking a weaker version of abelian categories, and they don’t really imply each other. Triangulated categories takes a different approach to abelian categories. Instead of kernels, cokernels, and strict morphisms, triangulated categories bypass these notions and start out with “distinguished triangles”, which are similar to exact sequences.</p>
+        <blockquote class="pullquote"><p>“Algebra is but written geometry and geometry is but figured algebra.” </p>
+<p style="text-align: right;"> Sophie Germain </p></blockquote>
+<p>Recall that for a topological space \(X\), a fibre bundle of fibres \(F\), where \(F\) is a topological space, is a topological space \(E\), with a surjective map \(\pi: E\rightarrow X\) such that for all \(x\in X\), exists an open nbhd \(x\in U\subseteq X\) such that there is a homeomorphism \(\varphi: \pi^{-1}(U)\rightarrow U\times F\) such that \(\mathrm{pr}_U\circ \varphi=\pi|_{\pi^{-1}(U)}\) where \(\mathrm{pr}_U:U\times F\rightarrow U\) is the projection onto \(U\). Fibre bundles generalize vector bundles and covering spaces. In this post, we interpret this algebraically and generalize this notion to schemes. </p>
 <span id="more"></span>
-
-<p>A translation functor on an additive category \(\mathcal C\) is an automorphism \(T:\mathcal C\rightarrow\mathcal C\) where we denote \(T^n(X)=X[n]\) and \(T^nf=f[n]\) for \(n\in\mathbb Z\). A <em>triangle</em> is a diagram \(X\rightarrow Y\rightarrow Z\rightarrow X[1]\), and a morphism of triangles is a diagram<iframe class="quiver-embed" src="https://q.uiver.app/?q=WzAsOCxbMCwwLCJYIl0sWzEsMCwiWSJdLFsyLDAsIloiXSxbMywwLCJYWzFdIl0sWzAsMSwiWF5cXHByaW1lIl0sWzEsMSwiWV5cXHByaW1lIl0sWzIsMSwiWl5cXHByaW1lIl0sWzMsMSwiWF5cXHByaW1lWzFdIl0sWzAsMV0sWzEsMl0sWzIsM10sWzQsNV0sWzUsNl0sWzYsN10sWzAsNCwidSJdLFsxLDUsInYiXSxbMiw2LCJ3Il0sWzMsNywidVsxXSJdXQ==&embed" width="300" height="180" style="border-radius: 0px; border: none;"></iframe>which commutes. A triangulated category is an additive category \(\mathcal C\) with a translation functor and a family of triangles called <em>distinguished triangles</em> such that the following axioms are satisfied.</p>
-<ol>
-<li>For any \(X\in\mathcal C\), the triangle \(X\xrightarrow{\mathbf 1_X} X\rightarrow \mathbf 0\rightarrow X[1]\) is distinguished.</li>
-<li>Any triangle isomorphic to a distinguished triangle is distinguished.</li>
-<li>Any morphism \(X\rightarrow Y\) can be completed to a distinguished triangle \(X\rightarrow Y\rightarrow Z\rightarrow X[1]\).</li>
-<li>(Rotation axiom) A triangle \(X\xrightarrow{u} Y\rightarrow Z\rightarrow X[1]\) is distinguished iff \(Y\rightarrow Z\rightarrow X[1]\xrightarrow{-u[1]}Y[1]\) is.</li>
-<li>Suppose the rows in the diagram <iframe class="quiver-embed" src="https://q.uiver.app/?q=WzAsOCxbMCwwLCJYIl0sWzEsMCwiWSJdLFsyLDAsIloiXSxbMywwLCJYWzFdIl0sWzAsMSwiWF5cXHByaW1lIl0sWzEsMSwiWV5cXHByaW1lIl0sWzIsMSwiWl5cXHByaW1lIl0sWzMsMSwiWF5cXHByaW1lWzFdIl0sWzAsMV0sWzEsMl0sWzIsM10sWzQsNV0sWzUsNl0sWzYsN10sWzAsNCwidSJdLFsxLDUsInYiXSxbMiw2LCJ3IiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzMsNywidVsxXSJdXQ==&embed" width="300" height="180" style="border-radius: 8px; border: none;"></iframe> are distinguished, and the left square commutes, then there exists a morphism \(w:Z\rightarrow Z^\prime\) (not necessarily unique) completing the diagram into a morphism of triangles. </li>
-<li>(Octahedral axiom) Suppose the first three rows are distinguished and the left two squares commute, then there exists morphisms \(u,v,w\) completing the diagram into two morphisms of triangles and the whole diagram commutes and the last row is also distinguished <iframe class="quiver-embed" src="https://q.uiver.app/?q=WzAsMTYsWzAsMCwiWCJdLFsxLDAsIlkiXSxbMiwwLCJaXlxccHJpbWUiXSxbMywwLCJYWzFdIl0sWzAsMSwiWCJdLFsxLDEsIloiXSxbMiwxLCJZXlxccHJpbWUiXSxbMywxLCJYWzFdIl0sWzAsMiwiWSJdLFsxLDIsIloiXSxbMiwyLCJYXlxccHJpbWUiXSxbMywyLCJZWzFdIl0sWzAsMywiWl5cXHByaW1lIl0sWzEsMywiWV5cXHByaW1lIl0sWzIsMywiWF5cXHByaW1lIl0sWzMsMywiWl5cXHByaW1lWzFdIl0sWzAsNCwiXFxtYXRoYmYgMV9YIl0sWzEsNSwiZyJdLFs0LDgsImciXSxbNSw5LCJcXG1hdGhiZiAxX1oiXSxbMCwxLCJmIl0sWzEsMiwiYSJdLFsyLDNdLFs0LDVdLFs1LDYsImIiXSxbNiw3XSxbOCw5LCJnIl0sWzksMTAsImMiXSxbMTAsMTFdLFszLDcsIlxcbWF0aGJmIDFfe1hbMV19Il0sWzcsMTEsImZbMV0iXSxbMiw2LCJ1IiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzYsMTAsInYiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbMTAsMTQsIlxcbWF0aGJmIDFfe1heXFxwcmltZX0iXSxbMTIsMTMsInUiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbMTMsMTQsInYiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbMTQsMTUsInciLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbMTEsMTUsImFbMV0iXSxbOCwxMiwiYSJdLFs5LDEzLCJiIl1d&embed" width="300" height="300" style="border-radius: 8px; border: none;"></iframe> </li>
-</ol>
-<p>If all but the last axiom is satisfied, then it is known as a <em>pre-triangulated category</em>. It is conjectured that pre-triangulated categories are triangulated, i.e. the last axiom is redundant. The general concensus seems to be that this is not true. </p>
-<p>An additive functor between triangulated categories \(F:\mathcal C\rightarrow\mathcal D\) is said to <em>commute with translation</em> if there is a natural isomorphism \(FT_{\mathcal C}\cong T_{\mathcal D} F\), and \(F\) is said to be <em>exact</em> or <em>triangulated</em> if it commutes with translation and takes distinguished triangles to distinguished triangles. Let \(F,G:\mathcal C\rightarrow\mathcal D\) be exact functors, and \(\eta_{F}:FT_{\mathcal C}\rightarrow T_{\mathcal D}F\) and \(\eta_{G}:GT_{\mathcal C}\rightarrow T_{\mathcal D}G\) be natural isomorphisms, then a natural transformation \(w:F\rightarrow G\) is <em>graded</em> if for \(X\in\mathcal C\) <iframe class="quiver-embed" src="https://q.uiver.app/?q=WzAsNCxbMCwwLCJGVF97XFxtYXRoY2FsIEN9WCJdLFsxLDAsIlRfe1xcbWF0aGNhbCBEfUZYIl0sWzAsMSwiR1RfXFxtYXRoY2Fse0N9WCJdLFsxLDEsIlRfXFxtYXRoY2FsIERGWCJdLFswLDEsIlxcZXRhX3tGLFh9Il0sWzAsMiwid197VF9cXG1hdGhjYWwgQ1h9IiwyXSxbMSwzLCJUX1xcbWF0aGNhbCBEd19YIl0sWzIsMywiXFxldGFfe0csWH0iLDJdXQ==&embed" width="180" height="180" style="border-radius: 8px; border: none;"></iframe> commutes. </p>
+<h4 id="Symmetric-Algebra-and-Quasi-coherent-Bundles"><a href="#Symmetric-Algebra-and-Quasi-coherent-Bundles" class="headerlink" title="Symmetric Algebra and Quasi-coherent Bundles"></a>Symmetric Algebra and Quasi-coherent Bundles</h4><p>Recall that for \(M\) an \(A\)-module, its tensor algebra is the graded algebra \(T(M)=\bigoplus<em>{n\in\mathbb N}T^n(M)\) where \(T^n(M)=M^{\otimes n}\). The symmetric algebra is the algebra \(\mathrm{Sym}(M)=T(M)/I\) where \(I\) is the ideal generated by the set \(\{m\otimes n-n\otimes m:m,n\in M\}\), which is a graded algebra \(\mathrm{Sym}(M)=\bigoplus\</em>{n\in\mathbb N}\mathrm{Sym}^n(M)\) since \(I\) is homogeneous. Note that \(\mathrm{Sym}^0(M)=A\) and \(\mathrm{Sym}^1(M)=M\), so there is a map \(i:\mathrm{Sym}^1(M)=M\rightarrow \mathrm{Sym}(M)\). The symmetric algebra has the universal property that the precomposition \(\varphi\mapsto \varphi\circ i\) induces a bijection </p>
+<p>\[\mathrm{Hom}_{A-\mathrm{Alg}}(\mathrm{Sym}(M),B)\rightarrow\mathrm{Hom}_{A-\mathrm{Mod}}(M,B)\]</p>
+<p>for every \(A\)-algebra \(B\). Setting \(B=\mathrm{Sym}(N)\), we see from this that we can find \(\mathrm{Sym}(u):\mathrm{Sym}(M)\rightarrow\mathrm{Sym}(N)\) which is a graded morphism, so \(\mathrm{Sym}\) is a functor from the category of \(A\)-modules to the category of graded \(A\)-algebras. We globalize this construction to schemes. Let \(X\) be a scheme (a more generally a ringed space), and \(\mathcal E\) and \(\mathcal O_X\)-module, then define the graded \(\mathcal O_X\)-algebra \(\mathrm{Sym}(\mathcal E)=\bigoplus_{n\in\mathbb N}\mathrm{Sym}^n(\mathcal E)\) be the sheafification of \(U\mapsto \mathrm{Sym}_{\Gamma(U,\mathcal O_X)}(\Gamma(U,\mathcal E))\), and similar to the local case, we have a bijection</p>
+<p>\[\mathrm{Hom}_{\mathcal O_X-\mathrm{Alg}}(\mathrm{Sym}(\mathcal E), \mathcal A)\rightarrow \mathrm{Hom}_{\mathcal O_X-\mathrm{Mod}}(\mathcal E, \mathcal A)\]</p>
+<p>Let \(\mathcal B\) be a quasicoherent \(\mathcal O_X\)-algebra. There exists an \(X\)-scheme \(\underline{\mathrm{Spec}}(\mathcal B)\), such that for all \(X\)-schemes \(f:T\rightarrow X\) there are bijections functorial in \(T\) of the following form </p>
+<p>\[\mathrm{Hom}_{\mathrm{Sch}/X}(T,\underline{\mathrm{Spec}}(\mathcal B))\rightarrow\mathrm{Hom}_{\mathcal O_X-\mathrm{Alg}}(\mathcal B,f_*\mathcal O_T)\]</p>
+<p>In other words, the functor \((\mathrm{Sch}/X)^{\mathrm{op}}\rightarrow \mathbf{Set}\) given by \((f: T \rightarrow X) \mapsto \operatorname{Hom}_{\mathcal{O}_X-\mathrm{Alg}}\left(\mathcal{B}, f_<em> \mathcal{O}_T\right)\) is representable. To see this, we note that this is a sheaf on the Zariski site, since \(f_</em>\) and \(\mathrm{Hom}(\mathcal B,-)\) are left-exact. We also have this is covered by representable open subfunctors. More concretely, the points of \(\underline{\mathrm{Spec}}(\mathcal B)\) above \(x\in X\) is that of \(\mathrm{Spec}(\mathcal \Gamma(B,\mathcal O_X)\otimes \kappa(p))\) and the topology above an open affine \(U=\mathrm{Spec}(A)\) is \(\mathrm{Spec}(\Gamma(U,\mathcal B))\). For every quasi-coherent \(\mathcal O_X\)-module \(\mathcal E\), we define \(\mathbb V(\mathcal E)=\underline{\mathrm{Spec}}(\mathrm{Sym}(\mathcal E))\) functorial in \(E\) which the call the quasi-coherent bundle associated to \(E\). When restricted to locally free \(\mathcal O_X\)-modules, this functor provides a correspondance to algebraic vector bundles, where algebraic vector bundles are understood as follows, </p>
 <blockquote>
-<p>Theorem 1. In a (pre)triangulated category \(\mathcal C\), if \(X\xrightarrow{u} Y\xrightarrow{v} Z\xrightarrow{w} X[1]\) is distinguished, then</p>
-<ol>
-<li>\(vu=0\) and \(wv=0\)</li>
-<li>any change of sign of exactly two of \(u,v,w\) is distinguished,</li>
-<li>if \(U\in\mathcal C\), then there exists long exact sequences of abelian groups \[\begin{aligned}&amp;\cdots\rightarrow\mathrm{Hom}(U,X[i])\xrightarrow{u[i]_*}\mathrm{Hom}(U,Y[i])\xrightarrow{v[i]_*} \mathrm{Hom}(U,Z[i])\xrightarrow{w[i]_*}\mathrm{Hom}(U,X[i+1])\rightarrow\cdots\\ &amp;\cdots\leftarrow\mathrm{Hom}(X[i],U)\xleftarrow{u[i]^*}\mathrm{Hom}(Y[i],U)\xleftarrow{v[i]^*} \mathrm{Hom}(Z[i],U)\xleftarrow{w[i]^*}\mathrm{Hom}(X[i+1],U)\leftarrow\cdots\end{aligned}\] where \(f^*,f_*\) for some \(f\) represents maps induced by Hom-functors.</li>
-<li>(triangulated 5-lemma) Consider a morphism of distinguished triangles, and let its components be \(f:X\rightarrow X^\prime,g:Y\rightarrow Y^\prime,h:Z\rightarrow Z^\prime\), then if any two of them are isomorphisms, so is the third.</li>
-<li>\(u\) is an isomorphism iff \(Z\cong\mathbf{0}\)</li>
-</ol>
-<div class="spoiler collapsed">
-    <div class="spoiler-title">
-        Proof
-    </div>
-    <div class="spoiler-content">
-        <ol>
-<li>It suffice to show \(vu=0\), and \(wv=0\) can be obtained from the rotation axiom. To show this, we first note that \(Z\rightarrow Z\rightarrow \mathbf 0\rightarrow Z[1]\) is distinguished. The triangle \(Y\rightarrow Z\rightarrow X[1]\rightarrow Y[1]\) is distinguished by axiom 4, and we construct a morphism between them via axiom 5, and then we can obtain \(vu=0\) from the commutativity of a square in the diagram.</li>
-<li>Straightforwardly, the triangle obtained by changing exactly two signs is isomorphic to the original triangle by an obvious morphism of triangles, so it is still distinguished.</li>
-<li>We will only prove the first one, and the second one is proved dually. Since \(vu=0\), we have \((v[i])(u[i])=0\), so \(\mathrm{Im}(u[i]_*)\subseteq \mathrm{Ker}(v[i]_*)\). Conversely, suppose \(f\in \mathrm{Ker}(v[i]_*)\), so \(f(v[i])=0\). Consider the diagram as follows\[<br>\require{AMScd}<br>\begin{CD}<br>U[-i] @&gt;{}&gt;&gt; \mathbf{0} @&gt;{}&gt;&gt; U[-i+1] @&gt;{-\mathbf{1}}&gt;&gt; U[-i+1]\\<br>@VV{f[-i]}V @VVV @. @VV{f[-i+1]}V \\<br>Y @&gt;{v}&gt;&gt; Z @&gt;{w}&gt;&gt; X[1] @&gt;{-u[1]}&gt;&gt; Y[1]<br>\end{CD}\] which we can complete to a morphism of triangles with some \(h:U[-i+1]\rightarrow X[1]\). By the commutativity of the rightmost square, \(-f[-i+1]=-(u[i])h\) so \(f=(u[i])(h[-i+1])\), so \(f\in \mathrm{Im}(u[i]_*)\). By the rotation axiom, since we proved a short exact sequence, we have the exactness of the long exact sequence.</li>
-<li>By the rotation axiom, it suffice to show the case where the first two are isomorphisms. By using (3), we have a long exact sequence, and we can obtain the isomorphism using the usual 5-lemma, details ommited.</li>
-<li>A striaghtforward corollary.</li>
-</ol>
-
-    </div>
-</div>
+<p>Definition. A vector bundle of rank \(n\in\mathbb N\) on \(X\) is an \(X\)-scheme \(V\) with an equivalence class of families \((U_i, c_i)\) where \((U_i)_i\) is an open cover of \(V\) and isomorphisms \(c_i:V|_{U_i}\rightarrow \mathbb A^{n}_{U_i}\) of \(U_i\)-schemes, such that for all \(i,j\), the automorphisms \(c_i\circ c_j:\mathbb A^n_{U_i\cap U_j}\rightarrow \mathbb A^n_{U_i\cap U_j}\) are linear, where two such families, called atlases, are equivalent if their union is an atlas. Moreover, define a morphisms of vector bundles \((V,U_i,c_i)\rightarrow (V^\prime,U^\prime_i,c^\prime_i)\) as a \(X\)-morphism \(f:V\rightarrow V^\prime\) such that \(c^\prime_j\circ f\circ c_i^{-1}:\mathbb A^n_{U_i\cap U^\prime_j}\rightarrow \mathbb A^n_{U_i\cap U^\prime_j}\) is linear. </p>
 </blockquote>
-<p>Let \(\mathcal C\) be a triangulated category and \(\mathcal A\) an abelian category, then an additive functor \(H:\mathcal C\rightarrow\mathcal A\) is called <em>cohomological</em> if for every distinguished triangle \(X\rightarrow Y\rightarrow Z\rightarrow X[1]\), the sequence \(H(X)\rightarrow H(Y)\rightarrow H(Z)\) is exact. It is then a straightforward consequence by the rotation axiom that for every distinguished triangle \(X\rightarrow Y\rightarrow Z\rightarrow X[1]\), we have the following long exact sequence<br>\[\cdots\rightarrow H(X[i])\xrightarrow{H(u[i])} H(Y[i])\xrightarrow{H(v[i])}H(Z[i])\xrightarrow{H(w[i])}H(X[i+1])\rightarrow\cdots\] What we just proved in part 3 of the previous theorem is that the Hom-functor is cohomological. </p>
+<p>The locally free \(\mathcal O_X\)-modules are interpreted as sheaf of sections over the vector bundle. More specifically, for a vector bundle \(E\) as above, we define a locally free \(\mathcal O_X\)-module \(\mathcal E_V\) as the following. Define the sheaf \(\mathcal P( V/X)\) of abelian groups by attaching to \(U\subseteq X\) the sections of \(V\) over \(U\), that is, morphisms \(s:U\rightarrow V|_U\) with \(f\circ s=\mathrm{id}_U\), and restrictions are given by restrictions of scheme morphisms. Locally, this has the structure of \(\mathcal O_X^n\) which gives the module structure. This gives the inverse to \(\mathbb V(-)\). This correspondance is part of what is known as Serre-Swan theorem</p>
+<h4 id="Cartier-Divisors-and-Weil-divisors"><a href="#Cartier-Divisors-and-Weil-divisors" class="headerlink" title="Cartier Divisors and Weil divisors"></a>Cartier Divisors and Weil divisors</h4><p>It is an important question to determine the configuration of zeros and poles of a rational (or meromorphic) function. Let \(X\) be an integral scheme (i.e. reduced and irreducible). We denote by \(\mathcal K_X\) the constant sheaf on \(X\) with value the function field \(K(X)\) of \(X\). </p>
 <blockquote>
-<p>Definition 2. An object in an abelian category is <em>simple</em> if the only subobjects are zero and the object itself, and semisimple if it is a coproduct of simple objects. An abelian category is semisimple if every short exact sequence splits.</p>
+<p>Definition. A Cartier divisor on \(X\) is a family \((U_i,f_i)\) where \((U_i)_i\) is an open cover of \(X\) and \(f_i\in K(X)^\times\) with \(f_if_j^{-1}\in \Gamma(U_i\cap U_j,\mathcal O_X^\times) \) for all \(i,j\), where two families \((U_i,f_i)\), \((V_i,g_i)\) give rise to the same Cariter divisor if \(f_ig_j^{-1}\in\Gamma(U_i\cap V_j,\mathcal O_X^\times)\) for all \(i,j\). The Cartier divisors form an abelian group \(\mathrm{Div}(X)\), where adding the family \((U_i,f_i)\) and \((V_i,g_i)\) gives \((U_i\cap V_j,f_ig_j)\). A Cartier divisor is principle if it is given by some \((X,f)\), and two divisors \(D,E\) are linearly equivalent if \(D-E\) is principle. </p>
 </blockquote>
-<p>Caution: some authors call a category semisimple if all objects are semisimple, which is a stronger definition and is NOT equivalent to our definition. Every semisimple abelian category has a triangulated structure. To do this, we let the translation functor be the identity functor, and we declare a triangle \(X\xrightarrow{u} Y\xrightarrow{v} Z\xrightarrow{w} X\) distinguished if it is “exact” at \(X\), i.e. \(\mathrm{Ker}(u)=\mathrm{Im}(w)\). Verifying this is a triangulated category is a tedious, and we will not do it here. Moreover, all abelian triangulated categories are semisimple. We will not prove this either. In fact, the homotopy category of complexes \(K(\mathcal A)\) is triangulated. To see this, we set the distinguished triangles to be the ones isomorphic to a standard triangle of the form \[X^\bullet\xrightarrow{f^\bullet} Y^\bullet \xrightarrow{i_f^\bullet} \mathrm{Cone}(f^\bullet)\xrightarrow{p_f^\bullet} X^\bullet[1]\] and as expected, the cohomology functor \(H^n:K(\mathcal A)\rightarrow\mathcal A\) is cohomological.</p>
+<p>Alernatively, we can set \(\mathrm{Div}(X)=\Gamma(X,\mathcal K_X^\times/\mathcal O_X^\times)\), and principle divisors the ones in the image of \(\Gamma(X,\mathcal K_X^\times)\). We call the ones in \(\Gamma(X,(\mathcal K_X^\times\cap \mathcal O_X)/\mathcal O_X^\times)\) effective divisors and denote it by \(D\ge 0\). Let \(\mathrm{Cl}(X)\) denote \(\mathrm{Div}(X)\) modulo the principle divisors, which we call the divisor class group. We have<br>\[1\longrightarrow \Gamma(X,\mathcal O_X)^\times\longrightarrow K(X)\longrightarrow \mathrm{Div}(X) \longrightarrow \mathrm{Cl}(X)\longrightarrow 0\] a short exact sequence. To a Cartier divisor \(D\), we associate the line bundle \(\mathcal O_X(D)\)<br>\[\Gamma(V,\mathcal O_X(D))=\{f\in K(X): \forall i,f_if\in \Gamma(U_i\cap V,\mathcal O_X)\}\] for all open \(V\subseteq X\). This association \(D\mapsto \mathcal O_X(D)\) induces an isomorphism \(\mathrm{Cl}(X)\cong \mathrm{Pic}(X)\). Call an invertible \(\mathcal O_X\)-submodule of \(\mathcal K_X\) an invertible fractional ideal of \(\mathcal O_X\). Then we can associate a Cartier divisor \(D\) an invertible fractional ideal \(\mathcal F_X(D)\) such that \(\mathcal F_X(D) (U_i)=f<em>i\mathcal O_X\). This correspondance provides an isomorphism between \(\mathrm{Div}(X)\) and the invertible fractional ideal on \(X\). Cartier divisors considered more geometrically is so called Weil divisors. Let \(Z^k(X)\) be the free abelian group generated on the set of closed integral subscheme of codimension \(k\). The elements of \(Z^1(X)\) are then called Weil divisors and their generators called the prime divisors, and the ones with nonnegative coefficients are called the effective Weil divisors. We now connect Weil divisors with Cartier divisors with a homomorphism \(\mathrm{cyc}: \mathrm{Div}(X)\rightarrow Z^1(X) \). To this end, we need to define, for a prime Weil divisor \(C\), the order \(\mathrm{ord}_C(f)\) for some meromorphic function \(f\in \Gamma(U,\mathcal K_X)\) where the generic point \(\xi\) of \(C\) is contained in \(C\). If the local ring \(\mathcal O\</em>{X,C}=\mathcal O_{X,\xi}\) is a DVR, for example, when \(X\) is normal, then we can just set \(\mathrm{ord}_C(f)=\nu (f)\) the normalized discrete valuation of \(f\). In general, the local ring is a local noetherian ring of dimension \(1\). For a nonzero \(f\in \mathrm{Frac}(\mathcal O_{X,C})\) where \(f=a/b\) we set \(\mathrm{ord}_C(f)=\mathrm{lg}(\mathcal O_{X,C}/(a))-\mathrm{lg}(\mathcal O_{X,C}/(b))\). For a Cartier divisor \(D\), we choose some element of its atlas \((U_i,f_i)\) where \(\xi_C\in U_i\), and define \(\mathrm{ord}_C(D)=\mathrm{ord}_C(f_i)\), and then we can define \(\mathrm{cyc}(D)=\sum_C\mathrm{ord}_C(D)\left[C\right]\). This provides the desired correspondance. Like Cartier divisors, we can associate to each Weil divisor \(D\), a fractional ideal \(\mathcal L\) where<br>\[\Gamma(U,\mathcal L)=\{f\in \mathcal K_X(U): \mathrm{div}(f)+D\ge 0\}\] which is the same one as the one with the corresponding Cartier divisor. </p>
+<h4 id="Torsors"><a href="#Torsors" class="headerlink" title="Torsors"></a>Torsors</h4><p>For a sheaf \(T\) on some \(X\) and a sheaf of groups \(G\) on \(X\), we say \(T\) is a \(G\)-torsor if \(G\) acts on \(T\) simply transitively and \(X\) has an open cover \((U_i)_i\) such that \(T(U_i)\) is nonempty for all \(i\). The sheaf cohomology \(H^1(X,G)\) classifies the \(G\)-torsors. For a locally free \(\mathcal O_X\)-module \(\mathcal E\) of rank \(n\). The sheaf \(\mathrm{Isom}(\mathcal O_X^n,\mathcal E)\) is a \(\mathrm{GL}_n(\mathcal O_X)\)-torsor by \(\mathrm{GL}_n(\mathcal O_X)(U)\) acts on \(\mathrm{Isom}(\mathcal O_X^n,\mathcal E)(U)\) by \(g\cdot u\mapsto u\circ g^{-1}\). We have a bijection between rank \(n\) vector bundles and \(H^1(X,\mathrm{GL}_n(\mathcal O_X))\), so rank \(n\) vector bundles are identified with \(\mathrm{GL}_n(\mathcal O_X)\)-torsors. </p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
     
     </div>
     
     <div class="columns is-variable is-1 is-multiline is-mobile">
     
-        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/Category-Theory/">#Category Theory</a></span>
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/Algebraic-Geometry/">#Algebraic Geometry</a></span>
     
     </div>
     
     
     <div class="columns is-mobile is-multiline article-nav">
-        <span class="column is-12-mobile is-half-desktop  article-nav-prev">
-            
-            <a href="/archives/d806580c/">Localization of Categories and Derived Category</a>
+        <span class="column is-12-mobile is-half-desktop is-hidden-mobile article-nav-prev">
             
         </span>
         <span class="column is-12-mobile is-half-desktop  article-nav-next">
             
-            <a href="/archives/4bee11dc/">Abelian Categories and Derived Functors</a>
+            <a href="/archives/cb9350c1/">Musings on Education</a>
             
         </span>
     </div>
