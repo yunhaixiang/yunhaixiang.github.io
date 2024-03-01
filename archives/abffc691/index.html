@@ -2,7 +2,7 @@
 <html class="has-navbar-fixed-top">
 <head>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-<title>Categories - The Singularity</title>
+<title>Uniformization Theorem for Elliptic Curves - The Singularity</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
@@ -17,28 +17,17 @@
 
 
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="The Singularity">
-<meta property="og:url" content="http://yoursite.com/categories/index.html">
+    <meta name="description" content="“The pursuit of mathematics is a divine madness of the human spirit.”   Alfred North Whitehead   In this post, we prove the uniformization theorem for elliptic curves. The theorem states that every el">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Uniformization Theorem for Elliptic Curves">
+<meta property="og:url" content="http://yoursite.com/archives/abffc691/index.html">
 <meta property="og:site_name" content="The Singularity">
+<meta property="og:description" content="“The pursuit of mathematics is a divine madness of the human spirit.”   Alfred North Whitehead   In this post, we prove the uniformization theorem for elliptic curves. The theorem states that every el">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-02-29T05:10:11.000Z">
+<meta property="article:modified_time" content="2024-03-01T00:11:24.808Z">
 <meta property="article:author" content="Yunhai Xiang">
 <meta property="article:tag" content="Number Theory">
-<meta property="article:tag" content="Combinatorics">
-<meta property="article:tag" content="Algebra">
-<meta property="article:tag" content="Category Theory">
-<meta property="article:tag" content="Algebraic Geometry">
-<meta property="article:tag" content="Arithmetic Geometry">
-<meta property="article:tag" content="Euclidean Geometry">
-<meta property="article:tag" content="Algebraic geometry">
-<meta property="article:tag" content="Representation Theory">
-<meta property="article:tag" content="Differential Geometry">
-<meta property="article:tag" content="Logic Theory">
-<meta property="article:tag" content="Lie Groups and Lie Algebras">
-<meta property="article:tag" content="Algebraic Topology">
-<meta property="article:tag" content="Category theory">
-<meta property="article:tag" content="Philosophy">
-<meta property="article:tag" content="Homotopy Theory">
 <meta property="article:tag" content="Complex Analysis">
 <meta name="twitter:card" content="summary">
 
@@ -137,35 +126,128 @@
             </a>
             
             
+            <div class="navbar-item is-hoverable has-dropdown is-hidden-mobile is-hidden-tablet-only toc">
+                <a class="navbar-item" title="Table of Contents">
+                    <i class="fa fa-list"></i>
+                </a>
+                <div class="navbar-dropdown is-right">
+                    
+                    
+                </div>
+            </div>
+            
             
         </div>
     </div>
 </nav>
 
-    <section class="section section-heading">
+    <section class="section">
     <div class="container">
-        <div class="content">
-            <h5><i class="far fa-folder"></i>Categories</h5>
-        </div>
+    <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            Uniformization Theorem for Elliptic Curves
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2024-02-29T05:10:11.000Z" itemprop="datePublished">Feb 29 2024</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/Articles/">Articles</a>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            5 minutes read (About 697 words)
+        </span>
+        
     </div>
-</section>
-<section class="section">
-    <div class="container">
-        <div class="columns is-variable is-1 is-multiline is-mobile">
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <blockquote class="pullquote"><p>“The pursuit of mathematics is a divine madness of the human spirit.” </p>
+<p style="text-align: right;"> Alfred North Whitehead </p></blockquote>
+
+<p>In this post, we prove the uniformization theorem for elliptic curves. The theorem states that every elliptic curve over the complex numbers arose from the complex plane modulo a lattice, and vice versa. In fact there is an isomorphism between them which is both complex analytic and algebraic. This shows that elliptic curves over complex numbers is a torus. </p>
+<span id="more"></span>
+
+<p>A lattice \(L=[\omega_1,\omega_2]\subseteq \mathbb C\) is an additive subgroup \(\omega_1\mathbb Z+\omega_2\mathbb Z\subseteq \mathbb C\) with \(\omega_1,\omega_2\) linearly independent. For example, if \(\mathcal O=\mathbb Z[\tau]\) is an imaginary quadratic order, the it gives rise to lattice \([1,\tau]\). An elliptic function for a lattice \(L\) is a meromorphic function \(f:D\subseteq \mathbb C\rightarrow\mathbb C\) that is doubly-periodic w.r.t. \(L\), i.e. \(f(z+\omega)=f(z)\) for all \(\omega\in L\). Elliptic functions form a field \(\mathbb C(L)\). We recall Cauchy’s principle argument. </p>
+<blockquote>
+<p>Theorem (Cauchy). Let \(\gamma\) be a simply closed positively oriented curve with interior \(\Gamma\). Let \(f\) be a function meromorphic on an open set \(\Omega\) containing \(\Gamma\) and \(\gamma\) that has no zero or pole on \(\gamma\), and \(g\) a nonzero function holomorphic on \(\Omega\), then for \(z_0\in\Gamma\) \[\frac{1}{2\pi i}\oint_{\gamma}g(z)\frac{f^\prime(z)}{f(z)}\mathrm dz=\sum_{\omega\in \Gamma}g(z_0)\mathrm{ord}_{w}(f)\] when \(g(z)=1\), the rhs is the difference between the number of zeros and poles in \(\Omega\). </p>
+</blockquote>
+<p>This theorem is proved by writing \(f,g\) in terms of their Laurent series about \(z_0\) and using Residue theorem. A corollary from this is that in any fundamental paralellogram \(F_{\alpha}=\alpha+\{t_1\omega_1+t_2\omega_2:0\le t_1,t_2&lt;1\}\), the number of poles is equal to the number of zeros. </p>
+<blockquote>
+<p>Definition. Let \(L\) be a lattice and \(k&gt;2\) an integer. The Einsenstein series of weight \(k\) is \[G_{k}(L)=\sum_{\omega\in L\setminus\{0\}}\frac{1}{\omega^k}\] Consider lattices \([1,\tau]\) for \(\tau\in\mathbb H\) where \(\mathbb H=\{z\in\mathbb C:\mathrm{Im}(z)&gt;0\}\) is the upper-half plane, we define \(G_{k}(\tau)=G_{k}([1,\tau])\), so that \(G_k\) is a funciton on the upper-half plane \(\mathbb H\). </p>
+</blockquote>
+<p>If \(k\) is odd then the term \(\frac{1}{\omega^k}\) cancels with \(\frac{1}{(-\omega)^k}\), so the only interesting Einsenstein series are those of even weight. The Einsenstein series converges absolutely. </p>
+<blockquote>
+<p>Definition. A Weierstrass \(\wp\)-function of a lattice \(L\) is \[\wp(z ; L)=\frac{1}{z^2}+\sum_{\omega \in L^*}\left(\frac{1}{(z-\omega)^2}-\frac{1}{\omega^2}\right)\] we write \(\wp(z)\) when there is no confusion of the lattice. </p>
+</blockquote>
+<p>The \(\wp\)-function has a pole of order \(w\) at each lattice point, and these are all the poles. Its derivative is</p>
+<p>\[\wp^\prime(z)=-2\sum_{\omega\in L}\frac{1}{(z-\omega)^3}\]</p>
+<p>It follows that \(\wp, \wp^\prime\) are elliptic functions. We will now derive a differential equation that reveals its link to elliptic curves. By expanding the \(\wp\)-function into series, we can write it in terms of Einsenstein series. \[\wp(z)=\frac{1}{z^2}+\sum_{n=1}^{\infty}(2 n+1) G_{2 n+2}(L) z^{2 n}\]</p>
+<p>The critical observation is that \(\wp \) satisfies the following differential equations. </p>
+<blockquote>
+<p>Theorem. Let \(L\) be a lattice, then \[\wp^{\prime}(z)^2=4 \wp(z)^3-g_2(L) \wp(z)-g_3(L),\] where \(g_2(L)=60G_4(L)\) and \(g_3(L)=140 G_6(L)\)</p>
+</blockquote>
+<p>This corresponds to an elliptic curve by letting \(y=\wp^\prime(z)\) and \(x=\wp(z)\), so we have an elliptic curve \(y^2=4 x^3-g_2(L) x-g_3(L)\), iff the discriminant \(\Delta(L)=g_2(L)^3-27g_3(L)^2\) is nonzero, and this is always nonzero. We now have a map that gives an elliptic curve for each lattice</p>
+<p>\[\Phi:\mathbb C/L\rightarrow E(\mathbb C)\quad z\mapsto (\wp(z),\wp^\prime(z))\]</p>
+<p>This is an isomorphism of groups and complex manifolds. Moreover, all elliptic curves arise this way. For a proof, consult <a target="_blank" rel="noopener" href="https://math.mit.edu/classes/18.783/2015/LectureNotes16.pdf">here</a>, becuase I’m too lazy to prove the rest. </p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+    
+    </div>
+    
+    <div class="columns is-variable is-1 is-multiline is-mobile">
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/Number-Theory/">#Number Theory</a></span>
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/Complex-Analysis/">#Complex Analysis</a></span>
+    
+    </div>
+    
+    
+    <div class="columns is-mobile is-multiline article-nav">
+        <span class="column is-12-mobile is-half-desktop is-hidden-mobile article-nav-prev">
             
-            <span class="column is-narrow">
-                <a class="tag is-light article-tag" href="/categories/Articles/">Articles&nbsp;(11)</a>
-            </span>
+        </span>
+        <span class="column is-12-mobile is-half-desktop  article-nav-next">
             
-            <span class="column is-narrow">
-                <a class="tag is-light article-tag" href="/categories/This-Week-I-Learned/">This Week I Learned&nbsp;(10)</a>
-            </span>
+            <a href="/archives/b80e1240/">Grothendieck&#39;s Proof of van Kampen theorem</a>
             
-            <span class="column is-narrow">
-                <a class="tag is-light article-tag" href="/categories/Essays/">Essays&nbsp;(1)</a>
-            </span>
-            
-        </div>
+        </span>
+    </div>
+    
+</article>
+
+
+
+
+<div class="comments">
+    <h3 class="title is-4">Comments</h3>
+    
+<script src="https://giscus.app/client.js"
+        data-repo="yunhaixiang/yunhaixiang.github.io"
+        data-repo-id="MDEwOlJlcG9zaXRvcnkxNzE1Nzk1ODU="
+        data-category="Announcements"
+        data-category-id="DIC_kwDOCjoYwc4CWrDP"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+</div>
+
     </div>
 </section>
     <footer class="footer">
