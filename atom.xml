@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2024-03-01T00:11:24.808Z</updated>
+  <updated>2024-05-01T15:35:49.637Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Adeles and Ideles</title>
+    <link href="http://yoursite.com/archives/6b46c65/"/>
+    <id>http://yoursite.com/archives/6b46c65/</id>
+    <published>2024-04-25T04:11:43.000Z</published>
+    <updated>2024-05-01T15:35:49.637Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote class="pullquote"><p>“God exists since mathematics is consistent, and the Devil exists since we cannot prove it.”</p><p style="text-align: right;"> André Weil </p></blockquote><p>I’ve recently finished my final project for my algebraic number theory course on adeles and ideles, which can be found <a href="/documents/adeles.pdf">here</a>. Adeles is an object in algebraic number theory that solves the technical problem of doing analysis over \(\mathbb Q\) so to speak. It lets us work over all completions of a global field simultaneously. One of the applications of it is that certain compactness theorems on it proves the Dirichlet unit theorem and class number theorem. If I had more time, I would have elaborated further at the last part in my project but i unfortunately did not have enough time. </p><span id="more"></span><p>In this post, I’ll give a quick summery of my project. Fix a global field \(K\). </p><blockquote><p>Definition. The adele ring \(\mathbb A_K\) associated to \(K\) is the restricted direct product<br>\[\mathbb A_K=\prod_{\nu}(K_\nu,\mathcal O_\nu)\] where \(\mathcal O_\nu\) is the valuation ring of \(K_\nu\), as a topological ring. More generally, for \(S\) a set of places of \(K\), the \(S\)-adele ring is the product \[\mathbb A_{K,S}=\prod_{\nu\in S}K<em>\nu\times \prod\</em>{\nu\not\in S}\mathcal O_\nu\] and we have further that \(\mathbb{A}_K \simeq \displaystyle\lim_{\longrightarrow} \mathbb{A}_{K, S}\). </p></blockquote><p>This is a locally compact and Hausdorff topological ring, by giving it a basis consisting of \(\prod_{\nu}U_\nu\) where \(U_\nu\subseteq K_{\nu}\) open with almost all \(U_\nu=\mathcal O_\nu\). We have a product formula \[\prod_{\nu}|x|_\nu=1\] for \(x\in K^\times\) for normalized absolute values. The ideles \(\mathbb I_K\) are the unit group in \(\mathbb A_K^\times\), given the subspace topology by diagonal embedding in \(\mathbb A_K\times \mathbb A_K\). The \(1\)-ideles is the subgroup of the ideles with norm \(1\), which inherits the same topology from \(\mathbb I_K\) and \(\mathbb A_K\). The important result is</p><blockquote><p>Proposition. \(\mathbb A_K/K\) and \(\mathbb I^1_K/K^\times\) are compact. </p></blockquote><p>This is what leads to Dirichlet unit theorem and class number theorem. </p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;pullquote&quot;&gt;&lt;p&gt;“God exists since mathematics is consistent, and the Devil exists since we cannot prove it.”&lt;/p&gt;
+&lt;p style=&quot;text-align: right;&quot;&gt; André Weil &lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;I’ve recently finished my final project for my algebraic number theory course on adeles and ideles, which can be found &lt;a href=&quot;/documents/adeles.pdf&quot;&gt;here&lt;/a&gt;. Adeles is an object in algebraic number theory that solves the technical problem of doing analysis over \(\mathbb Q\) so to speak. It lets us work over all completions of a global field simultaneously. One of the applications of it is that certain compactness theorems on it proves the Dirichlet unit theorem and class number theorem. If I had more time, I would have elaborated further at the last part in my project but i unfortunately did not have enough time. &lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Dold-Kan correspondence</title>
+    <link href="http://yoursite.com/archives/9bdfdff9/"/>
+    <id>http://yoursite.com/archives/9bdfdff9/</id>
+    <published>2024-03-21T16:08:08.000Z</published>
+    <updated>2024-05-01T15:44:01.544Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote class="pullquote"><p>“Mathematics is not the rigid and rigidity-producing schema that the layman thinks it is; rather, in it we find ourselves at that meeting point of constraint and freedom that is the very essence of human nature.” </p><p style="text-align: right;"> Hermann Weyl </p></blockquote><p>Dold-Kan correspondence is a basic result in homotopy theory that establishes correspondence between simplicial abelian groups and (connective) chain complexes of abelian groups. This is given by functors that form an equivalence of categories between the category of simplicial abelian groups \(\mathbf{SAb}\) and the category of connective chain complexes of abelian groups \(\mathrm{Ch}_{+}(\mathbf{Ab})\). Thus, this correspondence interpolates between homological algebra and (simplicial) homotopy theory.<br><span id="more"></span></p><blockquote><p>Theorem. Let \(\mathcal A\) be an abelian category. There is an equivalence of categories<br>\[N:\mathrm{Fun}(\Delta^{\mathrm{op}}, A)\rightleftharpoons \mathrm{Ch}_+(\mathcal A):\Gamma \]where \(N\) is the normalized chain complex functor, defined as \[(NA)_n=\bigcap_{i=1}^n\mathrm{Ker}(d_i^n)\] with \(\partial_n:=\left.d_0^n\right|_{(N A)_n}:(N A)_n \rightarrow(N A)_{n-1}\). And $\Gamma$ is the simplicialization functor, where \[\Gamma(C)_n=\bigoplus_{n\twoheadrightarrow k}C_k\] where the maps are given in <a href="https://math.uchicago.edu/~amathew/doldkan.pdf">here</a>. </p></blockquote><p>I haven’t have time to finish reading the proof yet. I will write more here when i do finish reading the proof. </p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;pullquote&quot;&gt;&lt;p&gt;“Mathematics is not the rigid and rigidity-producing schema that the layman thinks it is; rather, in it we find ourselves at that meeting point of constraint and freedom that is the very essence of human nature.” &lt;/p&gt;
+&lt;p style=&quot;text-align: right;&quot;&gt; Hermann Weyl &lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Dold-Kan correspondence is a basic result in homotopy theory that establishes correspondence between simplicial abelian groups and (connective) chain complexes of abelian groups. This is given by functors that form an equivalence of categories between the category of simplicial abelian groups \(\mathbf{SAb}\) and the category of connective chain complexes of abelian groups \(\mathrm{Ch}_{+}(\mathbf{Ab})\). Thus, this correspondence interpolates between homological algebra and (simplicial) homotopy theory.&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Uniformization Theorem for Elliptic Curves</title>
@@ -468,53 +508,6 @@
     
     
       <category term="Lie Groups and Lie Algebras" scheme="http://yoursite.com/tags/Lie-Groups-and-Lie-Algebras/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Bruhat Order and Sperner Property</title>
-    <link href="http://yoursite.com/archives/66165fd0/"/>
-    <id>http://yoursite.com/archives/66165fd0/</id>
-    <published>2022-05-02T13:10:19.000Z</published>
-    <updated>2023-02-22T09:06:34.866Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote class="pullquote"><p>“Mathematics is the music of reason.”</p><p style="text-align: right;"> James J. Sylvester </p></blockquote><p>This week is the first week of the spring term and also my first week of undergraduate research with Prof. Satriano, so I decided to write about a research paper I’ve given to read, <a href="https://arxiv.org/pdf/2002.08535.pdf">this one</a>. In a nutshell, the paper proves a combinatorical conjecture posed by McKinnon, Satriano and Huang, about orbits on a hyperplane under permutation. Specifically, suppose that \(\sigma\in S_n\) acts on \(v\in\mathbf R^n\) by permutation, and let \(\mathcal{O}(v, w)=\{\sigma\in S_n: w\cdot \sigma v=0\}\). We prove a best bound for the number of vectors obtained by permutation of coordinates that are contained in a hyperplane through the origin except for \(\sum_ix_i=0\), where \(n\ge 3\). In notations, we have the following theorem.</p><span id="more"></span><blockquote><p>Theorem 1. For \(n\ge 3\), we have<br>\[\max\{|\mathcal{O}(v,w)|: v\in S,w\in\mathbf{R}^n\}=2\lfloor n/2\rfloor (n-2)!\]where \(S=\{v\in \mathbf R^n: v\cdot \mathbf{1}\ne 0, v\mathrm{\ has\ distinct\ coordinates}\}\).</p></blockquote><p>An explicit construction that achieves this bound is given by McKinnon, Satriano and Huang, so it suffice to show that this is the best bound. The proof uses Bruhat order and Sperner property. </p><h4 id="Bruhat-order"><a href="#Bruhat-order" class="headerlink" title="Bruhat order"></a>Bruhat order</h4><p>Suppose \(\alpha\vdash n\) with \(\ell(\alpha)=m\), and \(i_j=\sum_{k=1}^j\alpha_j\) for \(j=0,1\dots,m\). Let \(X_{\alpha}\) be the set of ordered set partitions of type \(\alpha\). Naturally, we have \(\alpha^*\in X_{\alpha}\) where \(\alpha^*_j=\{i_j+1,i_j+2,\dots,i_{j+1}\}\). Let \(S(\alpha)=\{i_1,\dots,i_{m-1}\}\). We have \(S_n\) acts on \(X_{\alpha}\) by element, which is a transitive action. Thus identify \(X_{\alpha}\cong S_n/S_\alpha\) where \(S_{\alpha}\) is the stabilizer of \(\alpha^*\). Denote \(\alpha!=|S_{\alpha}|=\prod_{i}\alpha_i!\)</p><blockquote><p>Definition 2. The <em>Bruhat order</em> on \(S_n/S_\alpha\) is the transitive closure (they are connected by relations of the following kind) of \(B&lt;(i\ j)B\) for \(B\in S_n/S_\alpha\) where \(i\in B_a\) and \(j\in B_b\) and \(a&lt;b\) and \(i&lt;j\).</p></blockquote><p>We note that the <em>Bruhat order</em> on \(S_n/S_{(1,\dots,1)}\) is just the usual Bruhat order on \(S_n\). For \(B\in S_n/S_\alpha\) let \(\operatorname{word}(B)\) be the permutation by concatonating the numbers in each set written in their usual order. This sends ordered set partitions to a more common definition: \(\sigma\in S_n\) where \(\sigma(i)&gt;\sigma(i+1)\) implies \(i\in S(\alpha)\), and Bruhat order restricted to such permutations. There is an obvious bijection \((S_n/S_\alpha)\times S_\alpha\rightarrow S_n\) by \((B,\sigma)\mapsto \operatorname{word}(B)\sigma\). The \(\alpha\)-Bruhat order \(\le_{\alpha}\) on \(S_n\) is the image of \((B,\sigma)\le (B^\prime,\sigma^\prime)\) iff \(\sigma=\sigma^\prime\) and \(B\le B^\prime\) in Bruhat order under the aforementioned bijection, which is isomorphic to \(\alpha!\) isomorphic copies of \(S_n/S_\alpha\). If \(w\in\mathbf R^n\), define \(\operatorname{comp}(w)\vdash n\) as the composition of lengths of the weekly increasing components. An antichain in a poset is a set consisting of elements from different disjoint components.</p><blockquote><p>Lemma 3. Suppose \(v\in\mathbf R^n\) is stricly increasing and \(w\in\mathbf R^n\) weakly increasing, then \(\mathcal O(v,w)\) is an antichain in the \(\alpha\)-Bruhat order where \(\alpha=\operatorname{comp}(w)\).</p><div class="spoiler collapsed">    <div class="spoiler-title">        Proof    </div>    <div class="spoiler-content">        <p>Suppose \(\pi\in S_{\alpha}\) and \(\tau=\operatorname{word}(B)\) for some \(B\in S_n/S_\alpha\). Suppose \(i\in B_a\) and \(j\in B_b\) for \(i&lt;j\) and \(a&lt;b\). We have \(\tau \pi&lt; (i\ j)\tau \pi\). Next, we compute that<br>\[w\cdot \tau\pi v-w\cdot (i\ j)\tau \pi v=(w_j-w_i)(v_{\pi^{-1}\tau^{-1}(j)}-v_{\pi^{-1}\tau^{-1}(i)})\]Since \(\tau^{-1}(i)\) is at a lower interval than \(\tau^{-1}(j)\) (since \(a&lt;b\)) and \(\pi^{-1}\) preserves these intervals, we have \(v_{\pi^{-1}\tau^{-1}(j)}&gt;v_{\pi^{-1}\tau^{-1}(i)}\). Since we have \(w_i&lt;w_j\) by assumption, we have \(w\cdot \tau\pi v&gt;w\cdot (i\ j)\tau \pi v\). Therefore, if \(\sigma&lt;_{\alpha}\sigma^\prime\) then \(w\cdot \sigma v&gt;w\cdot \sigma^\prime v\).</p>    </div></div></blockquote><p>Therefore, we can bound the sizes of antichains in the \(\alpha\)-Bruhat order.</p><h4 id="Sperner-property"><a href="#Sperner-property" class="headerlink" title="Sperner property"></a>Sperner property</h4><p>We use \(q\)-polynomials to bound the sizes of antichains. Specifically, we will make use of the Sperner property of \(S_n/S_\alpha\): it is a ranked poset where the set of elements of rank \(r\), for some fixed \(r\), forms an antichain of maximal size. The rank generating function of \(S_n/S_\alpha\) is the \(q\)-binomial coefficient \(\begin{bmatrix}n\\ \alpha\end{bmatrix}_q\).</p><blockquote><p>Theorem 4. Let \(v,w\in\mathbf R^n\) where \(v\) has distinct coordinates, then<br>\[|\mathcal{O}(v,w)|\le \alpha!M\left(\begin{bmatrix}n\\ \alpha\end{bmatrix}_q\right)\]where \(\alpha=\operatorname{comp}(w)\) and \(M:\mathbf{Z}[q]\rightarrow\mathbf Z\) is the map that takes the maximum coefficient.</p><div class="spoiler collapsed">    <div class="spoiler-title">        Proof    </div>    <div class="spoiler-content">        <p>Since \(|\mathcal{O}(v,w)|=|\mathcal{O}(\sigma v,\tau w)|\) for any \(\sigma,\tau\in S^n\), we can assume \(v\) is strictly increasing and \(w\) weakly increasing. By the previous lemma, we have \(\mathcal{O}(v,w)\) is an antichain in the \(\alpha\)-Bruhat order on \(S_n\), and hence also on \(S_n/S_\alpha\times S_\alpha\). By the Sperner property, we have this bound.</p>    </div></div></blockquote><p>Therefore, it suffice to bound the coefficients of \(\begin{bmatrix}n\\ \alpha\end{bmatrix}_q\). </p><h4 id="Bounding-coefficients"><a href="#Bounding-coefficients" class="headerlink" title="Bounding coefficients"></a>Bounding coefficients</h4><p>Given \(\alpha,\beta\vdash n\), then we say \(\beta\) refines \(\alpha\), written as \(\alpha\prec \beta\), if \(\beta\) is obtained from \(\alpha\) by decomposing its entries.</p><blockquote><p>Lemma 5. If \(\alpha,\beta\vdash n\) and \(\alpha\prec \beta\), then \(\beta !M\left(\begin{bmatrix}n\\ \beta\end{bmatrix}_q\right)\le \alpha! M\left(\begin{bmatrix}n\\ \alpha\end{bmatrix}_q\right)\).</p><div class="spoiler collapsed">    <div class="spoiler-title">        Proof    </div>    <div class="spoiler-content">        <p>Assume \(\beta=(\alpha_1,\dots,\alpha_{i-1},\alpha_{i}-p,p,\alpha_{i+1},\dots,\alpha_m)\), then<br>\[\beta!\begin{bmatrix}n\\ \beta\end{bmatrix}_q=\binom{\alpha_i}{p}^{-1}\begin{bmatrix}\alpha_i\\ p\end{bmatrix}_q \alpha!\begin{bmatrix}n\\ \alpha\end{bmatrix}_q\]The lemma follows from \(M(fg)\le f(1)M(g)\).</p>    </div></div></blockquote><p>Eventually, with some lengthy calculations, we have \(M\left(\begin{bmatrix}n\\ k\end{bmatrix}_q\right)\le \displaystyle\frac{1}{n}\binom{n}{k}\) for \(n\ge 0\) and \(2 &lt; k &lt; n-2\). </p><blockquote><p>Theorem 1. For \(n\ge 3\), we have<br>\[\max\{|\mathcal{O}(v,w)|: v\in S,w\in\mathbf{R}^n\}=2\lfloor n/2\rfloor (n-2)!\]where \(S=\{v\in \mathbf R^n: v\cdot \mathbf{1}\ne 0, v\mathrm{\ has\ distinct\ coordinates}\}\).</p><div class="spoiler collapsed">    <div class="spoiler-title">        Proof    </div>    <div class="spoiler-content">        <p>If \(\operatorname{comp}(w)\) has \(1\) part then obviously \(|\mathcal{O}(v,w)|=0\). Assume \(\operatorname{comp}(w)\) has at least \(2\) parts.<br>\[\begin{aligned}|\mathcal{O}(v,w)|&amp;\le \operatorname{comp}(w)!M\left(\begin{bmatrix}n\\ \operatorname{comp}(w)\end{bmatrix}_q\right)\\ &amp;\le \operatorname{max}_{\alpha\vdash n, \ell(\alpha)\ge 2}\alpha!M\left(\begin{bmatrix}n\\ \alpha\end{bmatrix}_q\right)\\ &amp;\le \operatorname{max}_{0&lt;k&lt;n}k!(n-k)!M\left(\begin{bmatrix}n\\ k\end{bmatrix}\right)<br>\end{aligned}\]For \(2&lt;k&lt;n-2\), \[k!(n-k)!M\left(\begin{bmatrix}n\\ k\end{bmatrix}\right)\le k!(n-k)!\frac{1}{n}\binom{n}{k}=(n-1)!\] We see that if \(k=1\) then \(1!(n-1)!M\left(\begin{bmatrix}n\\ 1\end{bmatrix}\right)=(n-1)!\) and if \(k=2\) then \[2!(n-2)!M\left(\begin{bmatrix}n\\ 2\end{bmatrix}\right)=2(n-2)!\lfloor n/2\rfloor=\left\{\begin{matrix}(n-1)!&amp;n\mathrm{\ odd}\\ n(n-2)!&amp; n\mathrm{\ even}\end{matrix}\right.\]</p>    </div></div></blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote class=&quot;pullquote&quot;&gt;&lt;p&gt;“Mathematics is the music of reason.”&lt;/p&gt;
-&lt;p style=&quot;text-align: right;&quot;&gt; James J. Sylvester &lt;/p&gt;&lt;/blockquote&gt;
-
-&lt;p&gt;This week is the first week of the spring term and also my first week of undergraduate research with Prof. Satriano, so I decided to write about a research paper I’ve given to read, &lt;a href=&quot;https://arxiv.org/pdf/2002.08535.pdf&quot;&gt;this one&lt;/a&gt;. In a nutshell, the paper proves a combinatorical conjecture posed by McKinnon, Satriano and Huang, about orbits on a hyperplane under permutation. Specifically, suppose that \(\sigma\in S_n\) acts on \(v\in\mathbf R^n\) by permutation, and let \(\mathcal{O}(v, w)=\{\sigma\in S_n: w\cdot \sigma v=0\}\). We prove a best bound for the number of vectors obtained by permutation of coordinates that are contained in a hyperplane through the origin except for \(\sum_ix_i=0\), where \(n\ge 3\). In notations, we have the following theorem.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="This Week I Learned" scheme="http://yoursite.com/categories/This-Week-I-Learned/"/>
-    
-    
-      <category term="Combinatorics" scheme="http://yoursite.com/tags/Combinatorics/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Galois Category and Étale Fundamental Group</title>
-    <link href="http://yoursite.com/archives/cb0d1d4a/"/>
-    <id>http://yoursite.com/archives/cb0d1d4a/</id>
-    <published>2022-04-13T02:33:43.000Z</published>
-    <updated>2023-02-22T09:10:42.671Z</updated>
-    
-    <content type="html"><![CDATA[<p>I’m in a good mood today because it’s my birthday 🎉 and I finally finished recording my final presentation for PMATH 965! For my final presentation, I did an exposition on Galois categories and étale fundamental groups. Here’s the Youtube video of my presentation, and you can download the slides <a href="/documents/Etale_Fundamental_Group.pdf">here</a>.<span id="more"></span><div class="video-container"><iframe src="https://www.youtube.com/embed/mbobKvMsrng" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></p><p><br>In a nutshell, first I gave some motivations from Galois theory and algebraic topology where I made an analogy between the fundamental theorems of Galois theory and covering spaces, I then explained some backgrounds on Galois category and finite étale morphisms, and finally I use these backgrounds to define étale fundamental groups.</p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;I’m in a good mood today because it’s my birthday 🎉 and I finally finished recording my final presentation for PMATH 965! For my final presentation, I did an exposition on Galois categories and étale fundamental groups. Here’s the Youtube video of my presentation, and you can download the slides &lt;a href=&quot;/documents/Etale_Fundamental_Group.pdf&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Articles" scheme="http://yoursite.com/categories/Articles/"/>
-    
-    
-      <category term="Algebraic Geometry" scheme="http://yoursite.com/tags/Algebraic-Geometry/"/>
     
   </entry>
   
