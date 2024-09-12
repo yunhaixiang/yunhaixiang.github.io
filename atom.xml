@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2024-06-10T17:20:58.199Z</updated>
+  <updated>2024-09-12T19:17:35.957Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://yoursite.com/archives/ab08f85b/"/>
     <id>http://yoursite.com/archives/ab08f85b/</id>
     <published>2024-06-10T15:20:43.000Z</published>
-    <updated>2024-06-10T17:20:58.199Z</updated>
+    <updated>2024-09-12T19:17:35.957Z</updated>
     
-    <content type="html"><![CDATA[<blockquote class="pullquote"><p>“The pursuit of mathematics is a divine madness of the human spirit.” </p><p style="text-align: right;"> Alfred North Whitehead </p></blockquote><p>Yesterday I gave a talk on OGMC (Ontario Graduate Math Conference) at Waterloo on rigid analytic geometry. Here are the <a href="/documents/rigid2.pdf">slides</a>. In my talk I first discussed complex analytification, uniformization theorem, and discussed their analogues in rigid analytic geometry. I had a lot of fun at OGMC, and went to lots of great talks. The talks I liked the most was one on algebraic K-theory, and another one on categorical logic (eventhough I can’t say I understood most of them). They seem to be very interesting topics. </p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    <content type="html"><![CDATA[<blockquote class="pullquote"><p>“The pursuit of mathematics is a divine madness of the human spirit.” </p><p style="text-align: right;"> Alfred North Whitehead </p></blockquote><p>Yesterday I gave a talk on OGMC (Ontario Graduate Math Conference) at Waterloo on rigid analytic geometry. Here are the <a href="/documents/rigid2.pdf">slides</a>. I had a lot of fun at OGMC, and went to lots of great talks. The talks I liked the most was one on algebraic K-theory, and another one on categorical logic (eventhough I can’t say I understood most of them). They seem to be very interesting topics. </p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
     
     <summary type="html">
     
@@ -285,9 +285,9 @@
     <link href="http://yoursite.com/archives/ee8dd51d/"/>
     <id>http://yoursite.com/archives/ee8dd51d/</id>
     <published>2023-02-11T16:16:57.000Z</published>
-    <updated>2023-03-05T16:26:13.092Z</updated>
+    <updated>2024-09-12T19:19:45.299Z</updated>
     
-    <content type="html"><![CDATA[<p>Recently, I gave another talk on the <a href="https://puremath.club/events/w23#14">Short Attention Span Math Seminars</a> which is a friendly introduction to category theory. Here are my <a href="/documents/category.pdf">slides</a>, and here are the <a href="/documents/abstractions.pdf">slides</a> for the first five minutes. In my talk, I first talked about the idea of abstractions, then I talked about the categorical way of thing and along the way talked about many ideas like universal properties, functors, natural transformations. In the end, this culminated in the Yoneda lemma or the fundamental theorem of category theory. I also discussed a little an application of it to algebraic geometry, the functor of points, and how this could be used to construct (fine) moduli spaces such as Grassmannians.</p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    <content type="html"><![CDATA[<p>Recently, I gave another talk on the <a href="https://puremath.club/events/w23#14">Short Attention Span Math Seminars</a> which is a friendly introduction to category theory. Here are my <a href="/documents/category.pdf">slides</a>, and here are the <a href="/documents/abstractions.pdf">slides</a> for the first five minutes. In my talk, I first talked about the idea of abstractions, then I talked about the categorical way of thing and along the way talked about many ideas like universal properties, functors, natural transformations. In the end, this culminated in the Yoneda lemma or the fundamental theorem of category theory. I also discussed a little an application of it to algebraic geometry.</p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
     
     <summary type="html">
     
