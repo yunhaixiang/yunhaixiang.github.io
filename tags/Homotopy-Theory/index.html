@@ -149,7 +149,7 @@
         
         <span class="column is-narrow article-category">
             <i class="far fa-folder"></i>
-            <a class="article-category-link" href="/categories/This-Week-I-Learned/">This Week I Learned</a>
+            <a class="article-category-link" href="/categories/Articles/">Articles</a>
         </span>
         
         
@@ -164,6 +164,8 @@
     
         <blockquote class="pullquote"><p>“I am not saying that I believe in the law of the excluded middle, I am just saying that it isn’t not true. ” </p>
 <p style="text-align: right;"> Kavin Satheeskumar </p></blockquote>
+
+
 <p>Recently, I’ve been reading Cisinski’s <em>Higher Categories and Homotopical Algebra</em>. I wanted to write down some of the things I’ve learned. In this post, we start from a review of presheaves of sets and simplicial sets, and then build towards the definition of an \(\infty\)-category. Let \(A\) be a category, recall a presheaf on \(A\) is a contravariant functor \(X:A^{\mathrm{op}}\rightarrow \mathbf{Set}\), where we denote \(X_a=X(a)\) and \(u^*:b\rightarrow a\) the induced morphism for each \(u:a\rightarrow b\). And the category of presheaves on \(A\) is denoted as \(\widehat{A}\). The category of elements \(\int_AX\) (or \(\int X\)) is the category where objects are \((a,s)\) where \(a\in A\) and \(s\in X_a\), and a morphisms \(u:(a,s)\rightarrow (b,t)\) is a morphism \(u:a\rightarrow b\) where \(u^*(t)=s\). It comes equipped with a faithful functor \(\varphi_X:\int_A X\rightarrow \widehat{A}\) given by \((a,s)\mapsto \mathscr{H}_a\) on objects and \(u\mapsto \mathscr{H}(u)\) on morphisms, where \(\mathscr{H}:A\rightarrow \widehat{A}\) is the Yoneda embedding. In this post, we ignore all set-theoretic size issues. </p>
         <p class="article-more-link">
             <a href="/archives/bf63e237/#more">Read More</a>
@@ -185,7 +187,7 @@
     <div class="container">
         <div class="columns content">
             <div class="column is-narrow has-text-centered">
-                &copy; 2024 Yunhai Xiang&nbsp;
+                &copy; 2025 Yunhai Xiang&nbsp;
                 Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> & <a
                         target="_blank" rel="noopener" href="http://github.com/ppoffice/hexo-theme-minos">Minos</a>. Icons made by Freepik from Flaticon.
             </div>
@@ -364,23 +366,8 @@ document.addEventListener("DOMContentLoaded", function() {
     })(window);
 </script>
 
-<script src="/js/insight.js"></script>
+<script src="/js/insight.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
     
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
 </html>

@@ -25,9 +25,9 @@
 <meta property="og:description" content="“And every science, when we understand it not as an instrument of power and domination but as an adventure in knowledge pursued by our species across the ages, is nothing but this harmony, more or les">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-12-18T15:06:03.000Z">
-<meta property="article:modified_time" content="2024-12-19T15:07:26.237Z">
+<meta property="article:modified_time" content="2025-01-27T04:13:34.121Z">
 <meta property="article:author" content="Yunhai Xiang">
-<meta property="article:tag" content="Math">
+<meta property="article:tag" content="Combinatorics">
 <meta name="twitter:card" content="summary">
 
 
@@ -153,6 +153,11 @@
             <time datetime="2024-12-18T15:06:03.000Z" itemprop="datePublished">Dec 18 2024</time>
         </span>
         
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/Articles/">Articles</a>
+        </span>
+        
         
         <span class="column is-narrow">
             
@@ -184,6 +189,12 @@
 <p>Littlewood showed that Schur polynomials can be represented by sum indexed by semistandard Young tableaus \(s_\lambda\left(x_1, \ldots, x_n\right)=\sum_{T \in \operatorname{SSYT}_\lambda(n)} \mathbf{x}^T .\) Define \(\Lambda=\displaystyle\lim_{\longleftarrow}\Lambda_n\) the ring of symmetric functions. Let \(\omega:\Lambda\rightarrow\Lambda\) be \(\omega(h_{\lambda})=e_{\lambda}\), then \(\omega^2=\mathrm{id}\). Define also bilinear form \(\langle \cdot,\cdot\rangle:\Lambda^2\rightarrow\mathbb R\) extended by \(\langle m_{\lambda},h_{\mu}\rangle=\delta_{\lambda\mu}\). Wrt this form, the Schur polynomials form an orthonormal basis with \(\omega\) an isometry of it. This is the Hall inner product. </p>
 <p>One application of symmetric polynomials is Lagrange’s solution to depressed quartic equation. Let \(\alpha_i\) be the roots of \(x^4+a_2x^2+a_3x+a_4=0\). Let \(f_1=(\alpha_1+\alpha_2)(\alpha_3+\alpha_4)\) and \(f_2,f_3\) the other two in its orbit, then for any symmetric polynomial \(s\), we have \(s(f_1,f_2,f_3)\) is symmetric. Thus \(u_{i}=e_i(f_1,f_2,f_3)\) are symmetric for \(i=1,2,3\). Then \(u_i\) can be written as a polynomial in terms of \(a_i\) by Vieta. Since \(x^3-u_1x^2+u_2x+u_3\) has coefficients polynomials in \(a_i\), we can use the cubic formula to solve for \(f_i\) in terms of \(a_i\). Using \(f_1=(\alpha_1+\alpha_2)(\alpha_3+\alpha_4)=-(\alpha_1+\alpha_2)^2\) since \(\alpha_1+\alpha_2+\alpha_3+\alpha_4=0\), and likewise for \(f_2,f_3\), we can solve for \(\alpha_i\) in terms of \(a_i\). For further connection between Galois theory and symmetric functions, read <a target="_blank" rel="noopener" href="https://arxiv.org/pdf/1301.7116">this</a>. </p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+    
+    </div>
+    
+    <div class="columns is-variable is-1 is-multiline is-mobile">
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/Combinatorics/">#Combinatorics</a></span>
     
     </div>
     
@@ -232,7 +243,7 @@
     <div class="container">
         <div class="columns content">
             <div class="column is-narrow has-text-centered">
-                &copy; 2024 Yunhai Xiang&nbsp;
+                &copy; 2025 Yunhai Xiang&nbsp;
                 Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> & <a
                         target="_blank" rel="noopener" href="http://github.com/ppoffice/hexo-theme-minos">Minos</a>. Icons made by Freepik from Flaticon.
             </div>
@@ -411,23 +422,8 @@ document.addEventListener("DOMContentLoaded", function() {
     })(window);
 </script>
 
-<script src="/js/insight.js"></script>
+<script src="/js/insight.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
     
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
 </html>

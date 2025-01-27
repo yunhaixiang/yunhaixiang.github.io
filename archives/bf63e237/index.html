@@ -17,15 +17,15 @@
 
 
 
-    <meta name="description" content="“I am not saying that I believe in the law of the excluded middle, I am just saying that it isn’t not true. ”   Kavin Satheeskumar  Recently, I’ve been reading Cisinski’s Higher Categories and Homotop">
+    <meta name="description" content="“I am not saying that I believe in the law of the excluded middle, I am just saying that it isn’t not true. ”   Kavin Satheeskumar    Recently, I’ve been reading Cisinski’s Higher Categories and Homot">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Simplicial Sets and $\infty$-Categories: Part I">
 <meta property="og:url" content="http://yoursite.com/archives/bf63e237/index.html">
 <meta property="og:site_name" content="The Singularity">
-<meta property="og:description" content="“I am not saying that I believe in the law of the excluded middle, I am just saying that it isn’t not true. ”   Kavin Satheeskumar  Recently, I’ve been reading Cisinski’s Higher Categories and Homotop">
+<meta property="og:description" content="“I am not saying that I believe in the law of the excluded middle, I am just saying that it isn’t not true. ”   Kavin Satheeskumar    Recently, I’ve been reading Cisinski’s Higher Categories and Homot">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-09-26T00:14:47.000Z">
-<meta property="article:modified_time" content="2023-11-24T23:29:47.670Z">
+<meta property="article:modified_time" content="2025-01-27T04:02:14.970Z">
 <meta property="article:author" content="Yunhai Xiang">
 <meta property="article:tag" content="Category Theory">
 <meta property="article:tag" content="Homotopy Theory">
@@ -172,7 +172,7 @@
         
         <span class="column is-narrow article-category">
             <i class="far fa-folder"></i>
-            <a class="article-category-link" href="/categories/This-Week-I-Learned/">This Week I Learned</a>
+            <a class="article-category-link" href="/categories/Articles/">Articles</a>
         </span>
         
         
@@ -187,11 +187,15 @@
     
         <blockquote class="pullquote"><p>“I am not saying that I believe in the law of the excluded middle, I am just saying that it isn’t not true. ” </p>
 <p style="text-align: right;"> Kavin Satheeskumar </p></blockquote>
+
+
 <p>Recently, I’ve been reading Cisinski’s <em>Higher Categories and Homotopical Algebra</em>. I wanted to write down some of the things I’ve learned. In this post, we start from a review of presheaves of sets and simplicial sets, and then build towards the definition of an \(\infty\)-category. Let \(A\) be a category, recall a presheaf on \(A\) is a contravariant functor \(X:A^{\mathrm{op}}\rightarrow \mathbf{Set}\), where we denote \(X_a=X(a)\) and \(u^*:b\rightarrow a\) the induced morphism for each \(u:a\rightarrow b\). And the category of presheaves on \(A\) is denoted as \(\widehat{A}\). The category of elements \(\int_AX\) (or \(\int X\)) is the category where objects are \((a,s)\) where \(a\in A\) and \(s\in X_a\), and a morphisms \(u:(a,s)\rightarrow (b,t)\) is a morphism \(u:a\rightarrow b\) where \(u^*(t)=s\). It comes equipped with a faithful functor \(\varphi_X:\int_A X\rightarrow \widehat{A}\) given by \((a,s)\mapsto \mathscr{H}_a\) on objects and \(u\mapsto \mathscr{H}(u)\) on morphisms, where \(\mathscr{H}:A\rightarrow \widehat{A}\) is the Yoneda embedding. In this post, we ignore all set-theoretic size issues. </p>
 <span id="more"></span>
+
 <h4 id="Presheaves"><a href="#Presheaves" class="headerlink" title="Presheaves"></a>Presheaves</h4><p>First, we prove a variation of the Yoneda lemma (the coend calculus version).</p>
 <blockquote>
-<p>Theorem. The cocone defined by the collection of maps \(s:\mathscr{H}_a\rightarrow X\) for \((a,s)\in \int_AX\) (identifying via Yoneda lemma) exhibits \(X\) as a colimit of \(\varphi_X\) viewed as a diagram, that is, \(X=\mathrm{colim}\ \varphi_X\).<br><div class="spoiler collapsed">
+<p>Theorem. The cocone defined by the collection of maps \(s:\mathscr{H}_a\rightarrow X\) for \((a,s)\in \int_AX\) (identifying via Yoneda lemma) exhibits \(X\) as a colimit of \(\varphi_X\) viewed as a diagram, that is, \(X=\mathrm{colim}\ \varphi_X\).</p>
+<div class="spoiler collapsed">
     <div class="spoiler-title">
         Proof
     </div>
@@ -199,7 +203,7 @@
         <p>Let \(Y\) be a presheaf on \(A\). By the Yoneda lemma \(\mathrm{Hom}_{\widehat{A}}(\mathscr{H}_a,Y)\cong Y_a\), so a cocone from \(\varphi_X\) to \(Y\) can be viewed as a collection of sections \(f_s\in Y_a\) for \((a,s)\in \int_AX\) such that \(u^*(f_t)=f_s\) for all \(u:(a,s)\rightarrow (b,t)\). This means the collection of maps \(X_a\rightarrow Y_a\) by \(s\mapsto f_s\) is a morphism of presheaves. Hence, the map \(\Phi: \mathrm{Hom}(X,Y)\rightarrow (\varphi_X\downarrow Y)\) given by composition with \(s:\mathscr{H}_a\rightarrow X\) for \((a,s)\in \int_AX\) has a two-sided inverse, therefore we have \(X=\mathrm{colim}\varphi_X\).</p>
 
     </div>
-</div></p>
+</div>
 </blockquote>
 <p>Let \(C\) be a category with limits. For \(u:A\rightarrow C\), we can define a <em>functor of evaluation</em></p>
 <p>\[u^*:C\rightarrow \widehat{A}\quad\quad Y\mapsto \left[a\mapsto \mathrm{Hom}_{C}(u(a),Y)\right]\]</p>
@@ -220,7 +224,7 @@
 </ol>
 <p>We say an object \(a\in A\) has dimension \(n\) if \(d(a)=n\).</p>
 </blockquote>
-<p>The category \(\Delta\) is Eilenberg-Zilber with \(\Delta_{+}\) (resp. \(\Delta_{-}\)) the subcategory of monos (resp. epis), and \(d([n])=n\). Let \(X\) be a presheaf on an Eilenberg-Zilber category \(A\). For \(a\in A\), we say \(x\in X_a\) is <em>degenerate</em> if there is a map \(\sigma:a\rightarrow b\) in \(A\) with \(d(b)<d(a)\\), and \\(y\in x\_b\\) such that \\(\sigma^\*(y)="x\\)." the pair \\((\sigma,y)\\) is called a decomposition of \\(x\\). moreover, there unique \\(\sigma\in a\_{-}\\) \\(y\\) non-degenerate. for \\(n\ge 0\\), we define \\(\mathrm{sk}\_n(x)\\) maximal subpresheaf \\(x\\) any \\(m>n\) any section of \(\mathrm{Sk}_n(X)\) over an object \(a\) of dimension \(m\) is degenerate, that is \(\mathrm{Sk}_n(X)\) restricts the sections to dimensions \(\le n\). We can easily make the construction \(\mathrm{Sk}_n\) functorial, so it can be viewed as a functor. </d(a)\\),></p>
+<p>The category \(\Delta\) is Eilenberg-Zilber with \(\Delta_{+}\) (resp. \(\Delta_{-}\)) the subcategory of monos (resp. epis), and \(d([n])=n\). Let \(X\) be a presheaf on an Eilenberg-Zilber category \(A\). For \(a\in A\), we say \(x\in X_a\) is <em>degenerate</em> if there is a map \(\sigma:a\rightarrow b\) in \(A\) with \(d(b)&lt;d(a)\), and \(y\in X_b\) such that \(\sigma^*(y)=x\). The pair \((\sigma,y)\) is called a decomposition of \(x\). Moreover, there is a unique decomposition such that \(\sigma\in A_{-}\) and \(y\) is non-degenerate. For \(n\ge 0\), we define \(\mathrm{Sk}_n(X)\) the maximal subpresheaf of \(X\) such that for any \(m&gt;n\) any section of \(\mathrm{Sk}_n(X)\) over an object \(a\) of dimension \(m\) is degenerate, that is \(\mathrm{Sk}_n(X)\) restricts the sections to dimensions \(\le n\). We can easily make the construction \(\mathrm{Sk}_n\) functorial, so it can be viewed as a functor. </p>
 <h4 id="Nerves"><a href="#Nerves" class="headerlink" title="Nerves"></a>Nerves</h4><p>Every poset \(E\) can be viewed as a category where objects are elements, and there is a unique morphism \(x\rightarrow y\) if \(x\le y\) and none otherwise. Let \(i:\Delta\rightarrow\mathbf{Cat}\) the inclusion functor, then the <em>nerve functor</em> \(N=i^*:\mathbf{Cat}\rightarrow\mathbf{SSet}\) is given by \(C\mapsto [[n]\mapsto \mathrm{Hom}_{\mathbf{Cat}}([n],C)]\). Thus the \(n\)-simplex of \(N(C)\) is a string of arrows of length \(n\) in \(C\). By the preceeding theorem, the nerve functor has a left adjoint \(\tau=i_{!}:\mathbf{SSet}\rightarrow\mathbf{Cat}\). We’ll stop here and continue more in Part II. </p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
     
@@ -281,7 +285,7 @@
     <div class="container">
         <div class="columns content">
             <div class="column is-narrow has-text-centered">
-                &copy; 2024 Yunhai Xiang&nbsp;
+                &copy; 2025 Yunhai Xiang&nbsp;
                 Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> & <a
                         target="_blank" rel="noopener" href="http://github.com/ppoffice/hexo-theme-minos">Minos</a>. Icons made by Freepik from Flaticon.
             </div>
@@ -460,23 +464,8 @@ document.addEventListener("DOMContentLoaded", function() {
     })(window);
 </script>
 
-<script src="/js/insight.js"></script>
+<script src="/js/insight.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
     
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
 </html>

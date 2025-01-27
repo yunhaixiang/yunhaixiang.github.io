@@ -25,7 +25,7 @@
 <meta property="og:description" content="“Mathematics is not the rigid and rigidity-producing schema that the layman thinks it is; rather, in it we find ourselves at that meeting point of constraint and freedom that is the very essence of hu">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-03-21T16:08:08.000Z">
-<meta property="article:modified_time" content="2024-05-01T15:44:01.544Z">
+<meta property="article:modified_time" content="2025-01-27T04:14:15.678Z">
 <meta property="article:author" content="Yunhai Xiang">
 <meta property="article:tag" content="Math">
 <meta name="twitter:card" content="summary">
@@ -153,6 +153,11 @@
             <time datetime="2024-03-21T16:08:08.000Z" itemprop="datePublished">Mar 21 2024</time>
         </span>
         
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/Articles/">Articles</a>
+        </span>
+        
         
         <span class="column is-narrow">
             
@@ -165,7 +170,10 @@
     
         <blockquote class="pullquote"><p>“Mathematics is not the rigid and rigidity-producing schema that the layman thinks it is; rather, in it we find ourselves at that meeting point of constraint and freedom that is the very essence of human nature.” </p>
 <p style="text-align: right;"> Hermann Weyl </p></blockquote>
-<p>Dold-Kan correspondence is a basic result in homotopy theory that establishes correspondence between simplicial abelian groups and (connective) chain complexes of abelian groups. This is given by functors that form an equivalence of categories between the category of simplicial abelian groups \(\mathbf{SAb}\) and the category of connective chain complexes of abelian groups \(\mathrm{Ch}_{+}(\mathbf{Ab})\). Thus, this correspondence interpolates between homological algebra and (simplicial) homotopy theory.<br><span id="more"></span></p>
+
+<p>Dold-Kan correspondence is a basic result in homotopy theory that establishes correspondence between simplicial abelian groups and (connective) chain complexes of abelian groups. This is given by functors that form an equivalence of categories between the category of simplicial abelian groups \(\mathbf{SAb}\) and the category of connective chain complexes of abelian groups \(\mathrm{Ch}_{+}(\mathbf{Ab})\). Thus, this correspondence interpolates between homological algebra and (simplicial) homotopy theory. </p>
+<span id="more"></span>
+
 <blockquote>
 <p>Theorem. Let \(\mathcal A\) be an abelian category. There is an equivalence of categories<br>\[N:\mathrm{Fun}(\Delta^{\mathrm{op}}, A)\rightleftharpoons \mathrm{Ch}_+(\mathcal A):\Gamma \]where \(N\) is the normalized chain complex functor, defined as \[(NA)_n=\bigcap_{i=1}^n\mathrm{Ker}(d_i^n)\] with \(\partial_n:=\left.d_0^n\right|_{(N A)_n}:(N A)_n \rightarrow(N A)_{n-1}\). And $\Gamma$ is the simplicialization functor, where \[\Gamma(C)_n=\bigoplus_{n\twoheadrightarrow k}C_k\] where the maps are given in <a target="_blank" rel="noopener" href="https://math.uchicago.edu/~amathew/doldkan.pdf">here</a>. </p>
 </blockquote>
@@ -221,7 +229,7 @@
     <div class="container">
         <div class="columns content">
             <div class="column is-narrow has-text-centered">
-                &copy; 2024 Yunhai Xiang&nbsp;
+                &copy; 2025 Yunhai Xiang&nbsp;
                 Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> & <a
                         target="_blank" rel="noopener" href="http://github.com/ppoffice/hexo-theme-minos">Minos</a>. Icons made by Freepik from Flaticon.
             </div>
@@ -400,23 +408,8 @@ document.addEventListener("DOMContentLoaded", function() {
     })(window);
 </script>
 
-<script src="/js/insight.js"></script>
+<script src="/js/insight.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
     
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
 </html>
